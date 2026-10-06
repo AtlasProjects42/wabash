@@ -1,0 +1,263 @@
+{
+  "_site_title": "moved to config/place.json (site_title) — v1 2026-10-06",
+  "categories": [
+    {
+      "key": "events",
+      "label": "Events",
+      "schema": "events",
+      "workbook": "data/events.xlsx",
+      "color": "#ff6f5e",
+      "default_on": true,
+      "glyph": "📅",
+      "sheet": "Events"
+    },
+    {
+      "key": "adventures",
+      "label": "Adventures",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Adventures",
+      "color": "#00a896",
+      "default_on": true,
+      "glyph": "≋"
+    },
+    {
+      "key": "restaurants",
+      "label": "Restaurants",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Restaurants",
+      "color": "#e05252",
+      "default_on": true,
+      "glyph": "🍴"
+    },
+    {
+      "key": "farmstands",
+      "label": "Farm Stands",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Farm Stands",
+      "color": "#4caf50",
+      "default_on": true,
+      "glyph": "𐚱"
+    },
+    {
+      "key": "antiques",
+      "label": "Antiques & Vintage",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Antiques & Vintage",
+      "color": "#b08968",
+      "default_on": true,
+      "glyph": "☞"
+    },
+    {
+      "key": "artsent",
+      "label": "Arts & Entertainment",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Arts & Entertainment",
+      "color": "#a2c523",
+      "default_on": true,
+      "glyph": "▣"
+    },
+    {
+      "key": "lodging",
+      "label": "Lodging",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Lodging",
+      "color": "#8e6cf0",
+      "default_on": true,
+      "glyph": "☾"
+    },
+    {
+      "key": "flowersgifts",
+      "label": "Flowers & Garden",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Flowers & Garden",
+      "color": "#c2185b",
+      "default_on": true,
+      "glyph": "𐫱"
+    },
+    {
+      "key": "wellness",
+      "label": "Wellness",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Wellness",
+      "color": "#e6b422",
+      "default_on": true,
+      "glyph": "𐘿"
+    },
+    {
+      "key": "mutualaid",
+      "label": "Mutual Aid",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Mutual Aid",
+      "color": "#d4519f",
+      "default_on": true,
+      "glyph": "✚"
+    },
+    {
+      "key": "othernecessities",
+      "label": "Other Necessities",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Other Necessities",
+      "color": "#7a8ba6",
+      "default_on": true,
+      "glyph": "⚙"
+    },
+    {
+      "key": "geology",
+      "label": "Natural History",
+      "sheet": "Geology",
+      "workbook": "data/points_of_interest.xlsx",
+      "schema": "poi",
+      "glyph": "🕳️",
+      "color": "#5b4636",
+      "default_on": false,
+      "nearby": false
+    },
+    {
+      "key": "mines",
+      "label": "Mines & Quarries",
+      "sheet": "Mines & Quarries",
+      "workbook": "data/points_of_interest.xlsx",
+      "schema": "poi",
+      "glyph": "⛏️",
+      "color": "#8b4513",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "spills",
+      "label": "Spills",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Spills",
+      "schema": "poi",
+      "color": "#e8590c",
+      "glyph": "💥",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "storage",
+      "label": "Fuel & Chemical Storage",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Fuel & Chemical Storage",
+      "schema": "poi",
+      "color": "#6e7f3e",
+      "glyph": "🛢️",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "cleanup",
+      "label": "Cleanup Sites",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Cleanup Sites",
+      "schema": "poi",
+      "color": "#a61e4d",
+      "glyph": "☣️",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "orphanwells",
+      "label": "Orphaned Wells",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Orphaned Wells",
+      "schema": "poi",
+      "color": "#343a40",
+      "glyph": "⚫",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "landfills",
+      "label": "Landfills & Waste Handling",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Landfills & Waste Handling",
+      "schema": "poi",
+      "color": "#9c6b30",
+      "glyph": "🗑️",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "sewage",
+      "label": "Sewage & Overflows",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Sewage & Overflows",
+      "schema": "poi",
+      "color": "#3b5bdb",
+      "glyph": "🚽",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "discharges",
+      "label": "Industrial Discharges",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Industrial Discharges",
+      "schema": "poi",
+      "color": "#862e9c",
+      "glyph": "🏭",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "air",
+      "label": "Air Emissions",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Air Emissions",
+      "schema": "poi",
+      "color": "#868e96",
+      "glyph": "💨",
+      "default_on": false,
+      "lazy": true,
+      "wip": true
+    },
+    {
+      "key": "independent_media",
+      "label": "Independent Media",
+      "sheet": "Independent Media",
+      "workbook": "data/points_of_interest.xlsx",
+      "schema": "poi",
+      "glyph": "📻",
+      "color": "#8a4b2f",
+      "default_on": true,
+      "atlas": false
+    },
+    {
+      "key": "transportation",
+      "label": "Transportation",
+      "schema": "poi",
+      "workbook": "data/points_of_interest.xlsx",
+      "sheet": "Transportation",
+      "color": "#5b7a99",
+      "default_on": false,
+      "glyph": "🚌"
+    },
+    {
+      "key": "folklore",
+      "label": "Folklore",
+      "schema": "folklore",
+      "workbook": "data/folklore_legends.xlsx",
+      "color": "#000080",
+      "default_on": false
+    }
+  ]
+}

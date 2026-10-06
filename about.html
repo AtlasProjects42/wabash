@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — {{place.brand}}</title>
+<meta name="description" content="About {{place.brand}} — a living field guide to {{place.region_short}}.">
+<meta property="og:title" content="About — {{place.brand}}">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/share-card.png">
+<link rel="icon" href="images/favicon.svg">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap">
+<style>
+:root{
+  --ink:#00004d; --paper:#feffff; --parchment:#f4efe1; --parchment-line:#e3dcc8;
+  --ink-blue:#1a1d5c; --lichen:#dde0f2; --birch:#a9b0dd; --faint:#7b82b8;
+  --wampum:#39b7ff; --wampum-deep:#000080; --gold:#fca315; --gold-ink:#2b2410;
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{
+  font-family:'Lato',ui-sans-serif,system-ui,sans-serif;
+  color:var(--ink-blue);
+  background:var(--ink);
+  -webkit-font-smoothing:antialiased; line-height:1.6;
+}
+.betabar{background:var(--gold); color:var(--gold-ink);
+  font-family:'Montserrat',sans-serif; font-weight:700; font-size:11px;
+  letter-spacing:.08em; text-transform:uppercase; line-height:1.4;
+  overflow:hidden; white-space:nowrap; position:relative;}
+.betabar .ticker-track{display:inline-block; white-space:nowrap; animation:betabar-scroll 44s linear infinite;}
+.betabar:hover .ticker-track, .betabar:focus-within .ticker-track{animation-play-state:paused;}
+.betabar .ticker-set{display:inline-block;}
+.betabar a{color:inherit; text-decoration:underline; text-underline-offset:2px;}
+.betabar .ticker-track span span{padding:5px 14px; display:inline-block;}
+.betabar .tg{font-size:1.75em; font-weight:900; vertical-align:-4px; display:inline-block; margin-right:1px;}
+@keyframes betabar-scroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+@media (prefers-reduced-motion: reduce){
+  .betabar{overflow-x:auto;}
+  .betabar .ticker-track{animation:none;}
+}
+.sitenav{
+  position:sticky; top:0; z-index:100;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 20px; background:var(--parchment);
+  border-bottom:3px solid var(--ink-blue); box-shadow:0 2px 8px rgba(0,0,60,.05);
+}
+.sitenav .brand{
+  display:flex; align-items:center; gap:8px; text-decoration:none;
+  font-family:'Montserrat',sans-serif; font-weight:800; text-transform:uppercase;
+  letter-spacing:.05em; color:var(--ink-blue);
+}
+.sitenav .brand img{height:42px; width:auto; flex:none; display:block;}
+.sitenav .brand .stack{display:flex; flex-direction:column; line-height:1.03; margin-left:2px;}
+.sitenav .brand .stack .l1{font-size:16px; display:block;}
+.sitenav .brand .stack .l2{font-size:16px; display:block; transform:scaleX(0.979); transform-origin:left center;}
+.sitenav .links{display:flex; align-items:center; gap:4px;}
+.sitenav .links a.ig{padding:8px 10px; display:inline-flex; align-items:center;}
+.sitenav .links a.ig svg{width:18px; height:18px;}
+.sitenav .links a.mob-only{display:none;}
+/* Hamburger nav at ALL widths (Laurie, 2026-09-18) */
+.menubtn, #menuToggle{display:flex;}
+.sitenav .links{
+  display:none; position:absolute; top:100%; right:0; left:auto; min-width:220px;
+  flex-direction:column; align-items:stretch; gap:0;
+  background:var(--parchment); border:1px solid var(--ink-blue); border-top:none; border-bottom:3px solid var(--ink-blue);
+  box-shadow:0 12px 26px rgba(0,0,60,.18); padding:6px 10px 12px; z-index:101; border-radius:0 0 10px 10px;
+}
+.sitenav .links.open{display:flex;}
+.sitenav .hright > a.hd-ig{display:inline-flex; align-items:center; padding:7px; color:var(--ink-blue); border-radius:8px;}
+.sitenav .hright > a.hd-ig svg{width:22px; height:22px;}
+.sitenav .hright > a.hd-ig:hover{background:rgba(0,0,60,.06);}
+.sitenav .links a{padding:12px 14px; font-size:14px; letter-spacing:.08em;}
+.sitenav .links a.ig{align-self:flex-start;}
+.sitenav .links a.mob-only{display:block;}
+@media (max-width:760px){ .sitenav .links{left:0; right:0; min-width:0; border-radius:0; border-left:none; border-right:none;} }
+.sitenav .links a{
+  font-family:'Montserrat',sans-serif; font-weight:600; font-size:12.5px;
+  letter-spacing:.08em; text-transform:uppercase; text-decoration:none;
+  color:var(--ink-blue); padding:8px 14px; border-radius:6px; transition:.15s;
+}
+.sitenav .links a:hover{background:rgba(26,29,92,.07);}
+.sitenav .links a.active{color:var(--gold);}
+.sitenav .links a.ig{display:flex; align-items:center; justify-content:center; padding:7px; margin-left:2px; color:var(--ink-blue);}
+.sitenav .links a.ig:hover{background:rgba(26,29,92,.07); color:var(--gold);}
+.sitenav .links a.ig svg{width:22px; height:22px; display:block;}
+.menubtn{display:none; align-items:center; justify-content:center; background:none; border:none;
+  cursor:pointer; padding:8px; border-radius:6px; color:var(--ink-blue); transition:.15s; touch-action:manipulation;}
+.menubtn:hover{background:rgba(26,29,92,.07); color:var(--gold);}
+.menubtn svg{width:24px; height:24px; display:block;}
+@media (max-width:760px){
+}
+
+.wrap{max-width:720px; margin:0 auto; padding:56px 24px 72px; background:var(--parchment); border-radius:10px; box-shadow:0 8px 30px rgba(0,0,40,.28);}
+.eyebrow{font-family:'Montserrat',sans-serif; font-weight:700; font-size:12px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--gold); margin-bottom:12px;}
+h1{font-family:'Montserrat',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:.03em;
+  font-size:clamp(26px,5vw,38px); color:var(--ink-blue); line-height:1.08; margin-bottom:26px;}
+p{font-size:17px; color:#3a3f6b; margin-bottom:18px;}
+a.link{color:var(--wampum-deep); font-weight:700; text-decoration:none; border-bottom:2px solid var(--gold);}
+a.link:hover{background:rgba(252,163,21,.14);}
+.backmap{display:inline-block; margin-top:26px; font-family:'Montserrat',sans-serif; font-weight:700;
+  font-size:14px; letter-spacing:.05em; text-transform:uppercase; text-decoration:none;
+  background:var(--ink-blue); color:var(--paper); padding:13px 26px; border-radius:8px;}
+.backmap:hover{background:#24287a;}
+.faq{margin-top:44px; padding-top:8px; border-top:1px solid var(--parchment-line);}
+.faq .eyebrow{margin-top:32px;}
+.faq h2{font-family:'Montserrat',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:.02em;
+  font-size:clamp(20px,3.6vw,26px); color:var(--ink-blue); line-height:1.1; margin:0 0 22px;}
+.faq h3{font-family:'Montserrat',sans-serif; font-weight:700; font-size:18px; letter-spacing:.01em;
+  color:var(--ink-blue); margin:28px 0 10px;}
+.foot{background:var(--ink-blue); color:var(--birch); text-align:center; padding:32px 24px; font-size:13px; border-top:3px solid var(--gold);}
+.foot a{color:var(--gold); text-decoration:none; letter-spacing:.06em; font-family:'Montserrat',sans-serif; font-weight:600; font-size:12px;}
+.foot .row{margin-top:10px; display:flex; gap:18px; justify-content:center; flex-wrap:wrap;}
+@media (max-width:560px){
+  .sitenav{padding:6px 14px;}
+  .sitenav .brand img{height:36px;}
+  .sitenav .brand .stack .l1, .sitenav .brand .stack .l2{font-size:14px;}
+}
+
+/* Shared skyline widget */
+.skyline{
+  display:flex; align-items:center; gap:18px; margin:0 14px; flex:none;
+  font-family:'Montserrat',sans-serif; font-size:11px; letter-spacing:.04em; color:var(--ink-blue); line-height:1.2;
+}
+.skyline .sky-g{display:flex; align-items:center; gap:7px;}
+.skyline .sky-g + .sky-g{padding-left:18px; border-left:1px solid var(--parchment-line);}
+.skyline svg{width:26px; height:26px; flex:none; color:var(--ink-blue);}
+.skyline .sky-stack{display:flex; flex-direction:column; gap:2px; white-space:nowrap;}
+.skyline .sky-eyebrow{font-size:9px; letter-spacing:.16em; text-transform:uppercase; color:var(--faint);}
+.skyline .sky-val{font-weight:700; font-size:12.5px; letter-spacing:.02em;}
+.skyline .sky-val .c{font-weight:400; color:var(--faint); margin-left:5px;}
+.skyline .sky-val .sep{margin:0 5px; color:var(--birch); font-weight:400;}
+.skyline .sky-sub{font-size:10px; font-style:italic; letter-spacing:.02em; color:#4a4f7a;}
+.skyline .sky-stack{gap:1px;}
+.skyline .sky-wx{display:none;}
+.skyline.has-wx .sky-wx{display:flex;}
+.skyline.has-wx .sky-wx + .sky-g{padding-left:18px; border-left:1px solid var(--parchment-line);}
+.skyline .sky-wx + .sky-g{padding-left:0; border-left:none;}
+#modeToggle{margin-left:4px;}
+.skyline .sky-strat{display:none;}
+.skyline.has-strat .sky-strat{display:flex;}
+.skyline #stratArrow{transition:transform .6s ease; transform-origin:50% 50%;}
+/* 13" laptop band (2026-09-17, Laurie): keep every header group on one row down to ~1240px.
+   Nothing hides here — spacing tightens, the wind arrow loses its long tail, the degrees
+   drop, and the nav refuses to wrap. Below 1180 the moon and wind hide as before. */
+.sitenav .hright{display:flex !important; flex-direction:row !important; align-items:center; gap:6px; margin-left:auto; position:relative; flex-wrap:nowrap; white-space:nowrap;}   /* 2026-09-18: keeps search + ≡ side by side (they were stacking) */
+.sitenav .links{flex-wrap:nowrap; white-space:nowrap;}
+.skyline #stratArrow{width:15px; height:15px;}
+@media (max-width:1480px){
+  .sitenav{padding-left:12px; padding-right:12px;}
+  .skyline{margin:0 2px; gap:8px;}
+  .skyline .sky-g + .sky-g{padding-left:8px;}
+  .skyline .sky-g{gap:4px;}
+  .sitenav .brand{margin-right:0;}
+  .sitenav .links a{padding:8px 9px; letter-spacing:.06em;}
+  .sitenav .links a.ig{padding:8px 6px;}
+  .skyline .sky-strat .sky-val .deg{display:none;}
+}
+@media (max-width:1320px){
+  .skyline{gap:6px; margin:0;}
+  .skyline .sky-g + .sky-g{padding-left:6px;}
+  .sitenav .links{gap:0;}
+  .skyline .sky-eyebrow{letter-spacing:.12em;}
+  .sitenav .links a{padding:8px 7px; font-size:12px;}
+  .sitenav .brand .stack .l1, .sitenav .brand .stack .l2{font-size:15px;}
+}
+@media (max-width:1180px){ .skyline .sky-strat{display:none !important;} }
+@media (max-width:1180px){ .skyline .sky-moon{display:none;} }
+@media (max-width:960px){ .skyline{display:none;} }
+
+</style>
+</head>
+<body>
+<div class="betabar" role="region" aria-label="Site announcements">
+  <div class="ticker-track"><span class="ticker-set">
+    <!-- @@ticker -->
+  </span><span class="ticker-set" aria-hidden="true">
+    <!-- @@ticker -->
+  </span></div>
+</div>
+
+<!-- @@header -->
+  <button class="menubtn" id="menuToggle" title="Menu" aria-label="Menu" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+  </button>
+  </div>
+</nav>
+
+<main class="wrap">
+  <div class="eyebrow">About this guide</div>
+  <h1>{{place.brand}}</h1>
+
+  <p>{{place.about_text}}</p>
+
+  <p>Sun, moon and weather are computed for {{place.center.name}} ({{place.center.elev_txt}}) in the region's own time zone, for every visitor wherever they are. Weather is Open-Meteo; wildlife is iNaturalist and eBird; water levels are USGS. Live feeds say when they fail — a gap means "no report," never "nothing happened."</p>
+
+  <!-- @@if:contact_email --><p>Local organization, business, interesting bit of lore, or something else you think should be on the map? <a class="link" href="mailto:{{place.contact_email}}">{{place.contact_email}}</a>.</p><!-- @@endif -->
+  <!-- @@if:instagram --><p>Additions, suggestions, corrections? Message us on Instagram at <a class="link" href="{{place.instagram_url}}" target="_blank" rel="noopener">{{place.instagram_handle}}</a>.</p><!-- @@endif -->
+
+  <section class="faq">
+    <div class="eyebrow">Infrequently Asked Questions</div>
+
+    <h3>Who are you?</h3>
+    <p>[Editor: who makes this guide, and why. The Hilltowns version of this page is in the starter kit's history if you want its shape.]</p>
+
+    <h3>Do you track visitors?</h3>
+    <p>[Editor: if analytics.goatcounter is set in place.json, say so here — GoatCounter sets no cookies and collects no personal data. If it is blank, nothing is counted.]</p>
+  </section>
+
+  <a class="backmap" href="{{place.href_atlas}}">Explore the Atlas &rarr;</a>
+</main>
+
+<!-- @@footer -->
+
+<script>
+(function(){
+  var nav = document.getElementById("hnav"), btn = document.getElementById("menuToggle");
+  btn.addEventListener("click", function(e){
+    e.stopPropagation();
+    var open = nav.classList.toggle("open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  nav.addEventListener("click", function(){ nav.classList.remove("open"); btn.setAttribute("aria-expanded","false"); });
+  document.addEventListener("click", function(e){
+    if(nav.classList.contains("open") && !nav.contains(e.target) && !btn.contains(e.target)){
+      nav.classList.remove("open"); btn.setAttribute("aria-expanded","false");
+    }
+  });
+})();
+</script>
+<script src="skyline.js"></script>
+</body>
+</html>

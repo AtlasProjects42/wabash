@@ -1,0 +1,3 @@
+# Agenda-quiet list: one pattern per line (case-insensitive substring, or "re:" + regex), matched against event title AND venue.
+# Matching events keep their map pin and stay searchable but are hidden from the calendar list/month views.
+# Durable across events.xlsx drop-ins. Lines starting with # are comments.

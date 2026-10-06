@@ -1,0 +1,276 @@
+{
+  "_comment": "Single source of truth for everything place-specific. build/build.py reads this; pages get {{place.path}} tokens stamped at build; browser code reads window.PLACE from site/place.js. Nothing place-specific belongs in code.",
+  "_status": "v2 (2026-10-06): elevation 540 ft confirmed by Laurie; Myaamia moon names added with the Center's solstice reckoning; eight USGS gauges registered (verified site pages, liveness unconfirmed from the sandbox). Still empty: stations, keys, radio, calendar curation.",
+  "site_title": "Ye Olde Navigators Guide — Prophetstown & the Wabash Country",
+  "brand": "Ye Olde Navigators Guide",
+  "brand_line1": "Ye Olde",
+  "brand_line2": "Navigators Guide",
+  "short_name": "Navigators Guide",
+  "region": "the Wabash country around Prophetstown — Battle Ground, Lafayette, West Lafayette and Tippecanoe County, Indiana",
+  "region_short": "the Wabash country",
+  "tagline": "A living field guide to the Wabash country around Prophetstown — the land, the sky, the water and the people, mapped.",
+  "about_text": "A living field guide to the Wabash country around Prophetstown — the place where the Tippecanoe meets the Wabash. One map of the region's places and events, a dashboard of its natural cycles, and a record of who's been seen. Every entry lists its source; the guide is only ever as reliable as its sources.",
+  "epigraph": "People have been navigating these rivers since long before you were here, and will be long after you’re gone…",
+  "state_abbr": "IN",
+  "state_name": "Indiana",
+  "domain": "https://example.org/",
+  "repo_url": "",
+  "contact_email": "",
+  "instagram": "",
+  "analytics": {
+    "goatcounter": ""
+  },
+  "timezone": "America/Indiana/Indianapolis",
+  "center": {
+    "lat": 40.5,
+    "lng": -86.8333,
+    "name": "Prophetstown State Park",
+    "short": "Prophetstown",
+    "place_label": "Prophetstown State Park, Battle Ground, IN",
+    "elev_ft": 540,
+    "elev_note": "approximate; Wabash floodplain near Battle Ground. Confirm before quoting.",
+    "source": "Wikipedia 'Prophetstown State Park' 40.500 N 86.833 W (rounded); DNR mapping address 5545 Swisher Rd, West Lafayette IN 47906"
+  },
+  "map_home": {
+    "lat": 40.5,
+    "lng": -86.8333,
+    "zoom": 10.5
+  },
+  "landing": "atlas",
+  "radius_km": {
+    "map_default": 40,
+    "inaturalist": 40,
+    "ebird": 25,
+    "water_sweep": 50
+  },
+  "wildlife": {
+    "inat_dist_km": 40,
+    "inat_days": 14,
+    "ebird_dist_km": 25,
+    "ebird_back_days": 14
+  },
+  "weather": {
+    "open_meteo_point": {
+      "lat": 40.5,
+      "lng": -86.8333
+    },
+    "_stations_note": "One entry per xmACIS2 Daily Data Listing CSV in data/stations/<slug>.csv. daily=true ships raw daily highs/lows for the year charts (continuous records only). coords only needed for closed stations with daily temps.",
+    "stations": [],
+    "station_coords": {}
+  },
+  "water": {
+    "_note": "USGS site numbers verified 2026-10-06 against waterdata.usgs.gov/monitoring-location/<site>. 'Period of record through 2026-10-06' on every one, so all are presumed live; confirm on the first live load (the sandbox cannot reach the API). chains: ordered downstream; named_waters: regex (JS syntax, no slashes) matched against the USGS site name.",
+    "usgs_stream_sites": [
+      "03329000",
+      "03331500",
+      "03333050",
+      "03329700",
+      "03334500",
+      "03335000",
+      "03335500",
+      "03336000"
+    ],
+    "usgs_well_sites": [],
+    "well_notes": {},
+    "water_chain": {
+      "03329000": "Wabash · at Logansport, above the Tippecanoe",
+      "03331500": "Tippecanoe headwaters → Wabash · near Ora",
+      "03333050": "Tippecanoe → Wabash · near Delphi, above Prophetstown",
+      "03329700": "Deer Creek → Wabash · near Delphi",
+      "03334500": "South Fork Wildcat → Wildcat → Wabash",
+      "03335000": "Wildcat Creek → Wabash · near Lafayette",
+      "03335500": "Wabash · at Lafayette, below the confluence",
+      "03336000": "Wabash · at Covington, downstream"
+    },
+    "chains": [
+      {
+        "key": "wabash",
+        "name": "Wabash River · Logansport → Lafayette → Covington",
+        "light": "#2a78d6",
+        "dark": "#3987e5",
+        "sites": [
+          "03329000",
+          "03335500",
+          "03336000"
+        ]
+      },
+      {
+        "key": "tippecanoe",
+        "name": "Tippecanoe River → Wabash",
+        "light": "#eb6834",
+        "dark": "#d95926",
+        "sites": [
+          "03331500",
+          "03333050"
+        ]
+      },
+      {
+        "key": "wildcat",
+        "name": "Wildcat Creek → Wabash",
+        "light": "#1baf7a",
+        "dark": "#199e70",
+        "sites": [
+          "03334500",
+          "03335000"
+        ]
+      },
+      {
+        "key": "deer",
+        "name": "Deer Creek → Wabash",
+        "light": "#eda100",
+        "dark": "#c98500",
+        "sites": [
+          "03329700"
+        ]
+      }
+    ],
+    "chart_order": [
+      "wabash",
+      "tippecanoe",
+      "wildcat",
+      "deer"
+    ],
+    "named_waters": [
+      {
+        "key": "wabash",
+        "pattern": "wabash river",
+        "label": "Wabash River"
+      },
+      {
+        "key": "tippecanoe",
+        "pattern": "tippecanoe river",
+        "label": "Tippecanoe River"
+      },
+      {
+        "key": "wildcat",
+        "pattern": "wildcat creek",
+        "label": "Wildcat Creek"
+      },
+      {
+        "key": "deer",
+        "pattern": "deer creek",
+        "label": "Deer Creek"
+      },
+      {
+        "key": "burnett",
+        "pattern": "burnett creek",
+        "label": "Burnett Creek"
+      }
+    ],
+    "bbox_km": 50,
+    "cap": {
+      "stream": 99,
+      "lake": 3,
+      "well": 9
+    },
+    "tidal_label": "Tidal gauges"
+  },
+  "keys": {
+    "ebird": "dce779eb-603d-4505-9113-a04103e6d8d5",
+    "usgs": "imM50bTg9Hd7VWPGYA0fRs73FcFYLN8UchnfbZZO",
+    "_note": "Laurie's own keys, carried over from the Hilltowns site 2026-10-06 (keys are per person, not per site). Public in the page by design."
+  },
+  "towns": {
+    "_note": "Core towns get the gold highlight on the calendar and directory. Whole-word match against the parsed town / venue text. PLACEHOLDER list — confirm.",
+    "core": [
+      "Battle Ground",
+      "West Lafayette",
+      "Lafayette",
+      "Dayton",
+      "Brookston",
+      "Delphi",
+      "Americus",
+      "Buck Creek"
+    ]
+  },
+  "calendar": {
+    "_note": "Explore-nearby curation. Lower-case name substrings. All empty for a new region; the Hilltowns lists were editorial judgement calls, not code.",
+    "standing_features": [],
+    "nearby_exclude": [],
+    "nearby_exclude_exact": [],
+    "nearby_demote": [],
+    "nearby_demote_last": [],
+    "nearby_priority": [],
+    "nearby_priority_exact": []
+  },
+  "ticker": [
+    "Beta version: please double check all info before hitting the trail"
+  ],
+  "radio": [],
+  "moons": {
+    "_note": "Myaamia (Miami) lunar months — myaamia kiilhswaakani — from the Myaamia Center, Miami University / Miami Tribe of Oklahoma. Chosen because the Wabash–Tippecanoe confluence is Miami (Wea / Piankeshaw) homeland; Prophetstown itself (1808–12) was Tenskwatawa's pan-tribal town. Reckoning: the June solstice must fall inside paaphsaahka niipinwiki (mid-summer moon); when 13 lunations separate two mid-summer moons, waawiita kiilhswa 'Lost Moon' is inserted after mahkwa kiilhswa. This reproduces the Center's 2024 new year (day 7 of mahkoonsa = 2024-02-17) and their 2026 lost moon; it differs from their list of past lost-moon years at one edge case (2012/13), so it is a reckoning, not the Tribe's calendar — compare to the Center's published calendar each winter. Months begin at saakiwa, when the moon's light returns (new moon).",
+    "anchor": "june_solstice",
+    "solstice_index": 4,
+    "lost_after": 11,
+    "lost": [
+      "waawiita kiilhswa",
+      "Lost Moon"
+    ],
+    "names": [
+      [
+        "mahkoonsa kiilhswa",
+        "Young Black Bear Moon"
+      ],
+      [
+        "aanteekwa kiilhswa",
+        "Crow Moon"
+      ],
+      [
+        "cecaahkwa kiilhswa",
+        "Sandhill Crane Moon"
+      ],
+      [
+        "wiihkoowia kiilhswa",
+        "Whippoorwill Moon"
+      ],
+      [
+        "paaphsaahka niipinwiki",
+        "Mid-Summer Moon"
+      ],
+      [
+        "kiišiinkwia kiilhswa",
+        "Green Corn Moon"
+      ],
+      [
+        "mihšiiwia kiilhswa",
+        "Elk Moon"
+      ],
+      [
+        "šaašaakayolia kiilhswa",
+        "Grass Burning Moon"
+      ],
+      [
+        "kiiyolia kiilhswa",
+        "Smoky Burning Moon"
+      ],
+      [
+        "ayaapeensa kiilhswa",
+        "Young Buck Moon"
+      ],
+      [
+        "ayaapia kiilhswa",
+        "Buck Moon"
+      ],
+      [
+        "mahkwa kiilhswa",
+        "Black Bear Moon"
+      ]
+    ],
+    "source": "Myaamia lunar months, Myaamia Center (aacimotaatiiyankwi.org/ecology/lunar-months)",
+    "source_urls": [
+      "https://aacimotaatiiyankwi.org/ecology/lunar-months/",
+      "https://aacimotaatiiyankwi.org/2025/12/19/a-look-at-lunar-calendar-system/",
+      "https://miamioh.edu/centers-institutes/myaamia-center/research/publications/lunar-calendar.html"
+    ],
+    "note": "Myaamia Kiilhswaakani, the Miami lunar calendar, as published by the Myaamia Center (Miami Tribe of Oklahoma). Reckoned here from the summer-solstice rule the Center describes; a reckoning, not the Tribe’s own calendar — see aacimotaatiiyankwi.org for theirs."
+  },
+  "storage_keys": {
+    "likes_ns": "navigators-guide",
+    "share_token": "navigators_share_token"
+  },
+  "hearts_namespace": "navigators-guide",
+  "no_preview_hosts": [
+    "instagram.com"
+  ],
+  "user_agent": "Mozilla/5.0 (compatible; NavigatorsGuideBuild/1.0)"
+}
