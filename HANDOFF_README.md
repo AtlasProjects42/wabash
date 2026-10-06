@@ -6,6 +6,15 @@ The Hilltowns log this tree descends from is kept beside this file as `HILLTOWNS
 
 ---
 
+## Where things stand — v6 (2026-10-06)
+
+**Changes since v5:** the **Ancient Ways layer** — the global ancient-routes dataset from Laurie's Ways project (`data/layers/ways_layer_v169-B169.json`, 560 routes, schema v2 — polylines, a different model from the POI point pins) brought in as a toggle grouped with Folklore.
+- **New build step** `emit_ways_layer()` in `build/build.py`: reads the newest `data/layers/ways_layer*.json`, pre-builds two GeoJSON FeatureCollections + a per-route notes map → `site/data_ways.js` (`window.WAYS`, ~2 MB). 560 routes → **682 line features** (122 extra are antimeridian splits — segments crossing 180° are broken so no line smears across the globe; verified 0 features span >180°), **5,553 named nodes** (shaping/unnamed nodes dropped). Decisions from Laurie: colour **by class** (7 classes), render **all named nodes** (zoom-thinned: major types — terminus/port/pass/caravanserai/wall-gate/oasis/shrine — at every zoom, the rest from z8, labels from z9), notes from the layer only.
+- **New atlas module** (self-contained, end of `index.template.html`): injects an "Ancient Ways" checkbox into `#catsStory` beside Folklore; on first tick fetches `data_ways.js`, adds line layers (land solid, water dashed, colour by class, opacity by confidence tier A/B/C), a node circle layer and a node-label symbol layer, all **beneath the POI pins** so pins stay clickable. Click a line or node → a scrollable popup with the route's class, tier, era, group and full scholarly note. Sensitive routes (14) keep their generalized coordinates and say so in the popup; nothing is re-precised. The base and day/night switches only toggle visibility (never setStyle), so the layer persists across them.
+- Build: `BUILD OK — 739 records / 726 mappable`, plus the Ways layer. Headless test ticks the checkbox: `window.WAYS` loads, both layers add and go visible, untick hides them, **0 page errors**. **Not sandbox-verifiable:** the actual line/label rendering (needs map tiles) — confirm on the live site. On the Prophetstown home view only ~6 routes are nearby; it's a global layer, zoom/pan out to see it (said in the checkbox tooltip and the module comment).
+- **Not included:** `ways_lore.json` (122 lore entries) was omitted from the export per its data dictionary; the layer's own route notes are what render. Request that file from the Ways chat if the extra lore is wanted later.
+- Staged alongside the data for provenance: `data/layers/WAYS_brief_v169.md`, `WAYS_data_dictionary.md`, `ways_routes_index.csv`.
+
 ## Where things stand — v5 (2026-10-06)
 
 **Changes since v4:** the **Amtrak/VIA network** from the Hilltowns project (`train_stations_transportation.xlsx`, 751 rows) merged into the Transportation sheet by column name (the source header row carried two stray columns and a VLOOKUP). 679 rows imported with coordinates; **72 rows skipped for having no coordinates** — all VIA Rail flag stops in the Québec/Ontario bush (Anjou, Bima, Club Beaudin…), listed in the build log of this session; they had no coordinates in the source either. The kit's example row (`Hudson Amtrak Station`, Display = No) shadowed the real Hudson row on the existence-guard; example deleted, real row added. 10 Indiana stations present (South Bend, Elkhart, Waterloo, Connersville, Indianapolis, Crawfordsville, Lafayette, Rensselaer, Dyer, Hammond-Whiting). Transportation stays `default_on: false` in the manifest (toggle layer).
@@ -123,6 +132,7 @@ Run the smoke harness: `NODE_PATH=<global node_modules> node scripts/smoke_harne
 
 ## Log
 
+- **v6 — 2026-10-06.** Ancient Ways layer: global routes dataset as a Folklore-grouped toggle; new emit_ways_layer() + atlas line/node module. 560 routes / 682 line features / 5,553 nodes. BUILD OK; headless toggle clean, 0 errors; visual pending live.
 - **v5 — 2026-10-06.** Amtrak/VIA network merged (679 rows; 72 VIA flag stops had no coords). BUILD OK, 739 records / 726 mappable.
 - **v4 — 2026-10-06.** 32 preserves/trails (19 pinned, 13 directory-only). BUILD OK, 60 records / 47 mappable. Atlas season-gate gap logged.
 - **v3 — 2026-10-06.** First 30 POIs (Places-verified), keys carried over, openNow weekday fix. BUILD OK, 29 records. Smoke: 7 pages, 0 errors.

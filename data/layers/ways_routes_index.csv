@@ -1,0 +1,561 @@
+id,name,class,confidence,group,group_id,era,sensitive,n_segments,n_nodes,seg_kinds,note_chars
+AW-001,Nakasendō,post-road,A,Japan — Five Routes,gokaido,Edo period (1603–1868); older Kisōji beneath,False,1,74,land,154
+AW-002,Camino Francés,pilgrimage,A,Camino de Santiago network,camino,"9th century – present, continuous use",False,1,37,land,231
+AW-003,Trans-Saharan Way (Western: Sijilmasa–Timbuktu),caravan,C,Trans-Saharan network,trans-saharan,8th–16th c. peak; salt caravans into the 20th c.,False,2,10,land,368
+AW-004,Tōkaidō,post-road,A,Japan — Five Routes,gokaido,Edo period (1603–1868); the coastal great road,False,5,62,ferry|land,245
+AW-005,Shikoku Henro (88-temple circuit),pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,"9th century – present, continuous use; ~1,200 km circuit",False,1,104,land,285
+AW-006,Tea Horse Road (Chamadào),caravan,B,China–Tibet trade network,tea-horse,Tang dynasty – 20th century; tea for warhorses,False,2,34,land,375
+AW-007,Mount Kailash Kora,pilgrimage,A,Tibet — circumambulation paths,tibet-kora,millennia; sacred to four religions,False,1,6,land,218
+AW-008,Silk Road — Eastern Trunk (Chang'an–Dunhuang),caravan,B,Silk Road network,silk-road,Han dynasty (2nd c. BCE) – Ming; the Hexi Corridor,False,1,22,land,233
+AW-009,Silk Road — Tarim North Rim (Dunhuang–Kashgar),caravan,B,Silk Road network,silk-road,Han – Yuan; the road of Kucha and Turfan,False,3,25,land,284
+AW-010,Silk Road — Tarim South Rim (Dunhuang–Kashgar),caravan,C,Silk Road network,silk-road,"Han – ~10th c.; the road of Khotan, later half-lost to the sands",False,3,22,land,271
+AW-011,Silk Road — Tian Shan Corridor (Turpan–Tashkent),caravan,B,Silk Road network,silk-road,Han – Qing; the steppe road north of the mountains,False,1,26,land,289
+AW-012,Silk Road — Transoxiana–Khorasan Trunk (Osh–Rey),caravan,B,Silk Road network,silk-road,Achaemenid – Timurid; the road of Samarkand and Merv,False,3,28,land,319
+AW-013,Silk Road — Khyber Spur (Balkh–Taxila),caravan,B,Silk Road network,silk-road,Achaemenid – Mughal; the road into India,False,1,13,land,253
+AW-014,Silk Road — Caucasus Branch (Rey–Phasis),caravan,B,Silk Road network,silk-road,antiquity – Safavid; Caspian to Black Sea,False,1,26,land,286
+AW-015,Grand Trunk Road (Taxila–Sonargaon),trade,B,South Asian high roads,south-asia-roads,Mauryan origins; rebuilt by Sher Shah Suri (16th c.); continuous use,False,3,41,land|river,327
+AW-016,Uttarapatha (Taxila–Tamralipti),trade,B,South Asian high roads,south-asia-roads,Mauryan–Gupta antiquity; the northern high road of the epics,False,2,33,land,303
+AW-017,Dakshinapatha (Prayaga–Pratishthana),trade,B,South Asian high roads,south-asia-roads,Mauryan–Satavahana antiquity; the southern road of the Buddhist texts,False,2,14,land,311
+AW-018,Braj 84-kos Parikrama,pilgrimage,B,South Asian high roads,south-asia-roads,centuries of continuous pastoral-pilgrimage use,False,1,7,land,460
+AW-019,Incense Route (Qana–Gaza),caravan,C,Levant & Arabia,levant-arabia,~7th c. BCE – 2nd c. CE; frankincense and myrrh,False,2,19,land,326
+AW-020,King's Highway (Aqaba–Damascus),trade,B,Levant & Arabia,levant-arabia,"Bronze Age – present; the plateau road of Edom, Moab and Ammon",False,1,11,land,155
+AW-021,Via Maris (Pelusium–Damascus),trade,B,Levant & Arabia,levant-arabia,Bronze Age – Roman; the Way of the Sea,False,1,14,land,203
+AW-022,Ottoman Hajj Road (Istanbul–Mecca),pilgrimage,B,Hajj roads,hajj-roads,Ottoman period (16th–19th c.); the Darb al-Hajj al-Shami,False,2,41,ferry|land,381
+AW-023,Camino del Norte,pilgrimage,A,Camino de Santiago network,camino,9th century – present; the coastal way,False,1,25,land,190
+AW-024,Camino Portugués,pilgrimage,A,Camino de Santiago network,camino,12th century – present,False,1,22,land,175
+AW-025,Vía de la Plata,pilgrimage,A,Camino de Santiago network,camino,Roman road; pilgrimage use from the Middle Ages,False,1,25,land,730
+AW-026,Via Francigena,pilgrimage,A,Via Francigena,francigena,"Sigeric's itinerary, 990 AD; the road far older",False,3,86,ferry|land,847
+AW-027,St Olav's Way (Gudbrandsdalsleden),pilgrimage,A,St Olav ways,st-olav,11th century – present; to Nidaros,False,1,18,land,562
+AW-028,St Kevin's Way,pilgrimage,B,Ireland — monastic paths,irish-monastic,6th c. onward; the road to Kevin's Glendalough,False,1,11,land,482
+AW-029,Pilgrim's Road to Clonmacnoise,pilgrimage,B,Irish monastic ways,irish-monastic,early medieval; along the Eiscir Riada,False,1,3,land,214
+AW-030,Amber Road (Gdańsk–Aquileia),trade,B,Amber Road,amber-road,Bronze Age – Roman; the road of Northern Gold,False,1,18,land,230
+AW-031,Via Egnatia (Dyrrachium–Byzantium),trade,B,Roman viae,roman-viae,2nd c. BCE Roman; vital Ottoman artery into the 19th c.,False,1,18,land,292
+AW-032,Via Appia (Rome–Brundisium),trade,A,Roman viae,roman-viae,312 BCE onward; regina viarum,False,1,26,land,823
+AW-033,Alte Salzstraße (Lüneburg–Lübeck),trade,A,Salt roads,salt-roads,Middle Ages; the white-gold road of the Hanse,False,1,9,land,555
+AW-034,The Ridgeway,trade,A,British ancient ways,britain-ancient,"~5,000 years of use; Britain's oldest road",False,1,12,land,505
+AW-035,Tin Route (Ictis–Massalia),trade,C,Atlantic tin trade,tin-route,Bronze Age – classical antiquity,False,2,18,ferry|land,298
+AW-036,Highland Drove Road (Skye–Falkirk Tryst),drover,B,Drove roads & transhumance,drover-transhumance,16th–19th c.; cattle to the trysts,False,2,14,ferry|land,273
+AW-037,Cañada Real Soriana Occidental,drover,B,Drove roads & transhumance,drover-transhumance,Mesta charter 1273; seasonal use for 750 years,False,1,9,land,203
+AW-038,Tratturo Magno (L'Aquila–Foggia),drover,A,Drove roads & transhumance,drover-transhumance,pre-Roman; codified by the Aragonese Dogana (1447),False,1,8,land,252
+AW-039,"Trans-Saharan Way (Central: Ghadames Road, Tripoli–Kano)",caravan,C,Trans-Saharan network,trans-saharan,classical Garamantian roots; peak 9th–19th c.,False,1,14,land,278
+AW-040,"Trans-Saharan Way (Eastern: Fezzan–Bornu Road, Tripoli–Kukawa)",caravan,C,Trans-Saharan network,trans-saharan,Garamantian antiquity – 19th c.; the Bornu road,False,1,15,land,331
+AW-041,Hajj Road of Mansa Musa (Niani–Mecca),pilgrimage,C,Hajj roads,hajj-roads,the 1324 pilgrimage; corridor in use for centuries either side,False,2,43,land,586
+AW-042,Nile Corridor (Meroe–Cairo),trade,B,Nile corridor,nile-corridor,Kushite antiquity – present; the river road,False,2,21,land,501
+AW-043,"Gold Road (Wangara Road, Timbuktu–Begho)",trade,C,Trans-Saharan network,trans-saharan,~11th–17th c.; the Akan gold feeder,False,1,9,land,951
+AW-044,Swahili Caravan Road (Bagamoyo–Ujiji),caravan,B,Swahili coast–interior caravan roads,swahili-caravan,older roots; peak documented use 18th–19th c.,True,1,14,land,930
+AW-045,Qhapaq Ñan — Highland Trunk (Quito–Uspallata),post-road,B,Qhapaq Ñan — Inca road system,qhapaq-nan,Inca imperial road (15th–16th c.) over older Wari and regional alignments,False,1,69,land,448
+AW-046,Qhapaq Ñan — Coastal Road (Tumbes–Arica),post-road,B,Qhapaq Ñan — Inca road system,qhapaq-nan,Inca imperial road over Chimú and coastal predecessors,False,1,29,land,430
+AW-047,Camino Real de Tierra Adentro (Mexico City–Santa Fe),trade,A,Camino Real de Tierra Adentro,tierra-adentro,"1598–1882; the Royal Road of the Interior, 2,560 km",False,2,32,land,809
+AW-048,Natchez Trace,indigenous,A,North America — indigenous roads,north-america-indigenous,millennia of Choctaw–Chickasaw–Natchez use; boatmen's return road c. 1785–1830,True,3,32,ferry|land,1212
+AW-049,Great North Road (Chaco),indigenous,A,North America — indigenous roads,north-america-indigenous,"Ancestral Puebloan, ~9th–12th c.",False,2,7,land,412
+AW-050,Peabiru Path (São Vicente–Asunción),indigenous,C,Peabiru path,peabiru,pre-Columbian Guaraní–Inca contact path; Cabeza de Vaca walked it 1541–42,False,3,21,ferry|land,477
+AW-051,Old North Trail (Calgary–Fort Collins),indigenous,B,North America — indigenous roads,north-america-indigenous,in use for millennia along the Rocky Mountain front; Blackfoot lifeline,False,2,22,land,1309
+AW-052,Varangian Way of the East (Neva–Constantinople),trade,B,Varangian ways (Baltic–Black Sea),varangian,~8th–11th c.; the road from the Varangians to the Greeks,False,6,39,land|river|sea,504
+AW-053,Mekong River Trade Road (Jinghong–delta),trade,B,Mekong river trade,mekong,centuries of continuous use; the river as road,False,3,19,land|river,472
+AW-054,Maritime Spice Route (Ternate–Basra),trade,B,Maritime Spice Route,spice-maritime,antiquity – age of sail; the monsoon road,False,8,25,river|sea,578
+AW-055,Great North Road (Lusaka–Morogoro),trade,C,Great North Road (Africa),africa-great-north,ancient migration and trade corridor; motorable road 20th c.,False,1,9,land,372
+AW-056,Camino de Madrid,pilgrimage,B,Camino de Santiago network,camino,Roman road over the Fuenfría; pilgrim use from the medieval period; waymarked as a named camino in the 1990s,False,1,36,land,443
+AW-057,ViaJacobi,pilgrimage,B,Camino de Santiago network,camino,medieval Jakobsweg; the Alte Etzelstrasse was a trade road by the 10th c.; waymarked as SwitzerlandMobility route 4,False,5,49,ferry|land,845
+AW-058,Clare Priory Way,pilgrimage,B,Bury St Edmunds pilgrim ways,bury-pilgrim-ways,medieval; Clare Priory founded 1248 — the first Augustinian house in England,False,1,8,land,503
+AW-059,Lark Valley Way (Ely–Bury),pilgrimage,B,Bury St Edmunds pilgrim ways,bury-pilgrim-ways,commemorates the monks who came from Ely to the Abbey c.1020,False,1,12,land,332
+AW-060,First Benedictines' Way (St Benet's–Bury),pilgrimage,B,Bury St Edmunds pilgrim ways,bury-pilgrim-ways,"commemorates the twenty monks from St Benet's Abbey, c.1020",False,1,18,land,311
+AW-061,Icknield Way to Bury (Thetford–Bury),pilgrimage,B,Bury St Edmunds pilgrim ways,bury-pilgrim-ways,the Icknield Way is prehistoric; the pilgrim use medieval,False,1,8,land,486
+AW-062,The King's Road (Dunwich–Hoxne–Bury),pilgrimage,C,Bury St Edmunds pilgrim ways,bury-pilgrim-ways,"10th c., under King Athelstan's patronage; alignment lost",False,1,3,land,1699
+AW-063,Red River Trails — West Plains Trail,trade,B,Red River Trails,red-river-trails,an Indigenous path before the carts; oxcart use 1820s–1870s,False,1,19,land,549
+AW-064,Red River Trails — East Plains Trail,trade,B,Red River Trails,red-river-trails,in common use from the 1840s; Kittson's cart trains moved to it in 1854,False,1,16,land,445
+AW-065,Red River Trails — Woods Trail (Crow Wing Trail),trade,B,Red River Trails,red-river-trails,cut in autumn 1844; established by 1846; in use through the 1860s,False,1,19,land,568
+AW-066,Maumee–Wabash Portage (Lake Erie–Ohio River),trade,B,North America — indigenous roads,north-america-indigenous,"pre-contact Miami corridor; French, British and American contest 1680s–1830s",False,3,25,land|river,459
+AW-067,Trappers Trail (Fort Laramie–Bent's Fort),trade,B,North America — fur roads,north-america-fur,1830s–1850s; the Cherokee Trail later overlaid much of it,False,1,13,land,469
+AW-068,Grand Canal (Beijing–Hangzhou),trade,B,Grand Canal,grand-canal,Sui unification 605–609; Yuan realignment to Beijing 1280s; Shandong summit works 1411; northern reaches failed after the Yellow River shifted in 1855,False,2,39,river,1161
+AW-069,Via Augusta (Pyrenees–Gades),trade,B,Roman viae,roman-viae,"Republican roots on an older Heraklean Way; rebuilt and named under Augustus, 8–2 BCE",False,1,39,land,803
+AW-070,Kumeyaay Trade Road (coast–mountain–desert),indigenous,C,California — indigenous trade roads,california-indigenous,millennia of use; the shell-bead road east,True,1,12,land,609
+AW-071,Qhapaq Ñan — Atacama Despoblado (Arica–Copiapó),post-road,C,Qhapaq Ñan — Inca road system,qhapaq-nan,Inca imperial road; the southern despoblado crossing,False,1,11,land,536
+AW-072,Kilwa Caravan Road (Kilwa–Lake Nyasa),caravan,B,Swahili coast–interior caravan roads,swahili-caravan,Kilwa's gold-trade heyday 12th–16th c.; caravan road documented into the 19th,False,2,11,ferry|land,373
+AW-073,Mombasa Caravan Road (Mombasa–Lake Victoria),caravan,B,Swahili coast–interior caravan roads,swahili-caravan,older roots; documented caravan use 18th–19th c.,False,1,11,land,329
+AW-074,Peabiru — Andes Reach (Asunción–Samaipata),indigenous,C,Peabiru path,peabiru,pre-Columbian Guaraní–Inca contact; the reach Cabeza de Vaca's crossing gestures at,False,1,10,land,572
+AW-075,Narmada Parikrama,pilgrimage,B,South Asia — circumambulation circuits,india-parikrama,millennia; continuously walked,False,1,29,land,598
+AW-076,Panchkroshi Yatra (Kashi),pilgrimage,B,South Asia — circumambulation circuits,india-parikrama,ancient; continuously walked; five stages,False,1,11,land,475
+AW-077,Mohawk Trail (Albany–Onondaga),indigenous,B,Haudenosaunee trails,haudenosaunee-trails,pre-contact Haudenosaunee route; the only water-level gap through the Appalachians,False,1,13,land,515
+AW-078,Seneca Trail (Geneseo–Onondaga),indigenous,B,Haudenosaunee trails,haudenosaunee-trails,pre-contact; the east–west trail of the Five Nations,False,1,9,land,298
+AW-079,Onondaga–Susquehanna Trail,indigenous,B,Haudenosaunee trails,haudenosaunee-trails,pre-contact; the road from the council fire to the Susquehanna,False,1,8,land,1878
+AW-080,Minisink Trail,indigenous,B,Hudson Valley trails,hudson-valley-trails,pre-contact Lenape/Munsee route; the Old Mine Road follows part of it,False,1,10,land,210
+AW-081,Catskill Path (Kingston–Unadilla),indigenous,C,Hudson Valley trails,hudson-valley-trails,pre-contact Esopus/Munsee route across the Catskill divide,False,1,9,land,461
+AW-082,Mahican–Wappinger River Trail,indigenous,C,Hudson Valley trails,hudson-valley-trails,pre-contact Wappinger and Mahican route along the Hudson's east bank,False,1,9,land,674
+AW-083,Lake Champlain Water Road,trade,B,Hudson Valley trails,hudson-valley-trails,millennia of canoe use; the Mohawk–Abenaki corridor between the Hudson and the St. Lawrence,False,1,8,river,367
+AW-084,Great Warriors Path (Athawominee),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact; the Haudenosaunee–Cherokee war and trade road,False,1,23,land,657
+AW-085,Occaneechi Path (Great Trading Path),trade,B,North America — indigenous roads,north-america-indigenous,pre-contact; the Virginia–Catawba trade road; Occaneechi monopoly broken 1676,False,1,13,land,560
+AW-086,Old Sauk Trail (Detroit–Chicago),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Sauk and Potawatomi route; became US-12,False,1,13,land,401
+AW-087,Athiamiowee (the Path of the Armed Ones),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Miami route; contested through the 1790s,False,1,8,land,520
+AW-088,Chilkoot Trail (the grease trail),trade,A,North America — indigenous roads,north-america-indigenous,"Tlingit trade road for centuries; opened to outsiders 1880; 30,000 stampeders 1897–98",False,1,13,land,828
+AW-089,Mojave Road (Colorado–Afton),trade,B,California — indigenous trade roads,california-indigenous,pre-contact Mojave (Pipa Aha Macav) trade road; army wagon road 1860s,False,1,8,land,645
+AW-090,Hohokam Shell & Turquoise Route,trade,C,North America — indigenous roads,north-america-indigenous,"Hohokam, ~300 BCE–1450 CE; the O'odham corridor after",False,1,13,land,821
+AW-091,Naches Pass Trail,indigenous,B,North America — indigenous roads,north-america-indigenous,Yakama route across the Cascades; wagon road 1853,False,1,13,land,607
+AW-092,Ala Kahakai (the ala loa),trade,B,Pacific islands,pacific-islands,"the ancient ala loa, the long trail that ringed the island",False,1,8,land,571
+AW-093,The Kula Ring,trade,B,Pacific islands,pacific-islands,pre-contact; documented by Malinowski 1915–18; still practised,False,1,7,sea,1325
+AW-094,The Sawei Tribute Route (Satawal–Yap),trade,B,Pacific islands,pacific-islands,pre-contact; the outer-island tribute network to Yap,False,1,6,sea,628
+AW-095,Nōti Raureka (Browning Pass),indigenous,B,Ara tawhito — the pounamu trails,pounamu-trails,opened c.1700 by Raureka's crossing; knowledge later made tapu,False,1,9,land,808
+AW-096,Nōti Taramakau (Harper Pass),indigenous,B,Ara tawhito — the pounamu trails,pounamu-trails,pre-contact; seasonal use; the principal pounamu crossing,False,1,7,land,453
+AW-097,wukalina Walk,pilgrimage,A,lutruwita — palawa Country,tasmania-palawa,Country walked for tens of thousands of years; THIS walk established 2018,False,1,5,land,874
+AW-098,Icknield Way,trade,B,Britain — ancient trackways,britain-ancient,"prehistoric; in use before the Romans, before the Saxons, before the road",False,1,12,land,784
+AW-099,The Harrow Way,trade,C,Britain — ancient trackways,britain-ancient,prehistoric; the Hoary Way,False,1,11,land,610
+AW-100,Pilgrims' Way (Winchester–Canterbury),pilgrimage,B,Britain — ancient trackways,britain-ancient,the North Downs trackway dates to ~600–450 BC; pilgrim use from 1172,False,1,14,land,602
+AW-101,Lindisfarne Pilgrims' Way,pilgrimage,B,Tidal ways,tidal-ways,since Aidan's founding in 635; the poles are the modern marking of an ancient crossing,False,2,6,land|tidal,553
+AW-102,The Broomway,trade,C,Tidal ways,tidal-ways,attested since at least the 1400s; the only road to Foulness before 1922,False,1,5,tidal,692
+AW-103,Watling Street (Dubris–Viroconium),trade,B,Roman viae,roman-viae,an older British trackway metalled by Rome from 43 AD; the name is Saxon,False,1,20,land,648
+AW-104,Ermine Street (Londinium–Eboracum),trade,B,Roman viae,roman-viae,1st c. AD; the road to the north,False,3,13,ferry|land,492
+AW-105,Fosse Way (Isca–Lindum),trade,B,Roman viae,roman-viae,"c. 47 AD; first as a frontier, then as a road",False,1,12,land,515
+AW-106,Dere Street (Eboracum–Inveresk),trade,B,Roman viae,roman-viae,c. 71 AD; the invasion road into Caledonia,False,1,12,land,536
+AW-107,Sarn Helen (Segontium–Moridunum),trade,C,Roman viae,roman-viae,late 1st c. AD; the gold road of Wales,False,1,8,land,629
+AW-108,Tro Breizh,pilgrimage,B,Celtic pilgrimage,celtic-pilgrimage,attested from the 12th c.; suppressed by the Revolution; revived 1994,False,1,23,land,539
+AW-109,North Wales Pilgrim's Way (to Ynys Enlli),pilgrimage,B,Celtic pilgrimage,celtic-pilgrimage,medieval; Enlli a pilgrim island since the 6th c.,False,2,20,ferry|land,902
+AW-110,Tóchar Phádraig,pilgrimage,B,Celtic pilgrimage,celtic-pilgrimage,a pre-Christian chariot road to the mountain; a pilgrim road since the 5th c.,False,1,4,land,680
+AW-111,Corlea Trackway,trade,A,Ireland — ancient roads,ireland-ancient,the oaks were felled in the winter of 148/147 BC,False,1,3,land,748
+AW-112,Via Regia (Frankfurt–Kyiv),trade,B,German imperial roads,german-imperial-roads,royal road under the Königsbann from the 8th c.; the great east–west of Europe,False,1,33,land,542
+AW-113,Via Imperii (Stettin–Verona),trade,B,German imperial roads,german-imperial-roads,medieval Reichsstraße; the great north–south of the Empire,False,1,21,land,646
+AW-114,Westfälischer Hellweg (Duisburg–Paderborn),trade,B,German imperial roads,german-imperial-roads,prehistoric line; Charlemagne's Saxon-war road from 772; salt road after,False,1,11,land,538
+AW-115,Via Claudia Augusta (Altinum–Augusta Vindelicum),trade,B,Roman viae,roman-viae,"completed 47 AD by Claudius, on his father Drusus's line of 15 BC",False,1,10,land,572
+AW-116,Hærvejen / Ochsenweg (Viborg–Hamburg),drover,B,Drove roads & transhumance,drover-transhumance,prehistoric ridge line; army road and ox road through the 19th c.,False,1,13,land,747
+AW-117,Slighe Mhór (the Great Way),trade,C,The Five Roads of Tara,tara-roads,"attested in the annals from the birth of Conn Cétchathach; the esker is 10,000 years older",False,1,14,land,656
+AW-118,Slighe Midluachra (the north road),trade,C,The Five Roads of Tara,tara-roads,the road of the Táin; attested in the annals and the epic alike,False,1,11,land,460
+AW-119,Slighe Cualann (the southeast road),trade,C,The Five Roads of Tara,tara-roads,pre-Christian; the road that made Dublin,False,1,7,land,481
+AW-120,Slighe Dála (the southwest road),trade,C,The Five Roads of Tara,tara-roads,pre-Christian; the road to Munster through Osraige,False,1,10,land,435
+AW-121,Slighe Asail (the west road),trade,C,The Five Roads of Tara,tara-roads,pre-Christian; the least attested of the five,False,1,7,land,497
+AW-122,Zlatá stezka — Prachatice branch,trade,B,Zlatá stezka (the Golden Path),zlata-stezka,attested from 1010; the oldest of the three branches; salt until 1706,False,1,7,land,741
+AW-123,Zlatá stezka — Vimperk branch,trade,B,Zlatá stezka (the Golden Path),zlata-stezka,opened 14th c.; the Winterberger Steig,False,1,5,land,505
+AW-124,Zlatá stezka — Kašperské Hory branch,trade,B,Zlatá stezka (the Golden Path),zlata-stezka,opened 14th c.; the Bergreichensteiner Steig,False,1,6,land,450
+AW-125,Osudareva Doroga (the Sovereign's Road),trade,C,Russian north,russian-north,"built and used ONCE, August 1702",False,1,6,land,811
+AW-126,Wildnis Road — Ragnit to Kaunas (WB corridor),indigenous,C,Die Wildnis — the Great Wilderness,wildnis,"raiding corridor 1384–1402, documented in the Littauischen Wegeberichte",False,1,7,land,984
+AW-127,Wildnis Road — Insterburg to Vilnius (WB corridor),indigenous,C,Die Wildnis — the Great Wilderness,wildnis,raiding corridor 1384–1402; the deep road,False,1,6,land,762
+AW-128,Rathad nam Mèirleach (the Thieves' Road),drover,C,Drove roads & transhumance,drover-transhumance,"the cattle-raiding centuries, c.1500–1750",False,1,9,land,712
+AW-129,Rennsteig,trade,B,German forest roads,german-forest-roads,first documented 1330 as Rynnestig; the ridge is older,False,1,11,land,750
+AW-130,Hämeen Härkätie (the Ox Road of Häme),trade,B,Nordic roads,nordic-roads,medieval; Finland's oldest known road,False,1,9,land,500
+AW-131,Kongevegen over Filefjell (Oslo–Bergen),post-road,B,Nordic roads,nordic-roads,the medieval main line between Norway's two cities; rebuilt as a king's road 1793–1843,False,2,15,land|sea,575
+AW-132,Eriksgatan (the Eriksgata),pilgrimage,C,Nordic roads,nordic-roads,codified in the provincial laws c.1296 and the land law c.1350; ridden into the 16th c.,False,1,10,land,813
+AW-133,Via Augusta — Coastal Branch (Carthago Nova–Gades),trade,B,Roman viae,roman-viae,Phoenician coastal line from the 8th c. BC; Roman road under Augustus,False,1,14,land,720
+AW-134,Via Maritima Cambriae (Isca–Moridunum),trade,B,Roman viae,roman-viae,late 1st c. AD; the south Wales frontier road,False,1,6,land,574
+AW-135,Antonine Wall Military Way,post-road,A,Roman viae,roman-viae,built c.142 AD; abandoned c.162 AD,False,1,11,land,773
+AW-136,The Vistula (Kraków–Gdańsk),trade,B,The Vistula,vistula,the grain artery; peak 16th–17th c.,False,1,10,river,720
+AW-137,Nemacolin's Path (Cumberland–the Forks of the Ohio),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Lenape/Shawnee trail; blazed for wagons 1750; Braddock's Road 1755,False,1,10,land,1724
+AW-138,Raystown Path (Harris's Ferry–Fort Pitt),indigenous,B,North America — indigenous roads,north-america-indigenous,"pre-contact trader's path; the Forbes Road, 1758",False,1,10,land,1268
+AW-139,Great Minquas Path,trade,C,North America — indigenous roads,north-america-indigenous,"pre-contact; the beaver road, contested 1630s–1670s",False,1,7,land,617
+AW-140,Toronto Carrying-Place Trail,indigenous,B,Great Lakes portages,great-lakes-portages,pre-contact; the short road to the upper lakes,False,3,12,land|river,770
+AW-141,Niagara Portage (the Carrying Place),trade,A,Great Lakes portages,great-lakes-portages,pre-contact Seneca carry; French from 1720; the Devil's Hole massacre 1763,False,1,5,land,621
+AW-142,Iroquois Trail — the Western Door (Geneseo–Buffalo),indigenous,B,Haudenosaunee trails,haudenosaunee-trails,pre-contact; the western limb of the Great Iroquois Trail,False,1,5,land,418
+AW-143,Fox–Wisconsin Waterway (Green Bay–Prairie du Chien),trade,B,Great Lakes portages,great-lakes-portages,"pre-contact Ho-Chunk and Meskwaki route; Marquette and Jolliet, 1673",False,3,14,land|river,1098
+AW-144,Kennebec–Chaudière (the Height of Land),trade,C,North America — indigenous roads,north-america-indigenous,"Abenaki canoe road; Arnold's march, 1775",False,1,12,river,1157
+AW-145,Rian Bó Phádraig (the Track of Patrick's Cow),pilgrimage,C,Ireland — ancient roads,ireland-ancient,an ancient road; the Patrick legend medieval,False,1,8,land,720
+AW-146,Sibirsky Trakt (Moscow–Kyakhta),post-road,B,Sibirsky Trakt,sibirsky-trakt,"decreed 1689, built 1730s–1830s; superseded by the Trans-Siberian from 1903",False,1,61,land,764
+AW-147,From the Varangians to the Arabs (the Volga Road),trade,B,Varangian ways (Baltic–Black Sea),varangian,~8th–11th c.; older than the road to the Greeks and richer,False,2,37,river,859
+AW-148,Darb al-Arba'in (the Forty Days Road),caravan,C,Trans-Saharan network,trans-saharan,pharaonic roots; the great slave road 16th–19th c.; camel drives still run it,True,1,5,land,786
+AW-149,The Gold Road of Zimbabwe (Great Zimbabwe–Sofala),trade,C,Swahili coast–interior caravan roads,swahili-caravan,~11th–15th c.; the road that made Kilwa rich,False,1,3,land,757
+AW-150,Yeongnam-daero (Hanyang–Dongnae),post-road,B,Korea — the great roads,korea-roads,Joseon dynasty; one of the Nine Great Roads,False,1,9,land,682
+AW-151,The Amole Road (Danakil–Mekele),caravan,B,Ethiopia — the salt roads,ethiopia-salt,centuries; still walked,False,1,5,land,542
+AW-152,Kumano Kodō — Nakahechi,pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,imperial pilgrimages from the 10th c.; UNESCO 2004,False,3,14,land|river,857
+AW-153,The Shu Roads (Chang'an–Chengdu),trade,B,The Shu Roads (plank roads),shu-roads,Warring States plank roads; the Stone Cattle Road legend c.316 BC,False,1,11,land,996
+AW-154,Angkor Royal Road (Angkor–Phimai),post-road,C,Angkor royal roads,angkor-roads,"Jayavarman VII, r. 1181–1218",False,1,7,land,824
+AW-155,The Norse Sea Road of Ireland (Dublin–Limerick),trade,B,Ireland — ancient roads,ireland-ancient,"Hiberno-Norse, 9th–12th c.",False,1,11,sea,792
+AW-156,Cuyahoga–Tuscarawas Portage (Lake Erie–the Ohio),trade,B,Great Lakes portages,great-lakes-portages,pre-contact; an international border 1785–1805,False,3,11,land|river,652
+AW-157,The Wampum Road (Canarsee–Fort Orange),trade,C,North America — indigenous roads,north-america-indigenous,pre-contact shell trade; the Dutch circuit 1620s–1660s,False,3,9,ferry|land|river,753
+AW-158,The Jurassic Way (Stamford–Banbury),trade,C,Britain — ancient trackways,britain-ancient,prehistoric; the limestone ridge road,False,1,8,land,583
+AW-159,The Thames (Cricklade–London),trade,B,Britain — ancient trackways,britain-ancient,prehistoric navigation; the Oxford crossing from the Saxon period,False,1,12,river,613
+AW-160,Via Devana (Camulodunum–Duroliponte–Durovigutum),trade,C,Roman viae,roman-viae,1st c. AD,False,1,5,land,588
+AW-161,The Siskiyou Trail (Sacramento–the Columbia),indigenous,C,California — indigenous trade roads,california-indigenous,pre-contact Indigenous route; HBC brigade trail from 1826,False,1,11,land,1002
+AW-162,The Trans-Borneo Way (Kapuas–Müller–Mahakam),trade,C,Borneo river roads,borneo-rivers,pre-colonial Dayak route; the forest-product trade,False,3,13,land|river,744
+AW-163,Kōshū Kaidō,post-road,A,Japan — Five Routes,gokaido,Edo period; the third of the Gokaidō,False,1,19,land,573
+AW-164,Ōshū Kaidō,post-road,A,Japan — Five Routes,gokaido,Edo period; the fourth of the Gokaidō,False,1,9,land,634
+AW-165,Nikkō Kaidō,post-road,A,Japan — Five Routes,gokaido,Edo period; the fifth of the Gokaidō,False,1,15,land,637
+AW-166,Shio no Michi (the Salt Road),trade,B,Japan — the goods roads,japan-kaido,medieval; the Chikuni Kaidō,False,1,7,land,620
+AW-167,Saba Kaidō (the Mackerel Road),trade,B,Japan — the goods roads,japan-kaido,Nara period onward; the Wakasa Kaidō,False,1,6,land,580
+AW-168,Kōyasan Chōishi Michi,pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,Kūkai's road from 816; the stone pillars set 1265–1285,False,1,5,land,596
+AW-169,Kumano Kodō — Kohechi,pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,medieval; the direct road between the two sacred mountains,False,1,7,land,652
+AW-170,Kumano Kodō — Ōhechi,pilgrimage,B,Japan — pilgrimage circuits,japan-pilgrimage,medieval; the coastal way,False,1,9,land,583
+AW-171,Kumano Kodō — Iseji,pilgrimage,B,Japan — pilgrimage circuits,japan-pilgrimage,Edo period revival; the road between the two,False,1,10,land,610
+AW-172,Ōmine Okugakemichi,pilgrimage,B,Japan — pilgrimage circuits,japan-pilgrimage,"Shugendō, attributed to En no Gyōja, 7th c.",False,1,8,land,687
+AW-173,Saigoku Kannon Pilgrimage (33 temples),pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,traditionally founded 718; revived by retired Emperor Kazan c.988,False,3,40,ferry|land,710
+AW-174,Dewa Sanzan (the Three Mountains),pilgrimage,A,Japan — pilgrimage circuits,japan-pilgrimage,"attributed to Prince Hachiko, 6th c.; yamabushi ever since",False,1,4,land,701
+AW-175,Nagasaki Kaidō (the Sugar Road),post-road,A,Japan — the goods roads,japan-kaido,"Edo period; Japan Heritage 'Sugar Road', 2020",False,1,17,land,741
+AW-176,The Minisink Trail (Delaware–Navesink),indigenous,C,North America — indigenous roads,north-america-indigenous,pre-contact Lenape route; the shell road,False,1,10,land,647
+AW-177,The Burlington Path (Delaware–Raritan),indigenous,B,North America — indigenous roads,north-america-indigenous,Lenape path; the Lower Road from the 1680s; the King's Highway after,False,1,7,land,564
+AW-178,The Great Shamokin Path (Shamokin–Kittanning),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact; the east–west trunk of Pennsylvania,False,1,8,land,718
+AW-179,The Kittanning Path (Standing Stone–Kittanning),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Delaware and Shawnee route over the Allegheny Front,False,1,7,land,1204
+AW-180,The Tulpehocken Path (Shamokin–Philadelphia),indigenous,B,North America — indigenous roads,north-america-indigenous,"pre-contact; Conrad Weiser's road, 1730s–50s",False,1,9,land,2168
+AW-181,The Forbidden Path (Tioga–the Genesee),indigenous,B,Haudenosaunee trails,haudenosaunee-trails,pre-contact; closed to outsiders by Iroquois law; forced 1779,False,1,9,land,1599
+AW-182,The Great Carrying Place (Albany–Ticonderoga),trade,A,Hudson Valley trails,hudson-valley-trails,"pre-contact carry; the Great Warpath, 1690–1783",False,3,11,land|river,966
+AW-183,The Adirondack Canoe Route (Old Forge–Plattsburgh),trade,C,Adirondack ways,adirondack-ways,pre-contact Mohawk and Abenaki canoe route,False,3,15,land|river,752
+AW-184,The Sacandaga Path (Mohawk–Raquette),indigenous,C,Adirondack ways,adirondack-ways,pre-contact Mohawk hunting road into Couchsachraga,False,1,9,land,642
+AW-185,Darb al-Hajj al-Maghribi (Fez–Cairo),pilgrimage,B,Hajj roads,hajj-roads,from the 9th c.; the Maghreb's road to Mecca,False,1,53,land,772
+AW-186,The Almoravid Road (Marrakesh–Sijilmasa),trade,B,Trans-Saharan network,trans-saharan,"Almoravid, 11th c.; the road that founded a capital",False,1,13,land,581
+AW-187,Mauretania Tingitana Road (Baelo–Volubilis),trade,B,Roman viae,roman-viae,1st–3rd c. AD; abandoned beyond the Loukkos c.285,False,2,10,ferry|land,757
+AW-188,Roman Africa Coastal Road (Rusaddir–Leptis Magna),trade,B,Roman viae,roman-viae,1st–5th c. AD; the granary road,False,1,30,land,651
+AW-189,The Ghana Road (Sijilmasa–Koumbi Saleh),caravan,C,Trans-Saharan network,trans-saharan,8th–12th c.; superseded when Ghana fell and Mali rose,False,1,9,land,853
+AW-190,"The Straight Road (Zhidao, Xianyang–Jiuyuan)",post-road,B,China — the imperial roads,china-imperial-roads,built 212–210 BC by Meng Tian,False,1,11,land,920
+AW-191,"The Tang–Tibet Road (Tangbo Gudao, Chang'an–Lhasa)",post-road,B,China — the imperial roads,china-imperial-roads,"opened by Princess Wencheng's journey, 641 AD; over a hundred embassies each way",False,1,28,land,775
+AW-192,"The Five-Foot Way (Wuchi Dao, Chengdu–Bhamo)",trade,C,Silk Road network,silk-road,"Qin, 3rd c. BC; the southwestern silk road",False,1,13,land,969
+AW-193,"The Lychee Road (Lizhi Dao, Fuling–Chang'an)",post-road,C,China — the imperial roads,china-imperial-roads,"Tang, mid-8th c.; built for one woman's fruit",False,1,8,land,962
+AW-194,"The Qinghai Road (Qinghai Dao, Xining–Dunhuang)",caravan,C,Silk Road network,silk-road,"Tuyuhun road, 4th–7th c.; the main line after Tibet took the Hexi in the 760s",False,1,6,land,736
+AW-195,The Fall Line Road (Philadelphia–Petersburg),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact; the King's Highway after 1650; US-1 now,False,1,14,land,708
+AW-196,The Potomac Path (Georgetown–Cumberland),indigenous,B,North America — indigenous roads,north-america-indigenous,"pre-contact; Washington's road west, 1753; the C&O Canal after",False,1,10,land,790
+AW-197,The Schoharie Path (the Mohawk–the Esopus),indigenous,C,Hudson Valley trails,hudson-valley-trails,"pre-contact Mohawk route; the Palatine road, 1712",False,1,8,land,788
+AW-198,The Susquehanna Turnpike (Catskill–Unadilla),trade,C,Hudson Valley trails,hudson-valley-trails,"chartered 1800, built 1801–04, over an older Catskill–Susquehanna corridor",False,1,9,land,700
+AW-199,Akeman Street (Verulamium–Corinium),trade,B,Roman viae,roman-viae,1st c. AD,False,1,9,land,737
+AW-200,The Lake Erie Shore Path (Buffalo–Detroit),indigenous,B,Great Lakes portages,great-lakes-portages,"pre-contact; the south shore road, broken by the Black Swamp until the 1890s",False,1,12,land,951
+AW-201,"Kuninkaantie (the King's Road, Turku–Vyborg)",post-road,B,Nordic roads,nordic-roads,medieval; the postal road of the Swedish realm from the 14th c.,False,1,15,land,665
+AW-202,The Neman Road (the Baltic–the Dnieper),trade,C,Varangian ways (Baltic–Black Sea),varangian,~9th–13th c.; the western Varangian variant,False,3,11,land|river,853
+AW-203,The Palghat Gap Road (Muziris–Kaveripattinam),trade,B,South India — the peninsular roads,south-india-roads,"Sangam era; the Roman pepper trade, 1st–3rd c. AD",False,1,8,land,1180
+AW-204,The Coromandel Road (Kanchipuram–Nagapattinam),trade,B,South India — the peninsular roads,south-india-roads,Pallava and Chola; the road to the ports for Southeast Asia,False,1,7,land,607
+AW-205,The Macassan Trepang Route (Makassar–Marege'),trade,B,Australia — trade roads,australia-trade,annual voyages from at least c.1720; banned 1906–07,False,1,9,sea,994
+AW-206,The Pituri and Ochre Road (the Mulligan–Bookartoo),trade,C,Australia — trade roads,australia-trade,pre-contact; the Birdsville Track later followed it,False,1,7,land,932
+AW-207,The Persian Royal Road (Sardis–Susa),post-road,B,The Persian Royal Road,persian-royal-road,"Darius I, c.500 BC; Herodotus described it c.440 BC",False,1,35,land,799
+AW-208,Sacbe 1 (Cobá–Yaxuná),post-road,A,Maya sacbeob (the white roads),maya-sacbeob,c.700–800 AD,False,1,4,land,818
+AW-209,Darb Zubaydah (Kufa–Mecca),pilgrimage,B,Hajj roads,hajj-roads,"Abbasid; built out by Zubayda bint Ja'far, d. 831",False,1,20,land,801
+AW-210,The Yam Road (Khanbaliq–Karakorum),post-road,C,The Mongol yam,mongol-yam,örtöö relay from c.1234; Marco Polo described it c.1290,False,1,9,land,1001
+AW-211,The Kra Isthmus Portage (Takua Pa–Chaiya),trade,C,Maritime Spice Route,spice-maritime,from at least the 2nd c. AD; the shortcut round the Strait,False,1,5,land,750
+AW-212,The Casiquiare (the Orinoco–the Amazon),trade,C,Amazonia,amazonia,used by the Ye'kuana and others for millennia; Humboldt proved it 1800,False,1,9,river,749
+AW-213,The Old Connecticut Path (Shawmut–Hartford),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Nipmuc trail; Hooker's company walked it in 1636,False,1,11,land,789
+AW-214,The Bay Path (Newtowne–Agawam),indigenous,B,North America — indigenous roads,north-america-indigenous,"pre-contact; the Bay to the Connecticut, from 1636",False,1,6,land,571
+AW-215,The Mohawk Trail — Massachusetts (Pocumtuck Path),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Pocumtuck route; the Mohawk raiding road,False,1,9,land,760
+AW-216,The Pequot Path (Boston–New Amsterdam),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact coastal trail; the Boston Post Road from 1673,False,1,11,land,670
+AW-217,Estrada Real — Caminho Velho (Paraty–Ouro Preto),trade,B,Brazil — the royal roads,brazil-roads,opened 1690s on Guainá paths; the gold road until the Caminho Novo,False,1,13,land,938
+AW-218,Rota das Monções (Porto Feliz–Cuiabá),trade,C,Brazil — the royal roads,brazil-roads,annual river convoys c.1720–1830s,False,3,17,land|river,856
+AW-219,The Moscow Road (Vilnius–Minsk–Moscow),post-road,B,Varangian ways (Baltic–Black Sea),varangian,"the Lithuanian–Muscovite trunk; the invasion road, 1610–1941",False,1,15,land,824
+AW-220,The Gotthard Road (Lucerne–Milan),trade,A,Alpine passes,alpine-passes,opened c.1220 when the Schöllenen was bridged,False,2,18,land|river,832
+AW-221,Via Aemilia (Ariminum–Placentia),trade,A,Roman viae,roman-viae,"187 BC, Marcus Aemilius Lepidus",False,1,12,land,757
+AW-222,Via Postumia (Genua–Aquileia),trade,B,Roman viae,roman-viae,"148 BC, Spurius Postumius Albinus",False,1,12,land,690
+AW-223,The Nane Ghat Road (Pratishthana–Sopara),trade,B,South Asia — the trunk roads,south-asia-roads,"Satavahana, c.2nd c. BC – 2nd c. AD",False,1,7,land,1234
+AW-224,The Bhor Ghat Road (Pratishthana–Kalyan),trade,B,South Asia — the trunk roads,south-asia-roads,Satavahana; the Karla and Bhaja caves are its milestones,False,1,8,land,705
+AW-225,Camino Real de Panamá (the Isthmus),trade,B,The Spanish silver system,spanish-silver,1519–1739; the Portobelo fairs,False,1,6,land,1033
+AW-226,Camino Real del Perú (Tucumán–Buenos Aires),trade,B,The Spanish silver system,spanish-silver,16th–18th c.; illegal for most of it; legalised 1776,False,1,15,land,1428
+AW-227,The Muisca Salt Roads (Zipaquirá–Bacatá–Guatavita),trade,C,Colombia — the highland roads,colombia-roads,pre-contact Muisca; the salt-for-gold trade,False,1,6,land,847
+AW-228,The Magdalena (Cartagena–Honda–Bogotá),trade,B,Colombia — the highland roads,colombia-roads,pre-contact river road; the only way to Bogotá until the 20th c.,False,3,16,land|river|sea,679
+AW-229,The Rastrilladas (the pampa cattle trails),drover,C,Pampa trails,pampa-trails,"17th–19th c.; closed by the Conquest of the Desert, 1878–85",False,1,8,land,987
+AW-230,The Amazon (Belém–Manaus),trade,B,Amazonia,amazonia,millennia of Indigenous use; Orellana's descent 1541–42,False,1,18,river,781
+AW-231,Qhapaq Ñan — the Chilean Reach (Copiapó–the Maule),post-road,B,Qhapaq Ñan — Inca road system,qhapaq-nan,Inca conquest of central Chile c.1470s–80s; the road stops where the Mapuche did,False,1,15,land,971
+AW-232,The São Francisco Cattle Road (Pirapora–Salvador),drover,C,Brazil — the royal roads,brazil-roads,the currais from the 1590s; the cattle road of the sertão,False,2,9,land|river,1082
+AW-233,The Aconcagua Road (Uspallata–Valparaíso),post-road,B,Qhapaq Ñan — Inca road system,qhapaq-nan,"Inca, c.1470s–80s; crossed by the Army of the Andes in 1817",False,1,7,land,951
+AW-234,The El Mirador Causeways (El Mirador–Tintal),post-road,C,Maya sacbeob (the white roads),maya-sacbeob,"Preclassic Maya, c.300 BC – 150 AD",False,1,4,land,991
+AW-235,The Nicaragua Transit (San Juan–Rivas),trade,B,Mesoamerica — the isthmus roads,mesoamerica-roads,Nicarao and Chorotega use; Spanish from 1539; Vanderbilt's Transit 1851–68,False,2,8,land|river,856
+AW-236,The Cacao Road (Tenochtitlan–Soconusco),trade,C,Mesoamerica — the isthmus roads,mesoamerica-roads,Teotihuacan-era trade; conquered by Ahuitzotl in 1486,False,1,10,land,865
+AW-237,The Upper Xingu Roads (the Kuikuro network),post-road,C,Amazonia — the earthwork roads,amazonia-earthworks,c.1250–1650 AD; identified 2003,False,1,4,land,917
+AW-238,The Llanos de Mojos Causeways,post-road,C,Amazonia — the earthwork roads,amazonia-earthworks,c.500–1400 AD,False,1,4,land,950
+AW-239,The Madeira Portage (Guajará-Mirim–Porto Velho),trade,B,Amazonia,amazonia,Indigenous carries; the Devil's Railway 1907–12,False,2,8,land|river,1304
+AW-240,The Motagua Jade Road (Kaminaljuyú–the Caribbean),trade,C,The Maya highlands,maya-highlands,"Olmec from c.1200 BC to the Aztecs in 1520; one valley, three thousand years",False,1,6,land,711
+AW-241,The Copán Road (Quiriguá–Copán),trade,C,The Maya highlands,maya-highlands,Classic Maya; the road broke in 738 AD,False,1,4,land,804
+AW-242,The Obsidian Road (El Chayal–El Mirador),trade,C,The Maya highlands,maya-highlands,Preclassic onward; Cancúén's workshops 8th c. AD,False,3,11,land|river,873
+AW-243,The Pacific Coast Road (Xoconochco–Kaminaljuyú),trade,C,The Maya highlands,maya-highlands,Preclassic; Izapa c.300 BC – 100 AD,False,1,5,land,773
+AW-244,The Highland Capitals Road (Zaculeu–Kaminaljuyú),trade,C,The Maya highlands,maya-highlands,Postclassic; all four capitals fell 1524–25,False,1,6,land,780
+AW-245,The Norse Atlantic (Nidaros–Vinland),trade,B,The Norse Atlantic,norse-atlantic,"Iceland 870s, Greenland 985, Vinland c.1000; the last Markland voyage recorded 1347",False,1,13,sea,990
+AW-246,Via Militaris (Singidunum–Constantinople),post-road,B,Roman viae,roman-viae,1st c. AD; every crusade took it; the Ottomans came up it,False,1,13,land,783
+AW-247,Kealaikahiki (Raiatea–Tahiti–Hawaiʻi),trade,C,Pacific islands,pacific-islands,voyaging c.1000–1300 AD; the traffic stopped and nobody knows why,False,1,8,sea,1077
+AW-248,Đường Cái Quan (the Mandarin Road),post-road,B,Vietnam — the Mandarin Road,vietnam-roads,Lý dynasty onward; the spine of the Nam tiến,False,1,21,land,880
+AW-249,The Congo Portage (Matadi–Malebo Pool–Kisangani),trade,B,The Congo,congo,Kongo kingdom caravans; Stanley walked it 1877; the railway 1898,False,2,11,land|river,877
+AW-250,The Manila Galleon (Manila–Acapulco),trade,B,The Manila Galleon,manila-galleon,"1565–1815 — two hundred and fifty years, the longest-running shipping line in history",False,2,15,sea,1154
+AW-251,The Siberian River Road (Tobolsk–Okhotsk),trade,C,Siberian rivers,siberian-rivers,Yermak crossed the Urals 1582; the Pacific reached 1639 — fifty-seven years,False,6,19,land|river,1072
+AW-252,The Katanga Copper Road (Katanga–Great Zimbabwe),trade,C,Central Africa,central-africa,croisettes cast from c.800 AD; Ingombe Ilede's floruit 14th–15th c.,False,1,7,land,1059
+AW-253,The Mississippi (Itasca–New Orleans),trade,B,North America — the great rivers,north-america-rivers,millennia; Cahokia's floruit 1050–1350,False,1,19,river,917
+AW-254,The Missouri (St. Louis–Three Forks),trade,B,North America — the great rivers,north-america-rivers,millennia; the Mandan villages the northern plains' market; Lewis and Clark 1804–06,False,1,16,river,839
+AW-255,The Savanna Portage (Lake Superior–the Mississippi),trade,B,Great Lakes portages,great-lakes-portages,"pre-contact; the fur road, 17th–19th c.",False,3,7,land|river,713
+AW-256,The Carlton Trail (Fort Garry–Fort Edmonton),trade,B,Red River Trails (oxcart routes),red-river-trails,"HBC cart road, c.1820s–1885; killed by the railway",False,1,20,land,1207
+AW-257,The Ottawa River Route (Montreal–Georgian Bay),trade,B,Great Lakes portages,great-lakes-portages,pre-contact Algonquin route; Champlain 1615; the voyageur highway to 1821,False,1,11,river,719
+AW-258,The Texas Road (the Osage Trace),indigenous,C,North America — indigenous roads,north-america-indigenous,Osage trail; the removal road 1830s; the cattle road after,False,1,9,land,820
+AW-259,Via Turonensis (Paris–Ostabat),pilgrimage,A,Camino de Santiago,camino,"the Codex Calixtinus names all four, c.1140",False,1,13,land,753
+AW-260,Via Lemovicensis (Vézelay–Ostabat),pilgrimage,A,Camino de Santiago,camino,"Codex Calixtinus, c.1140",False,1,14,land,862
+AW-261,Via Podiensis (Le Puy–Ostabat),pilgrimage,A,Camino de Santiago,camino,"the first documented pilgrimage: Bishop Gotescalc, 950 AD",False,1,11,land,733
+AW-262,Via Tolosana (Arles–Puente la Reina),pilgrimage,A,Camino de Santiago,camino,"Codex Calixtinus, c.1140; the road that takes the other pass",False,1,13,land,735
+AW-263,The Bavarian Salt Road (Hallein–Augsburg),trade,B,Salt roads,salt-roads,"prehistoric; Munich founded on it by arson, 1158",False,1,7,land,763
+AW-264,The St. Lawrence (the Gulf–Lake Ontario),trade,B,North America — the great rivers,north-america-rivers,millennia; Cartier 1535; the road into the continent,False,1,10,river,930
+AW-265,The Arkansas (the Mississippi–the Three Forks),trade,B,North America — the great rivers,north-america-rivers,"millennia; the Quapaw, Osage and Wichita corridor",False,1,9,river,697
+AW-266,The Erie Canal (Albany–Buffalo),trade,A,The great canals,canals,dug 1817–25; the ditch that made New York,False,1,12,river,1737
+AW-267,Canal du Midi (Toulouse–Sète),trade,A,The great canals,canals,"1666–81, Pierre-Paul Riquet",False,1,10,river,907
+AW-268,The Canal of the Pharaohs (the Nile–the Red Sea),trade,C,The great canals,canals,Necho II c.600 BC; finished by Darius c.500 BC; reopened repeatedly to 767 AD,False,1,6,river,1135
+AW-269,The Diolkos (the Isthmus of Corinth),trade,B,The great canals,canals,"c.600 BC, Periander; in use for at least 700 years",False,1,3,land,965
+AW-270,The Rideau Canal (Ottawa–Kingston),trade,A,The great canals,canals,"1826–32, Colonel By; built for a war that never came",False,1,7,river,906
+AW-271,Fossa Carolina & the Main–Danube (Nürnberg–Kelheim),trade,B,The great canals,canals,Charlemagne dug it in 793 and it failed; finished 1992,False,1,6,river,900
+AW-272,The Bridgewater Canal (Worsley–Runcorn),trade,A,The great canals,canals,"1761 — the first, and the one that started the mania",False,1,7,river,954
+AW-273,The Trent & Mersey (the Grand Trunk),trade,A,The great canals,canals,"1766–77, Brindley; the spine of the Grand Cross",False,1,9,river,964
+AW-274,The Leeds & Liverpool (over the Pennines),trade,A,The great canals,canals,"begun 1770, finished 1816 — forty-six years",False,1,8,river,825
+AW-275,The Llangollen Canal (Hurleston–Horseshoe Falls),trade,A,The great canals,canals,"1795–1805, Telford and Jessop; UNESCO",False,1,7,river,879
+AW-276,The Kennet & Avon (Reading–Bristol),trade,A,The great canals,canals,"1794–1810, Rennie; derelict by 1950; reopened 1990",False,1,8,river,783
+AW-277,The Caledonian Canal (Inverness–Fort William),trade,A,The great canals,canals,"1803–22, Telford; obsolete before it opened",False,1,7,river,831
+AW-278,The Grand Junction (Brentford–Birmingham),trade,A,The great canals,canals,1793–1805; the trunk that made the system a system,False,1,10,river,1354
+AW-279,The Black Way (Chornyi Shliakh) — the slave road to Caffa,caravan,C,The Tatar slave roads,slave-roads,c.1450–1783; ended when Russia took Crimea,True,2,15,land|sea,1542
+AW-280,The Steenweg (Bruges–Brussels–Cologne),trade,B,The Low Countries,low-countries,12th–16th c.; the stone road of Flanders,False,1,9,land,710
+AW-281,The Wallachian Road (Brașov–Bucharest–Giurgiu),trade,B,The Danubian principalities,danubian-roads,medieval; the Saxon trade road over the Carpathians,False,1,7,land,810
+AW-282,The Kathmandu–Lhasa Road (the Kuti route),trade,B,Himalaya — the Nepal passes,himalaya-roads,7th c. onward; Araniko went north on it in 1260,False,1,11,land,810
+AW-283,The Kalinga Coast Road (Tamralipti–Kanchipuram),trade,C,South Asia — the trunk roads,south-asia-roads,Mauryan onward; the road Ashoka came down in 261 BC,False,1,12,land,923
+AW-284,The Piast Road (Poznań–Gniezno–Kalisz),trade,C,Amber Road,amber-road,"the Piast heartland, 9th–11th c.; on an older amber line",False,1,6,land,752
+AW-285,The Hisor Road (Samarkand–Termez),trade,C,Silk Road network,silk-road,Kushan onward; the Oxus crossing,False,1,7,land,658
+AW-286,"The Vidarbha Road (Kaushambi–Paithan, the eastern way)",trade,C,South Asia — the trunk roads,south-asia-roads,Satavahana and Vakataka; the other Dakshinapatha,False,1,12,land,786
+AW-287,The Yangzi (the Gorges–Shanghai),trade,B,China — the great rivers,china-rivers,millennia; the artery,False,1,11,river,942
+AW-288,The Yellow River (Lanzhou–the sea),trade,B,China — the great rivers,china-rivers,millennia; it has changed course 26 times,False,1,13,river,1001
+AW-289,The Meiling Pass Road (the Yangzi–Guangzhou),trade,B,China — the imperial roads,china-imperial-roads,cut by Zhang Jiuling in 716 AD; the Canton System's only artery 1757–1842,False,3,12,land|river,855
+AW-290,The Karakoram Pass (Leh–Yarkand),caravan,C,Silk Road network,silk-road,centuries; closed 1949–50,False,1,9,land,902
+AW-291,The Liaodong Road (Beijing–Shanhaiguan–Hanyang),post-road,B,China — the imperial roads,china-imperial-roads,the Korean tribute road; the gate opened in 1644,False,1,18,land,946
+AW-292,The Zayton Route (Quanzhou–Malacca),trade,B,Maritime Spice Route,spice-maritime,Song and Yuan; Quanzhou's floruit 11th–14th c.,False,1,10,sea,952
+AW-293,The Amur (Nerchinsk–Nikolayevsk),trade,B,Siberian rivers,siberian-rivers,Russian descent 1643–89; lost at Nerchinsk; retaken 1858,False,2,14,river,1087
+AW-294,The Irrawaddy (Bhamo–the Bay of Bengal),trade,B,Silk Road network,silk-road,millennia; Pagan 1044–1287,False,1,9,river,803
+AW-295,The Yukon (Bennett–St. Michael),trade,B,North America — the great rivers,north-america-rivers,millennia of Athabaskan use; 1898,False,1,14,river,717
+AW-296,The Iditarod Trail (Seward–Nome),post-road,B,North America — indigenous roads,north-america-indigenous,Athabaskan and Iñupiaq trails; a mail route from 1908; the serum run 1925,False,1,17,land,826
+AW-297,The Melos Obsidian Route (Melos–Franchthi),trade,C,The oldest ways,the-oldest-ways,"**c.11,000 BC** — the oldest sea route known anywhere",False,1,4,sea,992
+AW-298,The Sweet Track & the Post Track (Somerset),trade,A,The oldest ways,the-oldest-ways,**the Post Track 3838 BC; the Sweet Track 3807/3806 BC** — dated to the winter,False,1,3,land,917
+AW-299,The Lapis Lazuli Road (Sar-i-Sang–Ur),trade,C,The oldest ways,the-oldest-ways,"**c.4000 BC to now** — the same mine, six thousand years",False,1,12,land,1052
+AW-300,Wadi Hammamat (Coptos–the Red Sea),trade,B,The oldest ways,the-oldest-ways,predynastic to the Islamic period — five thousand years of graffiti,False,1,6,land,947
+AW-301,The Mont Viso Jade Road (the Alps–the Channel),trade,C,The oldest ways,the-oldest-ways,c.5000–3500 BC,False,1,11,land,1223
+AW-302,The Kozushima Obsidian Route (Kozushima–Honshu),trade,C,The oldest ways,the-oldest-ways,"**c.38,000 BP** — the oldest route in this layer, by a margin nothing else approaches",False,1,5,sea,1137
+AW-303,The Bluestone Road (Preseli–Stonehenge),trade,B,The oldest ways,the-oldest-ways,c.3000 BC; the Altar Stone's source found in 2024,False,1,10,land,1007
+AW-304,The Spondylus Road (Ecuador–Cusco),trade,C,The oldest ways,the-oldest-ways,c.3000 BC onward; the Chincha rafts to 1532,False,2,11,land|sea,1046
+AW-305,The Old Copper Road (Isle Royale–Poverty Point),trade,C,The oldest ways,the-oldest-ways,c.6000–3000 BC — among the oldest metalworking anywhere,False,1,10,land,1079
+AW-306,The Cappadocian Obsidian Road (Göllü Dağ–Jericho),trade,C,The oldest ways,the-oldest-ways,c.9000–6000 BC — the Neolithic's toolkit,False,1,11,land,974
+AW-307,The Kola Road (Begho–Kumasi–Elmina),trade,B,West Africa — the forest roads,west-africa-forest,Dyula kola trade from c.1400; the Asante great roads mapped 1817,True,1,7,land,1713
+AW-308,The Kwango Road (Kasanje–Luanda),caravan,C,The Atlantic slave roads,atlantic-slave-roads,Luanda founded 1576; the trade ran to the 1860s,True,1,6,land,1173
+AW-309,The Dahomey Road (Abomey–Ouidah),caravan,B,The Atlantic slave roads,atlantic-slave-roads,Dahomey took Ouidah in 1727; the trade ran to the 1860s,True,1,8,land,1074
+AW-310,The Aro Network (Arochukwu–Bonny),caravan,C,The Atlantic slave roads,atlantic-slave-roads,"17th c. to 1902, when the British blew up the oracle",True,2,9,land,1033
+AW-311,The Coffle Road (Alexandria–Natchez),caravan,B,The Atlantic slave roads,atlantic-slave-roads,1790–1860 — the Second Middle Passage,True,1,27,land,1223
+AW-312,The Ganges (Gangotri–Ganga Sagar),pilgrimage,B,South Asia — the great rivers,south-asia-rivers,millennia; the road and the goddess are the same thing,False,1,12,river,898
+AW-313,The Indus & the Harappan Roads,trade,C,South Asia — the great rivers,south-asia-rivers,**2600–1900 BC** — and this layer did not have it at all,False,2,12,river|sea,1221
+AW-314,The Char Dham (the four abodes),pilgrimage,C,South Asia — the trunk roads,south-asia-roads,"attributed to Adi Shankara, c.800 AD",False,1,88,land,1185
+AW-315,The Brahmaputra (Sadiya–the Bay),trade,B,South Asia — the great rivers,south-asia-rivers,millennia; the Ahom came over the Patkai in 1228 and stayed 600 years,False,1,10,river,1335
+AW-316,The Horse Road (Goa–Vijayanagara),trade,C,South Asia — the trunk roads,south-asia-roads,14th–16th c.; Vijayanagara destroyed 1565,False,1,7,land,1049
+AW-317,The Black Hills Circuit (Ȟe Sápa),pilgrimage,C,North America — indigenous roads,north-america-indigenous,pre-contact; the 1868 treaty; the 1877 taking; the money still refused,True,1,9,land,1445
+AW-318,The Snake River Road (Jackson–the Columbia),indigenous,B,North America — the great rivers,north-america-rivers,millennia; the Oregon Trail followed it after 1840,False,1,12,river,947
+AW-319,The Lolo Trail (Weippe–the Bitterroot),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Nez Perce buffalo road; Lewis and Clark 1805; the flight of 1877,False,1,7,land,1002
+AW-320,Nunna daul Tsuny (the Trail of Tears — the Northern Route),caravan,B,North America — indigenous roads,north-america-indigenous,1838–39,True,1,18,land,1176
+AW-321,The Mississippian Exchange (Spiro–Cahokia–Etowah),trade,C,North America — indigenous roads,north-america-indigenous,c.800–1600 AD,False,1,29,land,1083
+AW-322,The Lower Creek Trading Path (Charleston–Coweta),trade,B,North America — indigenous roads,north-america-indigenous,"the deerskin trade, c.1680–1760",False,1,10,land,821
+AW-323,El Camino Real de Florida (St. Augustine–Apalachee),post-road,C,North America — indigenous roads,north-america-indigenous,"the mission chain, c.1600–1704 — destroyed in two years",True,1,7,land,988
+AW-324,The Nuxalk-Carrier Grease Trail (Bella Coola–the Fraser),trade,B,North America — indigenous roads,north-america-indigenous,pre-contact; Mackenzie walked it in 1793,False,1,8,land,1081
+AW-325,The Frankincense Road of Dhofar (Salalah–Shabwa),caravan,C,Levant & Arabia,levant-arabia,c.1000 BC – 3rd c. AD; Ubar found by satellite in 1992,False,1,8,land,1115
+AW-326,The Comoros Route (Kilwa–Madagascar),trade,C,Swahili coast–interior caravan roads,swahili-caravan,Austronesian arrival c.500 AD; the Swahili trade after,False,1,8,sea,890
+AW-327,The Mataram Road (Borobudur–Gresik),pilgrimage,C,Maritime Spice Route,spice-maritime,"Sailendra and Mataram, 8th–10th c.; the court moved east c.929 and nobody knows why",False,1,8,land,924
+AW-328,The Chicago Portage (Lake Michigan–the Illinois),trade,A,Great Lakes portages,great-lakes-portages,pre-contact; Jolliet saw what it was in 1673; the river reversed in 1900,False,3,12,land|river,1217
+AW-329,The Lake Michigan Shore Trail (Green Bay–Chicago),indigenous,B,North America — indigenous roads,north-america-indigenous,"pre-contact Potawatomi, Menominee and Ho-Chunk route",False,1,8,land,781
+AW-330,The Grand River Trail (Detroit–Grand Haven),indigenous,B,North America — indigenous roads,north-america-indigenous,pre-contact Odawa route; Hopewell mounds at the rapids,False,1,7,land,793
+AW-331,The Great Hopewell Road (Newark–Chillicothe),post-road,C,North America — indigenous roads,north-america-indigenous,c.100–400 AD,False,1,5,land,1181
+AW-332,The Hopewell Interaction Sphere (Obsidian Cliff–Newark),trade,C,North America — indigenous roads,north-america-indigenous,c.200 BC – 500 AD,False,1,13,land,1115
+AW-333,The Hayes River Route (York Factory–Fort Garry),trade,B,North America — the great rivers,north-america-rivers,Cree route; the HBC's main line from 1684,False,1,9,river,1018
+AW-334,The Wabanaki Coast Path (Shawmut–Cushnoc),indigenous,B,North America — indigenous roads,north-america-indigenous,millennia; the Great Dying 1616–19,False,1,11,sea,1206
+AW-335,The Merrimack (Newburyport–Franconia),trade,B,North America — the great rivers,north-america-rivers,Pennacook fish weirs; Lowell 1823; Manchester 1838,False,1,8,river,833
+AW-336,The Penobscot (the Bay–Katahdin),indigenous,B,North America — the great rivers,north-america-rivers,millennia; Panawahpskek continuously inhabited; the river's status litigated to 2021,False,1,8,river,924
+AW-337,The Four Lakes Trail (Portage–Teejop–Aztalan),indigenous,C,North America — indigenous roads,north-america-indigenous,effigy mounds 700–1200 AD; Aztalan c.1100,False,1,6,land,1196
+AW-338,The Opimihaw Road (Wanuskewin–the South Saskatchewan),indigenous,C,North America — indigenous roads,north-america-indigenous,**c.4000 BC – the present** — six thousand years without a break,False,1,4,land,1067
+AW-339,The Nisenan Trans-Sierra Trail (the Valley–the Washoe),indigenous,C,California — indigenous trade roads,california-indigenous,pre-contact; the emigrant road and the railway followed it,False,1,8,land,980
+AW-340,The Bengaluru Road (Mysore–Bengaluru–Kanchipuram),trade,C,South India — the peninsular roads,south-india-roads,**the Begur inscription names Bengaluru c.890 AD** — six centuries before the fort,False,1,9,land,1762
+AW-341,The South Saskatchewan (the Forks–Wanuskewin–the North Branch),trade,B,North America — the great rivers,north-america-rivers,millennia; Wanuskewin from c.4000 BC; Batoche 1885,False,1,10,river,938
+AW-342,The Rock River (Aztalan–the Mississippi),trade,B,North America — the great rivers,north-america-rivers,Mississippian at Aztalan c.1100; Sauk at Saukenuk to 1832,False,1,7,river,940
+AW-343,The Humboldt (the Carson Sink–Fort Hall),indigenous,B,North America — the great rivers,north-america-rivers,Northern Paiute and Shoshone; the California Trail 1841–69,False,2,13,land|river,1183
+AW-344,The Clamshell Bead Road (Bodega–the Sierra),trade,C,California — indigenous trade roads,california-indigenous,pre-contact; the currency of central California,False,1,10,land,1170
+AW-345,The North Saskatchewan (Fort Edmonton–Lake Winnipeg),trade,B,North America — the great rivers,north-america-rivers,Cree route; Cumberland House 1774 — the HBC's first inland post,False,1,9,river,1082
+AW-346,The Milwaukee–Teejop Trail,indigenous,C,North America — indigenous roads,north-america-indigenous,pre-contact Potawatomi and Ho-Chunk route,False,1,6,land,829
+AW-347,The Connecticut (Saybrook–the Fourth Lake),trade,B,North America — the great rivers,north-america-rivers,millennia; the Deerfield captives walked up it in 1704,False,1,13,river,1128
+AW-348,The Mi'kmaq Coast (Passamaquoddy–Unama'ki),indigenous,C,North America — indigenous roads,north-america-indigenous,millennia; Basque contact from c.1500,False,1,8,sea,1168
+AW-349,The Wolastoq (the Bay of Fundy–the St. Lawrence),indigenous,B,North America — the great rivers,north-america-rivers,millennia; the Témiscouata portage; the Aroostook War 1838–39,False,2,9,land|river,950
+AW-350,The Turquoise & Macaw Road (Chaco–Cerrillos–Paquimé),trade,C,North America — indigenous roads,north-america-indigenous,c.900–1150 AD (Chaco); Paquimé's floruit 13th–14th c.,False,1,9,land,1192
+AW-351,The Comanchero Trail (Santa Fe–the Llano–the Three Forks),trade,C,North America — indigenous roads,north-america-indigenous,c.1750–1875; ended when the horses were shot,False,1,14,land,1195
+AW-352,The Columbia (Kettle Falls–Astoria),trade,B,North America — the great rivers,north-america-rivers,"Wyam fished for 11,000+ years; drowned 10 March 1957",False,1,13,river,1302
+AW-353,The Fraser (Mt Robson–the delta),trade,B,North America — the great rivers,north-america-rivers,millennia; Simon Fraser 1808; the Hells Gate slide 1913,False,1,9,river,964
+AW-354,The Nass & Skeena Grease Trails,trade,C,North America — indigenous roads,north-america-indigenous,millennia; Delgamuukw 1997,False,1,6,land,1023
+AW-355,The Haida Canoe Road (SGang Gwaay–the Nass),trade,C,North America — indigenous roads,north-america-indigenous,millennia; the 1862 smallpox; Athlii Gwaii 1985,True,1,10,sea,1441
+AW-356,The Salish Sea (Puget Sound–the Fraser),trade,B,North America — indigenous roads,north-america-indigenous,millennia; the reef nets; Boldt 1974,False,1,6,sea,1135
+AW-357,The Yellowstone (Gardiner–Fort Union),trade,B,North America — the great rivers,north-america-rivers,millennia; Clark came down it in 1806,False,1,9,river,1107
+AW-358,The Bozeman Trail (Fort Laramie–Virginia City),trade,B,North America — indigenous roads,north-america-indigenous,1863–68; closed by treaty,False,1,13,land,1108
+AW-359,The Platte Road (the Forks–South Pass–Fort Hall),trade,B,North America — the great rivers,north-america-rivers,"Pawnee earth-lodge country; ~400,000 emigrants 1841–69",False,1,11,river,1256
+AW-360,The Seaweed Road (the Chilean coast–Monte Verde),trade,C,The oldest ways,the-oldest-ways,"**c.14,500 BP** — the oldest route in the Americas by eight thousand years",False,1,3,land,1129
+AW-361,The Chavín Obsidian Road (Quispisisa–Chavín),pilgrimage,C,The oldest ways,the-oldest-ways,c.900–200 BC,False,1,8,land,1119
+AW-362,The Watson Brake Road (Watson Brake–Poverty Point),pilgrimage,C,The oldest ways,the-oldest-ways,**Watson Brake 3500 BC** — nineteen centuries before Poverty Point,False,1,3,land,905
+AW-363,The Green Obsidian Road (Pachuca–Teotihuacan–Kaminaljuyú),trade,C,The oldest ways,the-oldest-ways,"Teotihuacan, c.100–550 AD",False,1,10,land,972
+AW-364,The Tiwanaku Caravan Road (Alca–Chivay–Tiwanaku),caravan,C,The oldest ways,the-oldest-ways,obsidian from c.3000 BC; Tiwanaku c.500–1000 AD,False,1,9,land,1218
+AW-365,The Baetis (Corduba–Sanlúcar),trade,B,Iberia — the great rivers,iberia-rivers,Tartessian metal trade from c. 1000 BC; the Roman oil road at industrial scale 1st–3rd c. AD,False,1,13,river,1491
+AW-366,The Ebro (Logroño–the delta),trade,B,Iberia — the great rivers,iberia-rivers,"Iberian, then Roman from the 2nd c. BC; rafts and barges working into the 20th c.",False,1,13,river,1471
+AW-367,Camino Primitivo (Oviedo–Lugo–Melide),pilgrimage,B,Camino de Santiago network,camino,"from c. 814, when Alfonso II walked it; the busiest road to Santiago until the 11th c.",False,1,13,land,1496
+AW-368,Camino Inglés (Ferrol & A Coruña–Santiago),pilgrimage,A,Camino de Santiago network,camino,12th–16th c.; heaviest before the Reformation closed the English traffic,False,2,14,land,1229
+AW-369,"Via Nova — Via XVIII, the Geira (Bracara Augusta–Asturica Augusta)",trade,B,Roman viae,roman-viae,built AD 79–80 under Vespasian and Titus; restored under Maximinus Thrax,False,1,15,land,1800
+AW-370,Cañada Real Conquense (Sierra Morena–the Montes Universales),drover,B,Drove roads & transhumance,drover-transhumance,under the Mesta from 1273; still walked twice a year,False,2,27,land,2472
+AW-371,The Douro (Barca de Alva–Porto),trade,B,Iberia — the great rivers,iberia-rivers,the wine trade from the 17th c.; demarcated 1756; rabelos worked it until the dams of the 1960s–70s,False,1,10,river,1562
+AW-372,Camino Lebaniego (San Vicente de la Barquera–Santo Toribio),pilgrimage,A,Camino de Santiago network,camino,relics arrive 8th c. fleeing al-Andalus; jubilee privilege granted 1512; walked continuously,False,1,12,land,1503
+AW-373,Camino Vasco del Interior (Irún–Santo Domingo de la Calzada),pilgrimage,A,Camino de Santiago network,camino,"pre-Roman pass, Jacobean from the 11th c.; grew after Alfonso VIII took Gipuzkoa c. 1200",False,1,25,land,1794
+AW-374,Camino de San Salvador (León–Oviedo),pilgrimage,B,Camino de Santiago network,camino,"9th c. onward, once Alfonso II's relic collection made Oviedo a destination in its own right",False,1,12,land,1171
+AW-375,Camino de Fisterra-Muxía (Santiago–the end of the land),pilgrimage,B,Camino de Santiago network,camino,pre-Christian sun-cult ground; Jacobean epilogue attested from the 12th c.,False,2,16,land,1386
+AW-376,El Camino de Sevilla al Rocío (the Romería),pilgrimage,B,Iberian devotional roads,iberia-devotional,"shrine attested from the 15th c.; the brotherhood road walked annually, now by roughly a million",False,1,14,land,1596
+AW-377,Camino de la Cruz (Orihuela–Caravaca de la Cruz),pilgrimage,B,Iberian devotional roads,iberia-devotional,the Vera Cruz relic attested at Caravaca from 1231; jubilee granted in perpetuity 1998,False,1,9,land,1632
+AW-378,Camino de Guadalupe (Toledo–the Real Monasterio),pilgrimage,C,Iberian devotional roads,iberia-devotional,"image venerated from 1340; royal patronage under Alfonso XI after Salado, 1340",False,1,3,land,1394
+AW-379,Camino Sanabrés (Granja de Moreruela–Santiago),pilgrimage,B,Camino de Santiago network,camino,Mozarabic monastic foundations from the 10th c.; the Cistercians arrive 1143,False,1,19,land,1842
+AW-380,Camino de Invierno (Ponferrada–Silleda),pilgrimage,B,Camino de Santiago network,camino,"medieval; the winter alternative to O Cebreiro, and probably older than the pass road",False,1,12,land,1376
+AW-381,Camino Mozárabe (Almería & Málaga–Córdoba–Mérida),pilgrimage,B,Camino de Santiago network,camino,"from the 9th–10th c., walked by Christians living under Muslim rule; revived in the 20th c.",False,2,27,land,2039
+AW-382,Camí de Sant Jaume (Montserrat–Lleida–Logroño),pilgrimage,B,Camino de Santiago network,camino,medieval; Montserrat's Black Madonna venerated from the 12th c.,False,1,12,land,1042
+AW-383,Camino de Levante (Valencia–Toledo–Zamora),pilgrimage,C,Camino de Santiago network,camino,medieval; the road from the Mediterranean kingdoms to the Vía de la Plata,False,1,12,land,1149
+AW-384,Ruta de la Lana (Alicante–Cuenca–Burgos),pilgrimage,C,Camino de Santiago network,camino,the wool trade from the 13th c. under the Mesta; Jacobean use attested from 1624,False,1,13,land,1593
+AW-385,Camino Baztanés (Bayonne–Pamplona),pilgrimage,B,Camino de Santiago network,camino,medieval; the low-pass alternative to Roncesvalles,False,1,10,land,1008
+AW-386,Camino Ignaciano (Loyola–Manresa),pilgrimage,C,Iberian devotional roads,iberia-devotional,"walked once, by one man, in 1522; retraced as a route from 2012",False,1,11,land,1403
+AW-387,Ruta Teresiana — de la cuna al sepulcro (Ávila–Alba de Tormes),pilgrimage,B,Iberian devotional roads,iberia-devotional,the ground Teresa of Ávila covered 1515–1582; waymarked as a route in the modern era,False,2,26,land,1551
+AW-388,Vía de Bayona (Estavillo–Burgos),pilgrimage,B,Camino de Santiago network,camino,medieval; the Castilian arm of the Bayonne road,False,1,7,land,1270
+AW-389,Camino del Sureste (Alicante–Albacete),pilgrimage,C,Camino de Santiago network,camino,medieval; the southeastern feeder to the Levante road,False,1,7,land,1334
+AW-390,Camino Olvidado (Bilbao–Villafranca del Bierzo),pilgrimage,B,Camino de Santiago network,camino,"9th–13th c., heavily used; abandoned as the Reconquista moved south; recovered from 1993",False,1,26,land,1935
+AW-391,Ruta Vadiniense (Santo Toribio de Liébana–Mansilla de las Mulas),pilgrimage,B,Camino de Santiago network,camino,medieval; the way on from Liébana once the Lignum Crucis had been venerated,False,1,11,land,1445
+AW-392,Camino de San Juan de la Cruz (Beas de Segura–Caravaca),pilgrimage,C,Iberian devotional roads,iberia-devotional,the ground John of the Cross worked from 1578; established as a route by the Discalced Carmelites,False,1,5,land,1129
+AW-393,Camino de la Vera Cruz (Vélez Blanco–Caravaca),pilgrimage,C,Iberian devotional roads,iberia-devotional,historic approach from the Almerían altiplano; the Vera Cruz venerated at Caravaca from 1231,False,1,5,land,1146
+AW-394,Ruta do Mar de Arousa e Río Ulla (the Traslatio),pilgrimage,C,Camino de Santiago network,camino,the Traslatio placed by tradition in AD 44; sailed as a pilgrimage since 1965,False,2,8,river|sea,1919
+AW-395,Variante Espiritual (Pontevedra–Armenteira–Vilanova de Arousa),pilgrimage,C,Camino de Santiago network,camino,the Armenteira house founded 1162; walked as the Padre Sarmiento route from 1745,False,1,6,land,1208
+AW-396,The Allegheny Path (Philadelphia–Paxtang),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a bridle path within a few years of Penn's arrival; wagon road by the Revolution,False,1,17,land,1763
+AW-397,The Frankstown Path (Harris's Ferry–Frankstown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the traders' favoured road west through the first half of the 18th c.,False,1,10,land,1322
+AW-398,The Bald Eagle Creek Path (Great Island–Frankstown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a warriors path linking the Six Nations country to Virginia and the Carolinas,False,1,9,land,1055
+AW-399,The Venango Path (Forks of the Ohio–Presque Isle),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; improved as a French military road 1753–58,False,1,9,land,1431
+AW-400,The Logstown Path (Logstown–Venango),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the preferred northern route BEFORE the forts were built at the Forks,False,1,5,land,1311
+AW-401,The Sheshequin Path (Otstonwakin–Sheshequin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Conrad Weiser's road to Onondaga through the 1730s and 1740s,False,1,9,land,3100
+AW-402,The Towanda Path — the Genesee Road (Muncy–Tioga),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; possibly a Susquehannock runners' road; a settlers' road by 1790,False,1,9,land,1533
+AW-403,The Wyalusing Path (Friedenshütten–Muncy),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Friedenshütten 1765–72,False,1,7,land,1286
+AW-404,The Mingo Path (Mingo Town–Kuskuskies),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Beaver valley road between the Ohio and the Kuskuskies towns,False,1,4,land,1109
+AW-405,The Mahoning Path (Kuskuskies–the Tuscarawas),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the eastern end of the Great Trail to Detroit,False,1,6,land,1155
+AW-406,The Kuskusky–Ohio Forks Path (Pittsburgh–New Castle),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; heavily used by traders and land agents in the 1750s,False,1,10,land,1174
+AW-407,The Kuskusky–Venango Path (New Castle–Harrisville),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; walked by George Washington in December 1753,False,1,7,land,1157
+AW-408,The Kuskusky–Kittanning Path (Kittanning–New Castle),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Delaware towns at both ends destroyed within a decade of each other,False,1,3,land,1057
+AW-409,The Kuskusky–Chartier's Town Path (Tarentum–New Castle),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Chartier's Town abandoned c. 1745; Post's crossing November 1758,False,1,5,land,1158
+AW-410,The Kuskusky–Cussewago Path (Meadville–New Castle),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; walked by Robert R. Roberts in 1796,False,1,9,land,1124
+AW-411,The Presque Isle Portage (Lake Erie–French Creek),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; cut into a French military road in 1753,False,1,2,land,1220
+AW-412,The Chautauqua Portage (Lake Erie–the Allegheny),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Céloron 1749; French military use 1754–58,False,2,6,land|river,1117
+AW-413,The Allegheny Big Portage Path (Canoe Place–Canoe Place),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,4,land,1588
+AW-414,The Cherry Tree Portage (Canoe Place–Diamondville),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the tree a survey corner of the 1768 Purchase,False,1,5,land,1504
+AW-415,The Great Bend Portage (Lanesboro–Stockport),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; mapped as 'Portage 19ms' in 1793–94,False,1,5,land,1154
+AW-416,The Venango–Chinklacamoose Path (Clearfield–Franklin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a branch of the Great Shamokin Path,False,1,11,land,1363
+AW-417,The Venango–Conewango Path (Franklin–Warren),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; described by General William Irvine in 1785,False,1,5,land,1182
+AW-418,The Venango–Kittanning Path (Kittanning–Bullocks Ford),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; Brodhead's expedition against the Seneca, 1779",False,1,3,land,1267
+AW-419,The Punxsutawney–Venango Path (Punxsutawney–Fish Basket),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,5,land,2076
+AW-420,The Cornplanter–Venango Path (Warren–Franklin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the grant to Cornplanter 1791; the town drowned by the Kinzua Dam 1965,False,1,7,land,1417
+AW-421,The Pechoquealin Path (the Delaware Water Gap–Wyoming),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; carried Delaware families west after the Walking Purchase of 1737,False,1,5,land,1378
+AW-422,The Wechquetank Path (Bethlehem–Wyoming),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the mission at Wechquetank 1760–63; the path walked by the Moravians in 1765,False,1,8,land,1141
+AW-423,The Wapwallopen Path (Wapwallopen–Wyoming),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,4,land,1853
+AW-424,The Lackawanna Path (Wyoming–Oquaga),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; Oquaga a major Iroquois town until Sullivan's expedition, 1779",False,1,8,land,1326
+AW-425,The Lehigh Path (the Forks of the Delaware–Wyoming),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Moravian road from Bethlehem to the mission towns,False,1,6,land,1385
+AW-426,Logan's Path (McElhattan–Lewistown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; John Logan in the Kishacoquillas Valley from about 1765,False,1,9,land,1472
+AW-427,The Raystown–Chinklacamoose Path (Bedford–Clearfield),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; reconnoitred, or not, in June 1758",False,1,4,land,1753
+AW-428,The Frankstown–Burnt Cabins Path (Burnt Cabins–Frankstown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the cabins burned by the province in 1750,False,1,11,land,1781
+AW-429,The Frankstown–Venango Path (Cherry Tree–Franklin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,6,land,1249
+AW-430,The Standing Stone–Fort Littleton Path (Huntingdon–Fort Littleton),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Fort Littleton built 1755,False,1,2,land,1789
+AW-431,The Loyalhanna–Goschgoschink Path (Ligonier–West Hickory),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; Goschgoschink a Munsee town, Moravian mission 1768–70",False,1,2,land,3008
+AW-432,The Catawba Path (Ichsua–Morgantown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; the Iroquois–Catawba war road, in use until the peace of 1751",False,1,22,land,2125
+AW-433,The Catfish Path (Waynesburg–the Forks of the Ohio),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Catfish's camp established at Washington by 1769 or earlier,False,1,8,land,1641
+AW-434,The Catawissa Path (Catawissa–Shamokin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a short cut from the Wyoming Valley to the Forks of the Susquehanna,False,1,7,land,1513
+AW-435,The Brokenstraw Path (Buckaloons–Fort Le Boeuf),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,6,land,1457
+AW-436,The Blue Rock Path (Phoenixville–the Blue Rock ford),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the principal Susquehanna crossing before Wright's Ferry,False,1,8,land,1275
+AW-437,Camino de la Vera Cruz — the Templar road (Puente la Reina–Caravaca),pilgrimage,C,Iberian devotional roads,iberia-devotional,the Templar commanderies dissolved 1312; Jaime II's route of 1296–1301; recovered from the 1990s,False,1,43,land,1615
+AW-438,Camino del Campo de Cartagena (Cartagena–Caravaca),pilgrimage,C,Iberian devotional roads,iberia-devotional,modern waymarking on old inland tracks from the Mediterranean ports,False,1,5,land,1190
+AW-439,Camino Espiritual del Sur (Guadix–Caravaca),pilgrimage,C,Iberian devotional roads,iberia-devotional,modern; on the old Altiplano tracks between Granada and Murcia,False,1,5,land,1637
+AW-440,Camino de Uclés (Madrid–Uclés),pilgrimage,B,Iberian devotional roads,iberia-devotional,Uclés head of the Order of Santiago from 1174; the road waymarked in the modern era,False,1,10,land,1354
+AW-441,Calzada de los Blendios — the Besaya road (Suances–Herrera de Pisuerga),trade,B,Roman viae,roman-viae,"Roman, from the Cantabrian Wars of 29–19 BC; a Jacobean feeder in the medieval period",False,1,7,land,1115
+AW-442,Caminho Português Interior (Viseu–Ourense),pilgrimage,C,Camino de Santiago network,camino,"medieval; the inland Portuguese road, older than the coastal traffic",False,1,9,land,1302
+AW-443,Camino del Altiplano (Yecla–Jumilla),pilgrimage,C,Iberian devotional roads,iberia-devotional,modern waymarking on the Murcian altiplano tracks,False,1,2,land,1113
+AW-444,Camino del Bajo Guadalentín (Mazarrón–Totana),pilgrimage,C,Iberian devotional roads,iberia-devotional,modern waymarking; the Guadalentín corridor in use since antiquity,False,1,2,land,838
+AW-445,Camino del Alto Guadalentín (Águilas–Totana),pilgrimage,C,Iberian devotional roads,iberia-devotional,modern waymarking; Lorca a frontier city of the Reconquista,False,1,3,land,1104
+AW-446,The Delaware River Path — the Minsi Path (Philadelphia–Fort Hunter),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Mohawk war road to the southeastern seaboard,False,1,12,land,2584
+AW-447,The Glades Path (Raystown–Catfish),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; opened as the Glades Road in 1772,False,1,10,land,1167
+AW-448,The Conoy Path (Conoy Town–Carlisle),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the Conoy at Conoy Town c. 1718–1743; Bezaillon's grant 1719,False,1,6,land,1156
+AW-449,The Conemaugh Path (Raystown–Conemaugh),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Conemaugh a Delaware town on the Stony Creek junction,False,1,6,land,982
+AW-450,Cornplanter's Path (Jenuchshadego–Conewango),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,18th c.; the Seneca grant of 1791; the town drowned 1965,False,1,5,land,1917
+AW-451,The Old Iroquois Trail (Canajoharie–Onondaga),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,the great trail of the 17th century; superseded by the Rome line in the 18th,False,1,7,land,1773
+AW-452,The Indian Ladder Road (Schoharie–Albany),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,pre-contact; the escarpment climb still named for its notched-log ladder,False,1,5,land,1887
+AW-453,The Susquehanna Trail (Tioga Point–Canajoharie),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,pre-contact; a principal Iroquois thoroughfare in the later wars,False,1,6,land,1933
+AW-454,The Catskill Trail (Middleburgh–the Hudson),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,pre-contact; a Mahican–Iroquois contact route to the Hudson,False,1,3,land,1565
+AW-455,The Lake Ridge Trail (Oswego–the Genesee),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,pre-contact; the Ontario shore road,False,1,6,land,1072
+AW-456,"Van Curler's Road (Albany–Oneida, 1634)",indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,walked December 1634 – January 1635; the earliest traceable route west from Albany,False,1,17,land,1567
+AW-457,The Oswego Water Road (the Oneida Carry–Lake Ontario),trade,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,"pre-contact; the fur artery, fortified by both empires from the 1720s",False,2,8,land|river,1365
+AW-458,The Carrying Place Path (Oneida–the Oneida Carry),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,on Romer's map of 1700; became a thoroughfare once Oswego was a trading post,False,1,3,land,1277
+AW-459,The Onondaga Branch Trails (Pompey–Onondaga Lake and Chittenango),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,Onondaga at Pompey c. 1677–1700; the town moved east of Onondaga creek soon after,False,2,4,land,1381
+AW-460,The Kanestio Trail (Kanestio–Ganuskago),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,on Guy Johnson's map of 1771; Kanestio destroyed 1764,False,1,2,land,1624
+AW-461,The Turkeyfoot Path (Wills Creek–Turkeyfoot),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Turkeyfoot Road opened on it in 1751,False,1,4,land,1112
+AW-462,The Tuscarora Path (Path Valley–Shamokin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"the Tuscarora migration north, c. 1713–1722",False,1,4,land,1239
+AW-463,The Virginia Road (Paxtang–Winchester),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"the EARLIEST of the four Iroquois highways south; east of the Allegheny, displaced westward from the 1730s",False,1,8,land,1810
+AW-464,The Penns Creek Path — Karondinhah (Sunbury–Frankstown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the THIRD of the four southern highways; in use as the earlier two were closed off,False,1,10,land,1374
+AW-465,The Sinnemahoning Path (Great Island–Port Allegany),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact, and possibly the oldest road in the Pennsylvania set",False,1,6,land,1382
+AW-466,The Pine Creek Path (Jersey Shore–Genesee),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,8,land,1175
+AW-467,The Great Island Path (Shamokin–Great Island),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Shikellamy at his town on the West Branch from the 1720s,False,1,7,land,1269
+AW-468,Old Peter's Road (Downingtown–Conoy Town),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"Bezaillon's pack trail; his grant at Conoy Town 1719, the rival road cut 1737",False,2,8,land,1315
+AW-469,The Lenni Lenape Path — the Old York Road (Philadelphia–New Hope),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a laid-out road from 1711,False,1,7,land,1024
+AW-470,The Minsi Path (Philadelphia–Kingston),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Munsee on the upper Delaware until the Walking Purchase and after,False,1,17,land,2342
+AW-471,The Lake Shore Path (Sandusky–Buffalo),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the south-shore road of Lake Erie,False,1,8,land,1794
+AW-472,The Conneaut Path (Conneaut–Cussewago),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; crossed by the state boundary survey of 1786,False,1,5,land,1010
+AW-473,The Cayahaga Path (Venango–the Salt Spring),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the eastern approach to the Great Trail,False,1,3,land,1754
+AW-474,The Nanticoke Path (Calvert–Nanticoke),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"the Nanticoke at Nanticoke, Pa., for five years in the 1740s",False,2,13,land,2399
+AW-475,The Nescopeck Path (the Forks of the Delaware–Nescopeck),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Gnadenhütten 1746–55; a refugee road again after 1778,False,1,5,land,965
+AW-476,The Tunkhannock Path (Tunkhannock–Great Bend),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Ingaren at the Great Bend,False,1,5,land,3021
+AW-477,The Redstone Path (the Half King's Rock–Redstone Old Fort),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; Gist's plantation from 1753, the Half King there in 1754",False,1,3,land,1044
+AW-478,The Sewickley Old Town Path (West Newton–New Kensington),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the Sewickley Shawnee gone from both towns early in the 18th century,False,1,4,land,1124
+AW-479,The Kiskiminetas Path (Cherry Tree–Chartier's Landing),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Kiskiminetas Old Town abandoned before the surveys that name it,False,1,5,land,1803
+AW-480,The Pigeon Paths (Cornplanter's Town–the pigeon plateau),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"seasonal, annually, until the passenger pigeon was exterminated",False,2,8,land,1597
+AW-481,The Great Path (Pittsburgh–Tuscarawas),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; the trunk road west, to Detroit",False,1,10,land,1095
+AW-482,The Juniata Path — McKee's Path (Dalmatia–Jack's Narrows),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,McKee's upper trading post from the 1740s,False,1,6,land,1121
+AW-483,The Kishacoquillas Path (Bald Eagle's Nest–Lewistown),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,Kishacoquillas living at Lewistown by 1731; walked by Fithian in 1775,False,1,7,land,1054
+AW-484,The Loyalsock Path (Wyalusing–Montoursville),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,5,land,2463
+AW-485,The Chillisquaque Path (Northumberland–Comly),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; a road on Howell's map by 1792, a county line by 1822",False,1,3,land,1064
+AW-486,The Tioga Path (Trout Run–Painted Post),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,5,land,1208
+AW-487,The New Path (Letort's Spring–Aughwick),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,much used by traders after about 1749,False,1,5,land,1622
+AW-488,The Monocacy Path (Conejohela–Frederick),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the Susquehannock castle at Conejohela; the Conoy there in the 18th century,False,1,7,land,1154
+AW-489,The Warriors Branch (the Ohio–Brant Summit),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; a tributary of the Catawba Path,False,1,8,land,1310
+AW-490,St. Joseph's Path (Powell–Sheshequin),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"walked by Spangenberg and Weiser on the way to Onondaga, 1745",False,1,4,land,1067
+AW-491,The Perkiomen Path (Philadelphia–Reading),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; surviving as Ridge Avenue and the Ridge Pike,False,1,8,land,1593
+AW-492,The Ichsua Path (Port Allegany–Olean),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; on the Adlum-Wallis map of 1793 or '94,False,1,5,land,1540
+AW-493,The Horseheads Path (Grover–Horseheads),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; Kanawohalla destroyed by Sullivan's army, 1779",False,1,6,land,1464
+AW-494,Sullivan's Road (Easton–Kanawohalla),military,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,cut in 1779 for the invasion of the Iroquois country,False,1,8,land,1309
+AW-495,The Okehocking Path (Pawling Ford–Gradyville),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the Okehocking reservation set apart by William Penn in 1701,False,1,5,land,1146
+AW-496,The Oley Path (Bethlehem–Reading),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Moravian road from Bethlehem into the Oley cove,False,1,6,land,1921
+AW-499,The Oswayo Path (Genesee–Shinglehouse),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,6,land,2499
+AW-500,The Conestoga Portage (Conestoga Creek–French Creek),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the Susquehannock at Conestoga until 1763,False,1,2,land,1549
+AW-501,The Conococheague Portage (the Conodoguinet–the Conococheague),trade,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; named on a Maryland map of 1721,False,1,3,land,1619
+AW-502,The Oswegatchie Trail (Oneida Castle–Ogdensburg),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,"on Sauthier's map of 1779, made by order of Governor Tryon",False,1,4,land,1202
+AW-503,The Honeoye Trail (Canandaigua–Chenussio),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,on Guy Johnson's map of 1771,False,1,3,land,1142
+AW-504,The Canawagus Trail (Canandaigua–Irondequoit Bay),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,on Guy Johnson's map of 1771,False,1,3,land,1164
+AW-505,"Warriors Path: Through Bloody Run (Huntingdon–Oldtown, Md.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested colonial period; Wallace dates the name's spread to after white settlers displaced the Iroquois' eastern route,False,1,9,land,1738
+AW-506,"Warriors Path: Through Manns Choice (Frankstown–Cresaptown, Md.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested colonial period,False,1,14,land,1637
+AW-507,"Warriors Path: Through Raystown (the Fork–Cumberland, Md.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested colonial period,False,1,6,land,1549
+AW-508,The Allegheny Little Portage Path (Costello–Port Allegany),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; heavily used by settlers into the early 20th century,False,1,3,land,1509
+AW-509,Bald Eagle's Path (Milesburg–Clearfield),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; named for the Munsee Delaware chief Bald Eagle, who lived on Bald Eagle Creek",False,1,5,land,1986
+AW-510,The Bottom Path (Winfield–Sunbury),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,documented by a 1769 New Purchase survey warrant,False,1,3,land,1242
+AW-511,"The Cattaraugus Path (Buffalo, N.Y.–Salamanca, N.Y.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; possibly used by Étienne Brulé in 1615,False,1,4,land,1263
+AW-512,"The Conestoga–Newport Path (Washington Boro, Pa.–Newport, Del.)",indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the OCR of this entry's place names is degraded and several are uncertain,False,1,7,land,1047
+AW-513,The Conewago Path (Manada Gap–Conewago Creek),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; Derry Presbyterian Church organized 1724 on the path's own spring,False,1,3,land,747
+AW-514,The Fort Hill Path (Fort Hill–Winding Ridge),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,Fort Hill's Monongahela-culture settlement dated c. 1275-1300 by a 1939-40 WPA excavation,False,1,3,land,1148
+AW-515,"Wallace's Forbidden Path, Southern Branch (Athens–Olean)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"pre-contact; David Zeisberger first recorded white passage, 1767",False,1,16,land,1715
+AW-516,The French Creek Path (Conestoga–Phoenixville),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,colonial period; one of the earliest court-laid roads in Lancaster County,False,1,6,land,1162
+AW-517,"The Georgetown Road (Nichols Gap–Burnt Cabins, via Cowan Gap)",indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"1722 (Cartledge's Old Road) onward; packers' trade, believed based on Indian trails",False,1,5,land,1068
+AW-518,The Goschgoschink Path (West Hickory–Luthersburg),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; name recorded by German Moravian missionaries,False,1,8,land,1310
+AW-519,Wallace's Great Minquas Path (Fort Manayunk–Washington Boro),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-1675 (Susquehannock destruction); named by the Dutch for the Minquas,False,1,11,land,1445
+AW-520,Wallace's Great Warriors Path (Athens–Sunbury),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact; the designated road for Iroquois ambassadors travelling south,False,1,8,land,1383
+AW-521,"The Hays Mill Path (Somerset–Cumberland, Md.)",indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"packers' path, said to have been Indian-based; documented in warrantee surveys",False,1,5,land,967
+AW-522,The Kersey Road (near Luthersburg–Elk Creek),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"road laid out c. 1812, said to have followed an Indian path",False,1,3,land,600
+AW-523,The Lackawaxen Path (Indian Orchard–Lackawaxen),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,documented in 1781 and 1784 warrantee surveys,False,1,2,land,1265
+AW-524,The Loyalhanna Path (Ligonier–Vandergrift),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"walked by Christian Frederick Post on his second journey to the Allegheny, 1758",False,1,4,land,831
+AW-525,The Mahanoy Path (Lewistown–Selinsgrove),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested as both a 'Warriors Path' and 'Trading Path' in Land Office records,False,1,3,land,631
+AW-526,The Masthope Path (Indian Orchard–Masthope),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,documented in an 1775 warrantee survey,False,1,2,land,603
+AW-527,The Maxatawny Path (Easton–Reading),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the white man's road on this line ordered built 1754,False,1,4,land,766
+AW-528,The Minisink Path (Minisink Island–Wilkes-Barre),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,5,land,1339
+AW-529,The Morrison Cove Path (near King–Martinsburg),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"local tradition, reported to Wallace on US 220 near the Bedford/Blair line",False,1,3,land,562
+AW-530,The Muncy-Mahoning Path (Muncy–Danville),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,3,land,507
+AW-531,"The New Castle Path (New Castle, Del.–Peach Bottom)",indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,James Logan travelled it 1705; also called the Susquehanna Path,False,1,2,land,610
+AW-532,The Nippenose Paths (West Branch–Nippenose Valley),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,named for an Indian recorded at Shamokin in 1760-61,False,1,3,land,731
+AW-533,The Oil Creek Path (Waterford–Oil City),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"contested — possibly a white man's road of 1797, not an Indian path at all",False,1,2,land,1175
+AW-534,"The Old Swedes Path (Philadelphia–New Castle, Del.)",indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,the King's Road based on it existed before 1681,False,1,4,land,911
+AW-535,The Paxtang Path (Washington Boro–Sunbury),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested by Nicholas Scull's 1759 map and Cammerhof's 1748 winter journey,False,1,10,land,1189
+AW-536,The Peach Bottom Path (Hayesville–Peach Bottom),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,an offshoot of the Nanticoke Path,False,1,3,land,581
+AW-537,The Perkiomen–Lehigh Path (Oaks–Vera Cruz),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,tradition; Vera Cruz jasper quarries used since prehistory,False,1,3,land,687
+AW-538,The Pohopoco Path (Weissport–Shawnee on Delaware),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,still called an 'Indian Path' in surveys as late as 1785,False,1,4,land,902
+AW-539,The Point Pleasant Path (Schwenksville–Point Pleasant),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,Parson's Ferry patented 1740,False,1,3,land,1070
+AW-540,The Red Hole Path (upper Swatara Creek–West Branch Schuylkill),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,much used as a rendezvous and hideout during the French and Indian War,False,1,3,land,789
+AW-541,The Salt Lick Path (Ligonier–Hunkers),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"documented in the Papers of Henry Bouquet, August 1758",False,1,4,land,633
+AW-542,The Standing Stone Path (Huntingdon–Milesburg),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,attested by William Scull's 1770 map and a 1770 warrantee survey,False,1,4,land,976
+AW-543,"The Susquehanna Path (Harrisburg–Sunbury, west shore)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"documented on Capt. Joseph Shippen's 1756 map, used by Col. Clapham's regiment",False,1,5,land,1074
+AW-544,The Three Springs Path (Shirleysburg–Bedford),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,pre-contact,False,1,4,land,485
+AW-545,The Tory Path (Allemaengel–Catawissa),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,a Revolutionary War-era Tory haven at its western end,False,1,3,land,906
+AW-546,The Walnut Bottom Path (Carlisle–Shippensburg),indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"documented in an early Blunston license, 1734",False,1,3,land,785
+AW-547,"The Warm Spring Path (Mercersburg–Berkeley Springs, W.Va.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,"a traditional site of intertribal conferences, north and south",False,1,4,land,1064
+AW-548,The Warriors Mark Path (Warriors Mark–Clearfield),indigenous,C,Indian paths of Pennsylvania (Wallace),pa-indian-paths,referenced in Samuel Wallis's 1798 survey notes,False,1,3,land,1190
+AW-549,"The Wysaukin Path (Wysox–Owego, N.Y.)",indigenous,B,Indian paths of Pennsylvania (Wallace),pa-indian-paths,Moravian missionaries camped and named the site 1750,False,1,3,land,897
+AW-550,The Owego–Onondaga Trail (Owego–Onondaga at Pompey),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,18th c.; three named embassies attested 1737-1753,False,1,10,land,4528
+AW-551,The Cold Spring Creek Trail (Allegany Reservation–New Albion),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,carried War of 1812 dispatches,False,1,3,land,1041
+AW-552,The Oneida–Chittenango–Onondaga Trail,indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,"a 'recent' trail per Beauchamp's own dating, i.e. post-dating the earliest network",False,1,3,land,952
+AW-553,The Oneida–Hamilton–Chenango Canoe Trail,indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,"a well-defined trail, per Beauchamp",False,1,3,land,668
+AW-554,The Canandaigua Branch (Canandaigua Lake–Irondequoit Bay),indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,recorded by George H. Harris,False,1,2,land,1144
+AW-555,The Esopus–Neversink Trail (Saugerties–Port Jervis),indigenous,C,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,per Jeptha R. Simms's Schoharie County research; Beauchamp flags most such trails as modern,False,1,4,land,870
+AW-556,"Cammerhoff's Cayuga Road (Tioga–Cayuga, via Cayuta Lake and Ithaca)",indigenous,B,Iroquois trails of New York (Beauchamp),ny-iroquois-trails,"1750, Bishop Cammerhoff's second embassy to Onondaga",False,1,6,land,3086
+AW-557,The Garlock's Dorf–Schenectady Path (Duanesburgh corridor),indigenous,B,Schoharie foot-paths (Simms),ny-iroquois-trails,used by the first Dutch settlers of Vrooman's Land,False,1,3,land,774
+AW-558,The Kneiskern's Dorf–Fort Hunter Path (Mohawk–Susquehanna corridor),indigenous,B,Schoharie foot-paths (Simms),ny-iroquois-trails,much traveled by natives moving between the Mohawk and Susquehanna valleys,False,1,4,land,626
+AW-559,The Kneiskern's Dorf–Canajoharie Path,indigenous,B,Schoharie foot-paths (Simms),ny-iroquois-trails,"in full use until after 1762, per Judge Brown",False,1,2,land,596
+AW-560,"The Wickquasgeck Trail (Manhattan, Battery–Inwood)",indigenous,B,Hudson Valley trails,hudson-valley-trails,first written record 1642 (de Vries); pre-dates Dutch settlement,False,1,3,land,1215
+AW-561,"The Bloomingdale Trail (Manhattan, 14th Street–116th Street)",indigenous,B,Hudson Valley trails,hudson-valley-trails,legislatively documented as pre-existing by 1703,False,1,2,land,1135
+AW-562,The Wiccoppe–Wappinger Trail (Kingsbridge–Fishkill Creek),indigenous,B,Hudson Valley trails,hudson-valley-trails,"formalized as the Albany Post Road, 1669–1703; the Native basis predates that",False,1,9,land,2971

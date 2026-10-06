@@ -2998,7 +2998,149 @@ if(!map) applyHash();
   loadTicker();
 })();
 
+/* ===== Ancient Ways layer (v6, 2026-10-06, Laurie) =================================================
+   The global ancient-routes dataset (data/layers/ways_layer*.json → site/data_ways.js), surfaced as a
+   checkbox grouped with Folklore. Lines coloured by class; water segments dashed; lower confidence
+   fainter. Every named node is a point, zoom-thinned (major stops always, the rest as you zoom in),
+   with labels at close zoom. Click a line or a node for the route's scholarship. ~2 MB, fetched on the
+   first tick only. Added once, beneath the POI pins (pins stay clickable on top); the base and day/night
+   switches only toggle layer visibility, never setStyle, so these persist. A global layer on a local
+   map: near Prophetstown it's nearly empty — zoom/pan out to see it. ================================ */
+(function(){
+  if(typeof maplibregl === 'undefined' || !map) return;
+  var story = document.getElementById('catsStory'); if(!story) return;
+  var CLASS_COLOR = {indigenous:'#c2185b', trade:'#b08d57', pilgrimage:'#6a4fb3',
+                     'post-road':'#2e7d32', caravan:'#e0821a', drover:'#5d7a2e', military:'#9c2b2b'};
+  var colorExpr = ['match', ['get','cls']];
+  Object.keys(CLASS_COLOR).forEach(function(k){ colorExpr.push(k, CLASS_COLOR[k]); });
+  colorExpr.push('#8a7a5c');                                   /* fallback */
+  var nodeColorExpr = ['match', ['get','cls']];
+  Object.keys(CLASS_COLOR).forEach(function(k){ nodeColorExpr.push(k, CLASS_COLOR[k]); });
+  nodeColorExpr.push('#8a7a5c');
+  var opacityExpr = ['match', ['get','conf'], 'A', 0.95, 'B', 0.7, 'C', 0.45, 0.7];
+  var WATER = ['river','sea','ferry','tidal'];
+  /* major node types shown at every zoom; the rest appear from zoom 8 */
+  var MAJOR = ['terminus','port','pass','caravanserai','wall-gate','oasis','shrine'];
+  var loaded=false, adding=false, added=false, on=false, popup=null;
+
+  function addLayers(){
+    if(added) return;
+    map.addSource('ways-lines', {type:'geojson', data:(window.WAYS&&window.WAYS.lines)||EMPTY_FC});
+    map.addSource('ways-nodes', {type:'geojson', data:(window.WAYS&&window.WAYS.nodes)||EMPTY_FC});
+    var before = map.getLayer('pins') ? 'pins' : undefined;   /* sit beneath the POI pins */
+    map.addLayer({id:'ways-line-water', type:'line', source:'ways-lines',
+      filter:['in',['get','kind'],['literal',WATER]],
+      layout:{'line-cap':'round','line-join':'round','visibility':'none'},
+      paint:{'line-color':colorExpr, 'line-opacity':opacityExpr,
+        'line-dasharray':[2,1.6],
+        'line-width':['interpolate',['linear'],['zoom'], 3,0.8, 7,1.6, 12,3]}}, before);
+    map.addLayer({id:'ways-line', type:'line', source:'ways-lines',
+      filter:['!',['in',['get','kind'],['literal',WATER]]],
+      layout:{'line-cap':'round','line-join':'round','visibility':'none'},
+      paint:{'line-color':colorExpr, 'line-opacity':opacityExpr,
+        'line-width':['interpolate',['linear'],['zoom'], 3,0.9, 7,1.8, 12,3.4]}}, before);
+    map.addLayer({id:'ways-line-hit', type:'line', source:'ways-lines',
+      layout:{'line-cap':'round','line-join':'round','visibility':'none'},
+      paint:{'line-color':'#000','line-opacity':0,'line-width':12}}, before);
+    map.addLayer({id:'ways-node', type:'circle', source:'ways-nodes',
+      filter:['any',['in',['get','t'],['literal',MAJOR]],['>=',['zoom'],8]],
+      layout:{visibility:'none'},
+      paint:{'circle-color':nodeColorExpr,'circle-opacity':0.9,
+        'circle-stroke-color':'#fff','circle-stroke-width':1,
+        'circle-radius':['interpolate',['linear'],['zoom'], 4,2.2, 8,3.5, 12,5.5]}}, before);
+    map.addLayer({id:'ways-node-label', type:'symbol', source:'ways-nodes',
+      minzoom:9,
+      layout:{visibility:'none','text-field':['get','nm'],
+        'text-font':['Open Sans Regular','Arial Unicode MS Regular'],
+        'text-size':['interpolate',['linear'],['zoom'], 9,9, 13,12],
+        'text-offset':[0,0.9],'text-anchor':'top','text-optional':true,'text-allow-overlap':false},
+      paint:{'text-color':'#2a2a3a','text-halo-color':'#fff','text-halo-width':1.3}}, before);
+    added=true;
+    /* some basemap glyph stacks lack the requested font; MapLibre falls back silently. */
+  }
+  function setVisible(v){
+    ['ways-line-water','ways-line','ways-line-hit','ways-node','ways-node-label'].forEach(function(id){
+      if(map.getLayer(id)) map.setLayoutProperty(id,'visibility', v?'visible':'none');
+    });
+  }
+  function enable(labelEl){
+    on=true;
+    if(loaded){ if(!added) addLayers(); setVisible(true); return; }
+    if(adding) return;
+    adding=true; if(labelEl) labelEl.classList.add('loading');
+    var s=document.createElement('script'); s.src='data_ways.js';
+    s.onload=function(){
+      loaded=true; adding=false; if(labelEl) labelEl.classList.remove('loading');
+      try{ addLayers(); if(on) setVisible(true); wireClicks(); }
+      catch(e){ console.warn('ways: layer add failed', e); }
+    };
+    s.onerror=function(){ adding=false; if(labelEl){ labelEl.classList.remove('loading'); labelEl.classList.add('failed'); }
+      console.warn('ways: data_ways.js failed to load'); };
+    document.head.appendChild(s);
+  }
+
+  var CLASS_LABEL = {indigenous:'Indigenous', trade:'Trade', pilgrimage:'Pilgrimage',
+    'post-road':'Post road', caravan:'Caravan', drover:'Drover', military:'Military'};
+  function routeHTML(rid){
+    var N=(window.WAYS&&window.WAYS.notes&&window.WAYS.notes[rid]); if(!N) return '';
+    var head='<div class="w-pop"><div class="w-eyebrow" style="color:'+(CLASS_COLOR[N.cls]||'#8a7a5c')+'">'
+      +esc((CLASS_LABEL[N.cls]||N.cls||'Way'))+' · tier '+esc(N.conf||'?')+'</div>'
+      +'<h3>'+esc(N.name||rid)+'</h3>';
+    var meta=[]; if(N.era) meta.push(esc(N.era)); if(N.group) meta.push(esc(N.group));
+    if(meta.length) head+='<div class="w-meta">'+meta.join(' · ')+'</div>';
+    if(N.sensitive) head+='<div class="w-sens">Location deliberately generalized.</div>';
+    var note=N.note?('<p class="w-note">'+esc(N.note)+'</p>'):'';
+    return head+note+'</div>';
+  }
+  var clicksWired=false;
+  function wireClicks(){
+    if(clicksWired) return; clicksWired=true;
+    function show(e, rid){
+      if(!rid) return;
+      if(popup) popup.remove();
+      popup=new maplibregl.Popup({maxWidth:'330px', className:'ways-popup'})
+        .setLngLat(e.lngLat).setHTML(routeHTML(rid)).addTo(map);
+    }
+    map.on('click','ways-line-hit', function(e){ if(e.features[0]) show(e, e.features[0].properties.rid); });
+    map.on('click','ways-node', function(e){
+      var f=e.features[0]; if(!f) return;
+      if(popup) popup.remove();
+      var extra='<div class="w-node">'+esc(f.properties.nm||'')+(f.properties.t?' · '+esc(f.properties.t):'')+'</div>';
+      popup=new maplibregl.Popup({maxWidth:'330px', className:'ways-popup'})
+        .setLngLat(f.geometry.coordinates.slice()).setHTML(extra+routeHTML(f.properties.rid)).addTo(map);
+    });
+    ['ways-line-hit','ways-node'].forEach(function(ly){
+      map.on('mouseenter',ly,function(){ map.getCanvas().style.cursor='pointer'; });
+      map.on('mouseleave',ly,function(){ map.getCanvas().style.cursor=''; });
+    });
+  }
+
+  var lb=document.createElement('label'); lb.className='catbox'; lb.id='waysBox';
+  lb.title='Ancient trade routes, pilgrim roads and Indigenous paths — a global layer; zoom out to see it. ~2 MB, loads when switched on.';
+  lb.innerHTML='<input type="checkbox"><span class="catmark" style="display:inline-block;width:14px;height:0;border-top:3px solid '
+    +CLASS_COLOR.indigenous+';vertical-align:middle;margin:0 6px 0 2px"></span><span class="catname">Ancient Ways</span>';
+  lb.querySelector('input').addEventListener('change', function(ev){
+    if(ev.target.checked){ enable(lb); } else { on=false; setVisible(false); if(popup) popup.remove(); }
+  });
+  story.appendChild(lb);
+})();
+
 </script>
+<style>
+.ways-popup .maplibregl-popup-content{background:var(--paper,#feffff); color:#1a1d2e; border-radius:10px;
+  padding:14px 16px; box-shadow:0 6px 26px rgba(0,0,32,.28); max-height:52vh; overflow-y:auto;}
+.ways-popup .w-eyebrow{font:600 11px/1.3 'Montserrat',sans-serif; letter-spacing:.08em; text-transform:uppercase;}
+.ways-popup h3{margin:3px 0 4px; font:600 17px/1.25 'Montserrat',sans-serif; color:#00004d;}
+.ways-popup .w-meta{font:400 12px/1.4 'Lato',sans-serif; color:#5a5f78; margin-bottom:6px;}
+.ways-popup .w-node{font:700 12px/1.3 'Montserrat',sans-serif; color:#00004d; margin-bottom:4px;}
+.ways-popup .w-sens{font:italic 11px/1.4 'Lato',sans-serif; color:#8a5a2a; margin-bottom:6px;}
+.ways-popup .w-note{font:400 13px/1.55 'Lato',sans-serif; color:#2a2d3e; margin:4px 0 0; white-space:pre-wrap;}
+.catbox.failed .catname{color:#b25b45; text-decoration:line-through;}
+html[data-theme="night"] .ways-popup .maplibregl-popup-content{background:#141a3a; color:#e9e2cf;}
+html[data-theme="night"] .ways-popup h3{color:#f4ecd8;}
+html[data-theme="night"] .ways-popup .w-note{color:#d8d2c0;}
+html[data-theme="night"] .ways-popup .w-meta{color:#a9b0dd;}
+</style>
 <script src="skyline.js"></script>
 </body>
 </html>

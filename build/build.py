@@ -1635,6 +1635,95 @@ def emit_phenology_expected():
     (SITE / "phenology_expected.js").write_text("window.PHENOLOGY_EXPECTED = " + json.dumps(out, ensure_ascii=False) + ";\n", encoding="utf-8")
     print(f"  Expected phenology: {len(out)} microseasons, {sum(len(s['items']) for r in out for s in r['sections'])} entries in sections → phenology_expected.js")
 
+
+# ---------------------------------------------------------------------------
+# Ancient Ways layer (v6, 2026-10-06, Laurie): data/layers/ways_layer*.json (the global ancient-routes
+# dataset carried over from the Ways project, schema v2 — polylines, NOT the POI point model) →
+# site/data_ways.js. Pre-builds two GeoJSON FeatureCollections (lines by segment, points for every NAMED
+# node) plus a per-route notes map for the click panel, so the browser just loads and draws. Antimeridian-
+# crossing segments are split (per the layer's own antimeridian_rule) so a Pacific route doesn't smear
+# across the whole map. Reached by the "Ancient Ways" checkbox grouped with Folklore; lines-only toggle,
+# fetched on first tick like the lazy POI layers. Sensitive routes keep the generalized coords they ship
+# with — this build never re-precises them. Empty/absent file → no data_ways.js, build still OK.
+# ---------------------------------------------------------------------------
+def emit_ways_layer():
+    layers = sorted((ROOT / "data" / "layers").glob("ways_layer*.json")) if (ROOT / "data" / "layers").exists() else []
+    if not layers:
+        return
+    src = layers[-1]
+    try:
+        data = json.loads(src.read_text(encoding="utf-8"))
+    except Exception as e:
+        warn(f"ways: could not parse {src.name}: {e}")
+        return
+    routes = data.get("routes", [])
+    if not routes:
+        warn(f"ways: {src.name} has no routes")
+        return
+    def rnd(v):
+        return round(float(v), 5)
+    def split_antimeridian(coords):
+        """Break a coordinate run wherever consecutive lons jump >180° so the line doesn't wrap the globe."""
+        if len(coords) < 2:
+            return [coords] if coords else []
+        runs, cur = [], [coords[0]]
+        for prev, nxt in zip(coords, coords[1:]):
+            if abs(nxt[0] - prev[0]) > 180:
+                runs.append(cur); cur = [nxt]
+            else:
+                cur.append(nxt)
+        runs.append(cur)
+        return [r for r in runs if len(r) >= 2]
+    lines, nodes = [], []
+    notes = {}
+    bad_coord = 0
+    for r in routes:
+        rid = r.get("id")
+        if not rid:
+            continue
+        cls = r.get("class", "")
+        conf = r.get("confidence", "")
+        nm = r.get("name", rid)
+        stops = []
+        for seg in r.get("segments", []):
+            kind = seg.get("kind", "land")
+            scon = seg.get("confidence") or conf
+            coords = []
+            for nd in seg.get("nodes", []):
+                try:
+                    lon, lat = rnd(nd["lon"]), rnd(nd["lat"])
+                except (KeyError, TypeError, ValueError):
+                    bad_coord += 1; continue
+                if not (-180 <= lon <= 180 and -90 <= lat <= 90):
+                    bad_coord += 1; continue
+                coords.append([lon, lat])
+                nt = nd.get("t", "")
+                nn = nd.get("n")
+                if nn and nt != "shaping":
+                    nodes.append({"type": "Feature",
+                                  "geometry": {"type": "Point", "coordinates": [lon, lat]},
+                                  "properties": {"rid": rid, "nm": nn, "t": nt, "cls": cls}})
+                    stops.append([nn, nt])
+            for run in split_antimeridian(coords):
+                lines.append({"type": "Feature",
+                              "geometry": {"type": "LineString", "coordinates": run},
+                              "properties": {"rid": rid, "nm": nm, "cls": cls, "conf": conf, "kind": kind, "scon": scon}})
+        notes[rid] = {"name": nm, "cls": cls, "conf": conf, "era": r.get("era", ""),
+                      "group": r.get("group", ""), "sensitive": bool(r.get("sensitive")),
+                      "note": r.get("note", ""), "stops": stops}
+    if bad_coord:
+        warn(f"ways: skipped {bad_coord} node(s) with missing/out-of-range coordinates")
+    payload = {
+        "version": (data.get("_meta", {}) or {}).get("version", ""),
+        "lines": {"type": "FeatureCollection", "features": lines},
+        "nodes": {"type": "FeatureCollection", "features": nodes},
+        "notes": notes,
+    }
+    js = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    (SITE / "data_ways.js").write_text("window.WAYS = " + js + ";\n", encoding="utf-8")
+    print(f"  Ancient Ways: {len(routes)} routes → {len(lines)} line feature(s), {len(nodes)} named node(s) → data_ways.js ({len(js)//1024} KB)")
+
+
 def main() -> int:
     manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
     load_preview_cache()
@@ -1742,6 +1831,7 @@ def main() -> int:
     emit_phenology_history()
     emit_phenology_expected()
     emit_water_layer()                     # v982 (Laurie): data/water/*.xlsx + geo → site/data_water.js (waterwip.html only)
+    emit_ways_layer()                      # v6 (2026-10-06, Laurie): data/layers/ways_layer*.json → site/data_ways.js (Ancient Ways toggle)
     if (ROOT / "images").exists():
         shutil.copytree(ROOT / "images", SITE / "images", dirs_exist_ok=True)
     if (ROOT / "fonts").exists():
