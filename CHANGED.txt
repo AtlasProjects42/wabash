@@ -1,7 +1,4 @@
 HANDOFF_README.md
-build/build.py
-data/layers/WAYS_brief_v169.md
-data/layers/WAYS_data_dictionary.md
-data/layers/ways_layer_v169-B169.json
-data/layers/ways_routes_index.csv
-index.template.html
+config/place.json
+signals.html
+signals.js

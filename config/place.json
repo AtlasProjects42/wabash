@@ -336,7 +336,18 @@
       "hp_switchover_f": -5,
       "seer": 15.0
     },
-    "base_f": 65
+    "base_f": 65,
+    "install": {
+      "_note": "Typical INSTALLED cost per system, editable in the page. Rough US ballparks (2025) — installs vary enormously by home, ducting, region and contractor ($6.5k–$33k for a heat pump), so treat as a starting point and get local quotes. No live source exists. incentive_hp subtracted from the heat-pump install: the federal 25C credit expired after 2025, so it defaults to 0 — set it to any current state/utility rebate.",
+      "hp_standard": 12000,
+      "hp_cold": 16000,
+      "gas": 4800,
+      "propane": 4800,
+      "oil": 6500,
+      "resistance": 2500,
+      "incentive_hp": 0,
+      "as_of": "2025 US ballpark — replace with local quotes"
+    }
   },
   "towns": {
     "_note": "Core towns get the gold highlight on the calendar and directory. Whole-word match against the parsed town / venue text. PLACEHOLDER list — confirm.",

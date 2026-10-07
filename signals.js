@@ -1576,7 +1576,7 @@ function fetchINat(){
 (function(){
   var host=document.getElementById('fuel-ui'); if(!host) return;
   var P=window.PLACE||{}, H=P.heating||{}, C=P.center||{lat:0,lng:0,short:'here'};
-  var PR=(H.prices||{}), EQ=(H.equipment||{}), BASE=H.base_f||65;
+  var PR=(H.prices||{}), EQ=(H.equipment||{}), BASE=H.base_f||65, INST=(H.install||{});
   var EIA_KEY=(P.keys&&P.keys.eia)||'', EIA_STATE=H.eia_state||'';
   // physics
   var KWH_PER_MMBTU=1e6/3412.14, THERMS_PER_MMBTU=10, GAL_PROPANE=1/0.091452, GAL_OIL=1/0.1385;
@@ -1617,22 +1617,25 @@ function fetchINat(){
     var type=(document.getElementById('f-hptype')||{}).value||EQ.hp_type||'cold';
     var sw=val('f-switch', EQ.hp_switchover_f);
     var scop=seasonalCOP(type, sw);
+    var incent=val('f-incent', INST.incentive_hp||0);
+    var hpInst=Math.max(0, val('f-inst-hp', (type==='cold'?INST.hp_cold:INST.hp_standard)||0) - incent);
     var rows=[
-      {key:'hp', label:(type==='cold'?'Cold-climate heat pump':'Air-source heat pump'), note:'seasonal COP '+scop.toFixed(2), cost:elec*KWH_PER_MMBTU/scop, kind:'elec'},
-      {key:'gas', label:'Natural gas furnace', note:(gA*100).toFixed(0)+'% AFUE', cost:gas*THERMS_PER_MMBTU/gA, kind:'gas'},
-      {key:'prop', label:'Propane furnace', note:(pA*100).toFixed(0)+'% AFUE', cost:prop*GAL_PROPANE/pA, kind:'prop'},
-      {key:'oil', label:'Fuel-oil furnace', note:(oA*100).toFixed(0)+'% AFUE', cost:oil*GAL_OIL/oA, kind:'oil'},
-      {key:'res', label:'Electric resistance', note:'baseboard / strip, COP 1', cost:elec*KWH_PER_MMBTU, kind:'elec'}
+      {key:'hp', label:(type==='cold'?'Cold-climate heat pump':'Air-source heat pump'), note:'seasonal COP '+scop.toFixed(2), cost:elec*KWH_PER_MMBTU/scop, kind:'elec', inst:hpInst},
+      {key:'gas', label:'Natural gas furnace', note:(gA*100).toFixed(0)+'% AFUE', cost:gas*THERMS_PER_MMBTU/gA, kind:'gas', inst:val('f-inst-gas',INST.gas||0)},
+      {key:'prop', label:'Propane furnace', note:(pA*100).toFixed(0)+'% AFUE', cost:prop*GAL_PROPANE/pA, kind:'prop', inst:val('f-inst-prop',INST.propane||0)},
+      {key:'oil', label:'Fuel-oil furnace', note:(oA*100).toFixed(0)+'% AFUE', cost:oil*GAL_OIL/oA, kind:'oil', inst:val('f-inst-oil',INST.oil||0)},
+      {key:'res', label:'Electric resistance', note:'baseboard / strip, COP 1', cost:elec*KWH_PER_MMBTU, kind:'elec', inst:val('f-inst-res',INST.resistance||0)}
     ];
     rows.sort(function(a,b){return a.cost-b.cost;});
-    return {rows:rows, scop:scop, elec:elec, gas:gas, gA:gA, prop:prop, pA:pA, oil:oil, oA:oA, type:type};
+    return {rows:rows, scop:scop, elec:elec, gas:gas, gA:gA, prop:prop, pA:pA, oil:oil, oA:oA, type:type, incent:incent};
   }
   var COLOR={hp:'#1b9e77',gas:'#d95f02',prop:'#7570b3',oil:'#8a5a2a',res:'#b25b45'};
 
   function render(){
     var F=fuels(); var max=Math.max.apply(null,F.rows.map(function(r){return r.cost;}))||1;
     var bars=F.rows.map(function(r){ var w=Math.max(2,Math.round(r.cost/max*100));
-      return '<div class="fuel-bar"><div class="fuel-lab">'+esc(r.label)+' <span class="fuel-sub">'+esc(r.note)+'</span></div>'
+      var inst=(r.inst>0)?(' · ~$'+Math.round(r.inst).toLocaleString()+' installed'):'';
+      return '<div class="fuel-bar"><div class="fuel-lab">'+esc(r.label)+' <span class="fuel-sub">'+esc(r.note)+inst+'</span></div>'
         +'<div class="fuel-track"><div class="fuel-fill" style="width:'+w+'%;background:'+COLOR[r.key]+'"></div>'
         +'<span class="fuel-amt">$'+r.cost.toFixed(0)+'<small>/MMBtu</small></span></div></div>'; }).join('');
     var cheapest=F.rows[0];
@@ -1647,21 +1650,33 @@ function fetchINat(){
     var cool='<div class="fuel-cool"><h3 class="sg-h3" style="margin-top:16px">Cooling</h3>'
       +'<p class="sg-det" style="margin:0">At SEER '+seer.toFixed(0)+' and $'+F.elec.toFixed(3)+'/kWh, removing one MMBtu of heat costs <b>$'+coolPerMM.toFixed(2)+'</b>. '
       +'A heat pump cools at this same efficiency, so switching to one changes your heating bill, not your cooling bill. '+esc(C.short)+' averages about <b>'+Math.round(CDD).toLocaleString()+' cooling degree-days</b> a year.</p></div>';
-    // optional seasonal estimate
-    var loadMM=val('f-load',NaN); var seasonal='';
+    // optional seasonal estimate + payback
+    var loadMM=val('f-load',NaN); var seasonal='', payback='';
     if(isFinite(loadMM)&&loadMM>0){
       seasonal='<div class="fuel-season"><h3 class="sg-h3" style="margin-top:16px">Your winter, estimated</h3><div class="fuel-slist">'
-        +F.rows.map(function(r){ return '<div class="fuel-srow"><span>'+esc(r.label)+'</span><b>$'+Math.round(r.cost*loadMM).toLocaleString()+'/yr</b></div>'; }).join('')
-        +'</div><p class="sg-det" style="margin:6px 0 0">For a '+loadMM+' MMBtu heating season (your number). This is the softest figure here — it rides entirely on that load estimate.</p></div>';
+        +F.rows.map(function(r){ return '<div class="fuel-srow"><span>'+esc(r.label)+(r.inst>0?' <span class="fuel-sub">~$'+Math.round(r.inst).toLocaleString()+' to install</span>':'')+'</span><b>$'+Math.round(r.cost*loadMM).toLocaleString()+'/yr</b></div>'; }).join('')
+        +'</div><p class="sg-det" style="margin:6px 0 0">Running cost for a '+loadMM+' MMBtu heating season (your number). The softest figure here — it rides on that load estimate.</p></div>';
+      // simple payback of the heat pump vs each other method
+      var hp=F.rows.filter(function(r){return r.key==='hp';})[0];
+      if(hp){ var lines=F.rows.filter(function(r){return r.key!=='hp';}).map(function(r){
+          var extra=hp.inst-r.inst, save=(r.cost-hp.cost)*loadMM;   // $/yr the HP saves vs r
+          var verdict;
+          if(save<=0) verdict='costs more to run than '+esc(r.label.toLowerCase())+' here — no payback';
+          else if(extra<=0) verdict='cheaper to install <em>and</em> run than '+esc(r.label.toLowerCase());
+          else { var yrs=extra/save; verdict='pays back its $'+Math.round(extra).toLocaleString()+' higher install vs '+esc(r.label.toLowerCase())+' in <b>'+(yrs<100?yrs.toFixed(1):'100+')+' yr</b>'; }
+          return '<div class="fuel-srow"><span>vs '+esc(r.label)+'</span><span>'+verdict+'</span></div>'; }).join('');
+        payback='<div class="fuel-pay"><h3 class="sg-h3" style="margin-top:16px">Switching to the heat pump</h3><div class="fuel-slist">'+lines
+          +'</div><p class="sg-det" style="margin:6px 0 0">Simple payback = extra install cost ÷ annual running-cost saving (no discounting, no fuel-price drift, no maintenance). Install figures are rough editable defaults, not quotes.</p></div>';
+      }
     }
     document.getElementById('fuel-results').innerHTML=
       '<div class="fuel-bars">'+bars+'</div>'
       +'<p class="sg-det fuel-head" style="margin:10px 0 0">Cheapest to run here: <b style="color:'+COLOR[cheapest.key]+'">'+esc(cheapest.label)+'</b> at $'+cheapest.cost.toFixed(0)+'/MMBtu delivered.</p>'
-      +be+cool+seasonal;
+      +be+cool+seasonal+payback;
     var live=(window.__FUEL_SRC||{});
     document.getElementById('fuel-note').innerHTML='<b>Method.</b> Cost of delivered heat = price &divide; energy content &divide; efficiency; energy contents are exact (1 kWh = 3,412 BTU; 1 therm = 100,000 BTU; propane 91,452 BTU/gal; #2 oil 138,500 BTU/gal). '
       +'Seasonal COP is energy-weighted over '+esc(C.short)+'’s daily mean temperatures ('+YEARS+'-year Open-Meteo ERA5 archive, base '+BASE+'°F, '+Math.round(HDD).toLocaleString()+' HDD/yr) against a '+(F.type==='cold'?'cold-climate':'standard')+' COP curve — a model, adjustable above. '
-      +'Prices: '+(live.elec?'electricity and natural gas from EIA ('+esc(EIA_STATE)+', '+esc(live.date||'latest')+')':'editable defaults ('+esc(PR.as_of||'')+')')+'; propane and fuel oil are editable defaults. Equipment efficiencies are yours to set. The ranking is exact for the prices and efficiencies shown; the COP curve and any seasonal-dollar figure are estimates.';
+      +'Prices: '+(live.elec?'electricity and natural gas from EIA ('+esc(EIA_STATE)+', '+esc(live.date||'latest')+')':'editable defaults ('+esc(PR.as_of||'')+')')+'; propane and fuel oil are editable defaults. Equipment efficiencies are yours to set. Installed costs are rough US ballparks ('+esc(INST.as_of||'')+'), editable — real installs vary widely by home and contractor, so get local quotes; there is no live source for them. The federal 25C heat-pump credit expired after 2025, so the rebate field defaults to $0. The running-cost ranking is exact for the prices and efficiencies shown; the COP curve, install costs and any seasonal-dollar or payback figure are estimates.';
   }
 
   function num(id,v,step,min,max){ return '<input id="'+id+'" type="number" value="'+v+'" step="'+step+'"'+(min!=null?' min="'+min+'"':'')+(max!=null?' max="'+max+'"':'')+' inputmode="decimal">'; }
@@ -1680,6 +1695,14 @@ function fetchINat(){
       +'<label>Central AC/HP <span>SEER</span>'+num('f-seer',EQ.seer,0.5,8)+'</label>'
       +'<label>Your heating load <span>MMBtu/yr (optional)</span>'+num('f-load','',1,0)+'</label>'
       +'</div>'
+      +'<details class="fuel-install"><summary>Installed costs &amp; incentives (editable &mdash; rough US ballparks, '+esc(INST.as_of||'')+')</summary><div class="fuel-grid">'
+      +'<label>Heat pump <span>$ installed</span>'+num('f-inst-hp',(EQ.hp_type==='standard'?INST.hp_standard:INST.hp_cold)||0,100,0)+'</label>'
+      +'<label>Heat-pump rebate <span>$ (25C expired after 2025)</span>'+num('f-incent',INST.incentive_hp||0,100,0)+'</label>'
+      +'<label>Gas furnace <span>$ installed</span>'+num('f-inst-gas',INST.gas||0,100,0)+'</label>'
+      +'<label>Propane furnace <span>$ installed</span>'+num('f-inst-prop',INST.propane||0,100,0)+'</label>'
+      +'<label>Fuel-oil furnace <span>$ installed</span>'+num('f-inst-oil',INST.oil||0,100,0)+'</label>'
+      +'<label>Electric resistance <span>$ installed</span>'+num('f-inst-res',INST.resistance||0,100,0)+'</label>'
+      +'</div></details>'
       +'<div id="fuel-results"></div>';
     host.querySelectorAll('input,select').forEach(function(el){ el.addEventListener('input', render); el.addEventListener('change', render); });
     render();

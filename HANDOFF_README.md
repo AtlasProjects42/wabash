@@ -6,6 +6,14 @@ The Hilltowns log this tree descends from is kept beside this file as `HILLTOWNS
 
 ---
 
+## Where things stand — v14 (2026-10-06)
+
+**Fuel calculator: install costs + payback added** (Laurie). Each fuel row now shows a typical installed cost; a collapsible "Installed costs & incentives" panel makes every figure editable; and with a heating load entered, a "Switching to the heat pump" table shows **simple payback** vs each other method (extra install ÷ annual running-cost saving) — correctly reporting "no payback" where the heat pump costs more to run (e.g. vs cheap gas) and N-year paybacks vs propane/oil/resistance.
+- Defaults in `place.json → heating.install` (editable, dated US ballparks: HP $12k standard / $16k cold, gas/propane $4.8k, oil $6.5k, resistance $2.5k). **Honesty notes baked in:** no live source exists for install costs (unlike EIA for fuel), so they're labelled rough estimates "get local quotes"; and the **federal 25C heat-pump credit expired after 2025**, so the rebate field defaults to $0 with a note to use current state/utility rebates. Grounded against EnergySage / Inch Calculator 2025 figures.
+- Method note updated to separate exact (running-cost ranking) from estimate (COP curve, install, payback).
+- Build OK; headless: install on all 5 bars, payback table computes, 0 page errors.
+- (SEER, for the record: Seasonal Energy Efficiency Ratio — cooling BTU per watt-hour over a season; the cooling analogue of COP. Explained to Laurie in chat, not needed on the page.)
+
 ## Where things stand — v13 (2026-10-06)
 
 **Full-range station re-pull (supersedes v11's 5).** Laurie re-ordered the NCEI data to full period of record. Converted all (43 stations across 8 files) with `ghcn_to_xmacis.py`; curated the registration in `place.json → weather.stations`:
@@ -192,6 +200,7 @@ Run the smoke harness: `NODE_PATH=<global node_modules> node scripts/smoke_harne
 
 ## Log
 
+- **v14 — 2026-10-06.** Fuel calculator gains editable install costs + heat-pump payback table; 25C-expired and no-live-source caveats baked in. BUILD OK, headless clean.
 - **v13 — 2026-10-06.** Full-range station re-pull: 16 registered (3 long active temp anchors + 2 historical temp + 11 precip), 27 short records archived. West Lafayette 6 NW now 1901→2026 active. BUILD OK.
 - **v12 — 2026-10-06.** Climate-event register: 1,080 Wabash-region NCEI Storm Events (1950–2026, no filter) → climate_events.xlsx via new scripts/storm_to_register.py → the 'On record' timeline. Verified headless, 0 errors.
 - **v11 — 2026-10-06.** 5 Lafayette weather stations converted (new scripts/ghcn_to_xmacis.py) + registered; station_dd.js live. Storm Events data staged (4,181 IN events) pending register-scope decision. BUILD OK.
