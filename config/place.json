@@ -47,7 +47,9 @@
     "inat_dist_km": 40,
     "inat_days": 14,
     "ebird_dist_km": 25,
-    "ebird_back_days": 14
+    "ebird_back_days": 14,
+    "birdcast_region": "US-IN-157",
+    "_birdcast_note": "BirdCast migration dashboard region = US-<STATE>-<eBird county code>; Tippecanoe County IN = US-IN-157. Change if the centre county changes."
   },
   "weather": {
     "open_meteo_point": {
@@ -55,7 +57,152 @@
       "lng": -86.8333
     },
     "_stations_note": "One entry per xmACIS2 Daily Data Listing CSV in data/stations/<slug>.csv. daily=true ships raw daily highs/lows for the year charts (continuous records only). coords only needed for closed stations with daily temps.",
-    "stations": [],
+    "stations": [
+      {
+        "slug": "west_lafayette_6_nw",
+        "name": "West Lafayette 6 NW (co-op) · Greater Lafayette",
+        "elev_ft": 708,
+        "active": true,
+        "daily": true,
+        "lat": 40.475,
+        "lng": -86.9919
+      },
+      {
+        "slug": "lafayette_purdue_university_airport",
+        "name": "Lafayette Purdue University Airport (ASOS) · Greater Lafayette",
+        "elev_ft": 596,
+        "active": true,
+        "daily": true,
+        "lat": 40.4124,
+        "lng": -86.9474
+      },
+      {
+        "slug": "lafayette_8_s",
+        "name": "Lafayette 8 S (co-op) · Greater Lafayette",
+        "elev_ft": 732,
+        "active": true,
+        "daily": true,
+        "lat": 40.2963,
+        "lng": -86.9027
+      },
+      {
+        "slug": "west_lafayette_sewage_plant",
+        "name": "West Lafayette SEwage Plant (co-op) · Greater Lafayette",
+        "elev_ft": 522,
+        "active": false,
+        "daily": true,
+        "lat": 40.4,
+        "lng": -86.8833
+      },
+      {
+        "slug": "west_lafayette_purdu",
+        "name": "West Lafayette Purdu (co-op) · Greater Lafayette",
+        "elev_ft": 620,
+        "active": false,
+        "daily": true,
+        "lat": 40.4167,
+        "lng": -86.9167
+      },
+      {
+        "slug": "w_lafayette_sew_plant",
+        "name": "W Lafayette SEw Plant (co-op) · Greater Lafayette",
+        "elev_ft": 531,
+        "active": true,
+        "daily": false,
+        "lat": 40.4169,
+        "lng": -86.9058
+      },
+      {
+        "slug": "otterbein_2_3_se",
+        "name": "Otterbein 2.3 SE (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 692,
+        "active": true,
+        "daily": false,
+        "lat": 40.4672,
+        "lng": -87.0611
+      },
+      {
+        "slug": "lafayette_2_2_s",
+        "name": "Lafayette 2.2 S (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 646,
+        "active": true,
+        "daily": false,
+        "lat": 40.3798,
+        "lng": -86.8665
+      },
+      {
+        "slug": "lafayette_2_2_ne",
+        "name": "Lafayette 2.2 NE (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 671,
+        "active": true,
+        "daily": false,
+        "lat": 40.4363,
+        "lng": -86.8442
+      },
+      {
+        "slug": "west_lafayette_4_9_w",
+        "name": "West Lafayette 4.9 W (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 641,
+        "active": true,
+        "daily": false,
+        "lat": 40.4483,
+        "lng": -87.0048
+      },
+      {
+        "slug": "west_lafayette_2_2_w",
+        "name": "West Lafayette 2.2 W (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 687,
+        "active": true,
+        "daily": false,
+        "lat": 40.4476,
+        "lng": -86.953
+      },
+      {
+        "slug": "otterbein_2_0_ese",
+        "name": "Otterbein 2.0 ESE (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 698,
+        "active": true,
+        "daily": false,
+        "lat": 40.4763,
+        "lng": -87.06
+      },
+      {
+        "slug": "lafayette_1_3_w",
+        "name": "Lafayette 1.3 W (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 587,
+        "active": false,
+        "daily": false,
+        "lat": 40.4078,
+        "lng": -86.8955
+      },
+      {
+        "slug": "lafayette_8_3_se",
+        "name": "Lafayette 8.3 SE (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 742,
+        "active": false,
+        "daily": false,
+        "lat": 40.3326,
+        "lng": -86.7501
+      },
+      {
+        "slug": "lafayette_0_5_s",
+        "name": "Lafayette 0.5 S (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 673,
+        "active": false,
+        "daily": false,
+        "lat": 40.4037,
+        "lng": -86.8718
+      },
+      {
+        "slug": "lafayette_1_2_ssw",
+        "name": "Lafayette 1.2 SSW (CoCoRaHS) · Greater Lafayette",
+        "elev_ft": 650,
+        "active": false,
+        "daily": false,
+        "lat": 40.3938,
+        "lng": -86.8784
+      }
+    ],
     "station_coords": {}
   },
   "water": {
@@ -168,7 +315,28 @@
   "keys": {
     "ebird": "dce779eb-603d-4505-9113-a04103e6d8d5",
     "usgs": "imM50bTg9Hd7VWPGYA0fRs73FcFYLN8UchnfbZZO",
-    "_note": "Laurie's own keys, carried over from the Hilltowns site 2026-10-06 (keys are per person, not per site). Public in the page by design."
+    "_note": "Laurie's own keys, carried over from the Hilltowns site 2026-10-06 (keys are per person, not per site). Public in the page by design.",
+    "eia": "QOkrhtZfP75VdNOu0dJQjlJbkndno7WcbvtNECqo"
+  },
+  "heating": {
+    "_note": "Fuel & comfort calculator (Signals). Energy constants are physics (in code). Prices and efficiencies are editable in the page; if keys.eia is set, electricity and natural gas prefill live from EIA for eia_state. Update prices.as_of when you revise the fallbacks.",
+    "eia_state": "IN",
+    "prices": {
+      "elec_kwh": 0.15,
+      "gas_therm": 1.1,
+      "propane_gal": 2.6,
+      "oil_gal": 3.9,
+      "as_of": "2026 placeholder defaults — set an EIA key or enter your own"
+    },
+    "equipment": {
+      "gas_afue": 0.95,
+      "propane_afue": 0.92,
+      "oil_afue": 0.85,
+      "hp_type": "cold",
+      "hp_switchover_f": -5,
+      "seer": 15.0
+    },
+    "base_f": 65
   },
   "towns": {
     "_note": "Core towns get the gold highlight on the calendar and directory. Whole-word match against the parsed town / venue text. PLACEHOLDER list — confirm.",

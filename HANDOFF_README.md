@@ -6,6 +6,66 @@ The Hilltowns log this tree descends from is kept beside this file as `HILLTOWNS
 
 ---
 
+## Where things stand — v13 (2026-10-06)
+
+**Full-range station re-pull (supersedes v11's 5).** Laurie re-ordered the NCEI data to full period of record. Converted all (43 stations across 8 files) with `ghcn_to_xmacis.py`; curated the registration in `place.json → weather.stations`:
+- **16 registered.** Five temperature records (`daily:true`, >1,500 real Max/Min days): **West Lafayette 6 NW 1901→2026 (active, 126 yr — the long anchor), Purdue Univ. Airport ASOS 1944→2026 (active), Lafayette 8 S 1954→2026 (active)**, plus West Lafayette co-op 1948–53 and West Lafayette Sewage Plant 1953–72 (closed historical). The three active ones now draw a real current-year line, not just the modeled ERA5 one. Eleven long CoCoRaHS **precip** records (≥8 yr; 6 active) for the rain/snow picker.
+- **27 short CoCoRaHS records (1–7 yr) left in `data/stations/` as archive but NOT registered** — a 1–2 yr record can't support a year-by-year climate comparison and would clutter the picker. Register any later by adding a `weather.stations` entry (slug = filename stem); no re-conversion needed.
+- Curation rule (in case of future pulls): `daily:true` if >1,500 temp-days; register if a temperature station or ≥8 yr of record; `active` if the record reaches 2025+.
+- `station_dd.js` is now 5.2 MB raw (16 stations, 5 shipping raw dailies). Single-page (Signals) asset, gzips to ~1 MB over the wire — fine. If the page ever feels heavy, drop the two closed historical temp stations to `daily:false`.
+- Build OK; `BUILD OK — 739 records`, 16 stations.
+
+## Where things stand — v12 (2026-10-06)
+
+**Climate-event register built** — the "On record" timeline on Signs + Signals now carries real Wabash history.
+- Source: Laurie's 7 NCEI Storm Events CSVs (4,181 Indiana events, 1950–2026). Scope + filter per Laurie: **Wabash region** (Tippecanoe + 13 adjacent counties — Carroll, White, Clinton, Warren, Benton, Montgomery, Fountain, Cass, Howard, Tipton, Boone, Jasper, Newton) and **no significance filter** — every region event kept. Result: **1,080 events** after de-dup by NCEI EVENT_ID, 1950-07-19 → 2026-06-16, written to `data/climate_events.xlsx` (Events sheet, the kit's schema).
+- **New reusable tool `scripts/storm_to_register.py`:** reads NCEI storm_data CSVs, filters to the county whitelist, maps each to the register schema (ID `SE-<EVENT_ID>`, dates, category=EVENT_TYPE, a composed title and key-measurement, deaths/injuries/damage + narrative as the impact summary, and a link to the NCEI event page), de-dups, and writes the workbook. Re-run to refresh or widen the county set (`REGION` at the top).
+- Flows through the existing `emit_phenology_history()` → `phenology_history.js` (632 KB, Signals-only) → the "On record" fortnight panel in the Phenology section. Verified headless: the panel renders ~10 events for the current fortnight with glyphs, measurements, impact text and NCEI source links; **0 page errors**.
+- Every row is traceable (NCEI EVENT_ID + event-page URL) and confidence "A" (official NWS record). Pre-1996 events have structured fields but no narrative — that's NCEI, not a gap in the build.
+- **Future:** add non-NCEI historical events (pre-1950 floods, newspaper-sourced storms from Hoosier State Chronicles, the 1913 Wabash flood, USGS crest tables) as new rows in the same Events sheet — the register is built to hold them alongside the NCEI records.
+- Build OK; `BUILD OK — 739 records`, 1,080 register events.
+
+## Where things stand — v11 (2026-10-06)
+
+**Weather stations in (Phase 4 begun).** Five NOAA GHCN-Daily co-op records around Lafayette, converted from Laurie's NCEI "Climate Data Online" exports and registered in `place.json → weather.stations`:
+- west_lafayette_6_nw (1901–1970, 708 ft), lafayette_purdue_university_airport (1944–1970, 596 ft), lafayette_8_s (1954–1970, 732 ft), west_lafayette_purdu (1948–1953, 620 ft), west_lafayette_sewage_plant (1953–1970, 522 ft). All Tippecanoe Co., all `daily:true` (real Max/Min → year-by-year charts), all `active:false` with coords (closed-era, so they get a modeled ERA5 current-year line).
+- **New reusable tool `scripts/ghcn_to_xmacis.py`:** converts an NCEI GHCN-Daily CSV (one or many stations per file) to the kit's station CSV layout, reads NCEI's metric elevation → feet, warns if temps look metric, and prints a ready `weather.stations` snippet per station. Future station pulls: run it, paste the snippet, build.
+- `station_dd.js` now 1.75 MB (5 stations, Signals-only load — fine).
+- **Date-range caveat:** every export stopped at 1970 — a cap on the NCEI orders, not the stations' real close dates. The **Purdue Airport (KLAF, USW00014835)** especially runs to the present; a full re-pull would make it the *active* anchor with a live current-year line. Worth re-ordering 1944→today.
+- Build OK; `BUILD OK — 739 records`, 5 stations.
+
+**Next layer staged, not yet built:** Laurie sent 7 NCEI Storm Events files — **4,181 Indiana events, 1950–2026, statewide** (not just the region). Awaiting a scope decision for the climate-event register ("On record" timeline): Tippecanoe only (~80 notable), Wabash region (~240), or all Indiana (~1,044). Then: a storm→`climate_events.xlsx` converter with a documented significance filter, feeding the existing `emit_phenology_history()` / "On record" display.
+
+## Where things stand — v10 (2026-10-06)
+
+**Signals/Society editorial comb (Laurie):**
+- `signals.html`: the winds alt-line "the wind on the hill" (Helderberg-specific) → "the wind across the prairie" (Prophetstown is restored tallgrass prairie). The other alt-lines ("steers the valley weather" etc.) are generic/accurate for the Wabash valley and were left.
+- `society.html`: removed the "Hilltown Hotties" name and its (already-broken) `#hilltown-hotties` link, and the "hot tips" pun — the iNat/eBird intro now reads "Add your own sightings via … to help them make the species leaderboard" (anchor fixed to `#leaderboard`). The in-code leaderboard header was already neutralized to "Species leaderboard" back in v3.
+- **Bug the localizer missed:** the BirdCast migration-dashboard link in `society.html` was hardcoded to `US-NY-001` (Albany County, NY). Now `place.json → wildlife.birdcast_region` ("US-IN-157" = Tippecanoe County, IN) and the link reads from it. Worth remembering as a pattern — hardcoded region *codes* in copy slip past coordinate-based localisation.
+- Build OK; smoke 0 errors; verified no "wind on the hill" / "Hilltown Hotties" / "US-NY-001" left in the built site.
+
+## Where things stand — v9 (2026-10-06)
+
+**EIA key wired.** Laurie's EIA API key is set in `place.json → keys.eia` (public-in-page by the kit's convention, like eBird/USGS — EIA keys are free, rate-limit-only). It reaches `site/place.js` as `window.PLACE.keys.eia`, so the fuel calculator will attempt the live electricity + natural-gas prefill for Indiana. **Still not sandbox-verifiable** — the proxy blocks `api.eia.gov` (403), so the exact EIA v2 series paths in `signals.js` (`eiaPrefill()`) are unconfirmed. The module fails safe: any EIA error silently falls back to the editable defaults, and the method note then reads "editable defaults" instead of "from EIA." **Confirm on the live site:** open Signals, and either the prices show EIA values (method note says "from EIA (IN, <period>)") or they're defaults. If they're defaults when they shouldn't be, open the browser Network tab, find the `api.eia.gov` calls, and send me the response — the likely fix is a series-path/facet tweak (electricity `retail-sales`; gas `natural-gas/pri/sum` duoarea `SIN`, process `PRS`).
+
+## Where things stand — v8 (2026-10-06)
+
+**New: Fuel & comfort calculator** on Signals ("Heating & cooling — what's cheapest here"). Answers which heat source is cheapest to run *in this climate*, from local degree days.
+- **Method (exact vs modeled, stated on the page):** cost of one MMBtu of *delivered* heat = price ÷ energy-content ÷ efficiency. Energy contents are physics (1 kWh = 3,412 BTU; 1 therm = 100,000 BTU; propane 91,452 BTU/gal; #2 oil 138,500 BTU/gal) — the ranking is exact for the prices/efficiencies shown. The heat pump's efficiency is a **seasonal COP computed from the centre point's own ERA5 daily-temperature distribution** (Open-Meteo archive, ~20 yr) against a COP-vs-temperature curve (standard or cold-climate, selectable) — place-specific, because COP falls with outdoor temp. Energy-weighted over the HDD distribution. Cooling compared via CDD + SEER. A "your winter" seasonal-$ estimate appears if the viewer enters a heating load, clearly flagged as the softest number.
+- **Math unit-tested** in `scripts/fuel_calc_math_test.js` (node): conversions, cost-per-MMBtu for every fuel, COP interpolation/clamping, SCOP monotonicity (milder climate → higher SCOP), break-even identity, cooling. All pass.
+- **Prices:** editable in the page; with `keys.eia` set, electricity + natural gas prefill live from EIA for `heating.eia_state` (best-effort, graceful fallback; propane/oil are editable defaults). Config + fallbacks in `place.json → heating` and `keys.eia`. EIA key not set yet — until it is, prices are the dated defaults in place.json (clearly labelled on the page). **EIA fetch is not sandbox-verifiable** — confirm the prefill on the live site once a key is in.
+- Self-contained module appended to `signals.js` (fetches its own climatology; no coupling to the rest of the page), section markup + CSS in `signals.html`.
+- Build: `BUILD OK`. Headless (synthetic 20-yr climate, EIA forced to fail → defaults path): 5 ranked bars, cheapest callout, break-even line, cooling panel, seasonal estimate, recompute on input, **0 page errors**. Live site will use the real Open-Meteo archive (works) and real EIA if keyed.
+
+## Where things stand — v7 (2026-10-06)
+
+**Changes since v6 (all from Laurie, site now live and confirmed):**
+- **Nav trimmed:** Calendar, Directory and About commented out of `partials/header.html` and `footer.html`. Pages still build and are reachable by URL; nav is now Atlas · Signs + Signals · Society Pages. The atlas's in-panel "About this atlas" sidefoot link was left (contextual, not top-nav). Restore any by un-commenting.
+- **USGS 400 fixed** in `signals.js`: the OGC API `datetime` parameter was being given an ISO-8601 *duration* (`P1D`/`P7D`/`P30D`), which is invalid there (it wants an instant or interval) — so every water call 400'd and fell back to the retiring `waterservices.gov`. Added `usgsInterval()` to pass a proper trailing-window interval; also capped `limit` at 10000 (a too-large limit is the other blind 400). And softened `waterIV`: a successful legacy fallback now logs to console instead of showing a user-facing error (data was always correct — it was crying wolf). **Not sandbox-verifiable** (USGS unreachable from here) — confirm on the live Signals page that the four water lines are gone and the transect/nearby/7-day charts populate from the new API.
+- Build: `BUILD OK — 739 records / 726 mappable`. Smoke: all pages, 0 errors.
+
+**Open / proposed:** heat-pump vs. fuel cost-efficiency calculator for Signals (degree-day driven) — scoped with Laurie, not yet built.
+
 ## Where things stand — v6 (2026-10-06)
 
 **Changes since v5:** the **Ancient Ways layer** — the global ancient-routes dataset from Laurie's Ways project (`data/layers/ways_layer_v169-B169.json`, 560 routes, schema v2 — polylines, a different model from the POI point pins) brought in as a toggle grouped with Folklore.
@@ -132,6 +192,13 @@ Run the smoke harness: `NODE_PATH=<global node_modules> node scripts/smoke_harne
 
 ## Log
 
+- **v13 — 2026-10-06.** Full-range station re-pull: 16 registered (3 long active temp anchors + 2 historical temp + 11 precip), 27 short records archived. West Lafayette 6 NW now 1901→2026 active. BUILD OK.
+- **v12 — 2026-10-06.** Climate-event register: 1,080 Wabash-region NCEI Storm Events (1950–2026, no filter) → climate_events.xlsx via new scripts/storm_to_register.py → the 'On record' timeline. Verified headless, 0 errors.
+- **v11 — 2026-10-06.** 5 Lafayette weather stations converted (new scripts/ghcn_to_xmacis.py) + registered; station_dd.js live. Storm Events data staged (4,181 IN events) pending register-scope decision. BUILD OK.
+- **v10 — 2026-10-06.** Signals/Society editorial comb: prairie wind line, Hilltown Hotties name+link removed, BirdCast region fixed NY→IN (now in place.json). BUILD OK; smoke 0 errors.
+- **v9 — 2026-10-06.** EIA API key wired into place.json; live price prefill now attempted (unverifiable from sandbox — proxy blocks EIA; fails safe to defaults). Confirm on live.
+- **v8 — 2026-10-06.** Fuel & comfort calculator on Signals: delivered-heat cost ranking across fuels, climate-integrated seasonal COP from local ERA5, cooling via CDD/SEER, EIA price prefill. Math unit-tested; headless clean, 0 errors.
+- **v7 — 2026-10-06.** Nav trimmed (Calendar/Directory/About off); USGS OGC `datetime` 400 fixed (interval not duration) + quiet fallback. BUILD OK; smoke 0 errors.
 - **v6 — 2026-10-06.** Ancient Ways layer: global routes dataset as a Folklore-grouped toggle; new emit_ways_layer() + atlas line/node module. 560 routes / 682 line features / 5,553 nodes. BUILD OK; headless toggle clean, 0 errors; visual pending live.
 - **v5 — 2026-10-06.** Amtrak/VIA network merged (679 rows; 72 VIA flag stops had no coords). BUILD OK, 739 records / 726 mappable.
 - **v4 — 2026-10-06.** 32 preserves/trails (19 pinned, 13 directory-only). BUILD OK, 60 records / 47 mappable. Atlas season-gate gap logged.

@@ -399,7 +399,7 @@ a.link:hover{background:rgba(252,163,21,.14);}
   <!-- v1003 (2026-10-02, Laurie): iNaturalist + eBird moved here from Signs + Signals -->
   <h1 class="sg-head">Society Pages</h1>
   <!-- v1009 (2026-10-05, Laurie): intro at body-copy size, new copy, anchor to the leaderboard -->
-  <p class="sg-det sg-intro" style="margin:4px 0 22px">Who's been getting noticed in {{place.region_short}} lately! Submit your hot tips via <a href="https://www.inaturalist.org/observations/upload" target="_blank" rel="noopener">iNaturalist</a> or <a href="https://ebird.org/submit" target="_blank" rel="noopener">eBird</a> to help them make the <a href="#hilltown-hotties">Hilltown Hotties</a> list!</p>
+  <p class="sg-det sg-intro" style="margin:4px 0 22px">Who's been getting noticed in {{place.region_short}} lately! Add your own sightings via <a href="https://www.inaturalist.org/observations/upload" target="_blank" rel="noopener">iNaturalist</a> or <a href="https://ebird.org/submit" target="_blank" rel="noopener">eBird</a> to help them make the <a href="#leaderboard">species leaderboard</a>.</p>
   <p id="sg-status"></p>
 
   <h2 class="sg-sec">Seen lately · iNaturalist</h2>
@@ -410,7 +410,7 @@ a.link:hover{background:rgba(252,163,21,.14);}
   <p class="sg-note" id="inat-note"></p>
   <a class="sg-btn" id="inat-more" href="https://www.inaturalist.org/observations?quality_grade=research&subview=map&lat=42.6248&lng=-74.135&radius=40" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none">Explore more on iNaturalist &rarr;</a>
   <h2 class="sg-sec">Birds lately · eBird</h2>
-  <p class="sg-det" style="margin:0 0 10px">Reported within {{place.wildlife.ebird_dist_km}} km of {{place.center.short}} in the last {{place.wildlife.ebird_back_days}} days, newest first. The <a href="https://dashboard.birdcast.info/region/US-NY-001" target="_blank" rel="noopener" style="color:var(--gold,#c9a227)">BirdCast migration dashboard for Albany County</a> has tonight's radar forecast.</p>
+  <p class="sg-det" style="margin:0 0 10px">Reported within {{place.wildlife.ebird_dist_km}} km of {{place.center.short}} in the last {{place.wildlife.ebird_back_days}} days, newest first. The <a href="https://dashboard.birdcast.info/region/{{place.wildlife.birdcast_region}}" target="_blank" rel="noopener" style="color:var(--gold,#c9a227)">BirdCast migration dashboard for Albany County</a> has tonight's radar forecast.</p>
   <div id="ebird-notable"></div>
   <div class="sg-grid" id="ebird-grid"><p class="ph-empty">Loading sightings…</p></div>
   <p class="sg-note" id="ebird-note"></p>
