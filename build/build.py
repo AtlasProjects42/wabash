@@ -1610,7 +1610,9 @@ def emit_phenology_expected():
         WARNS.append("microseasons.xlsx: no 'Entries (Long Form)' sheet"); return
     rows = list(wb["Entries (Long Form)"].iter_rows(values_only=True))
     ix = {str(h).strip().lower(): i for i, h in enumerate(rows[0]) if h}
-    CATS = ["Sky & Light", "Weather & Ground", "Flora & Phenology", "Birds", "Animals", "Insects & Fungi", "Garden & Orchard", "Foodways", "Nature Health Watch"]  # renamed v890  # Ghost retired v876 (2026-09-25)
+    # v17 (2026-10-07, Laurie): category order for the Wabash microseasons MASTER. Human History entries are
+    # all Show=No (dated events lifted out for the events ingestor), so they drop out via the Show filter below.
+    CATS = ["Stars & Sky", "Weather & Wonders", "Flora", "Fauna", "Garden & Orchard", "Foodways", "Human History"]
     out, byn = [], {}
     for r in rows[1:]:
         g = lambda k: (str(r[ix[k]]).strip() if ix.get(k) is not None and r[ix[k]] is not None else "")
@@ -1618,6 +1620,7 @@ def emit_phenology_expected():
         except ValueError: continue
         entry = g("entry")
         if not entry: continue
+        if g("show").lower() in ("no", "n"): continue  # v17: honor the Show column (like the register's "Show on timeline")
         rec = byn.get(n)
         if not rec:
             dr = g("date range"); m = re.match(r"([A-Za-z]+)\s+(\d+)[–-](\d+)", dr)

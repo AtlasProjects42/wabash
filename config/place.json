@@ -49,7 +49,8 @@
     "ebird_dist_km": 25,
     "ebird_back_days": 14,
     "birdcast_region": "US-IN-157",
-    "_birdcast_note": "BirdCast migration dashboard region = US-<STATE>-<eBird county code>; Tippecanoe County IN = US-IN-157. Change if the centre county changes."
+    "birdcast_label": "Tippecanoe County",
+    "_birdcast_note": "BirdCast migration dashboard region = US-<STATE>-<eBird county code>; Tippecanoe County IN = US-IN-157. Change both region and label if the centre county changes."
   },
   "weather": {
     "open_meteo_point": {

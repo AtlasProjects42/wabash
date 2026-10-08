@@ -441,18 +441,35 @@
     })();
   }
 
-  /* ---------- Phenology: one PAIR per fortnight — expected (microseasons) beside on-record (register) ---------- */
-  function renderPhenology(){
-    var EV = window.PHENOLOGY_HISTORY || [], EX = window.PHENOLOGY_EXPECTED || [], row=$('ph-row'); if(!row) return;
-    var MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
-    function dim(m){ return new Date(2001, m, 0).getDate(); }
-    var esc=function(v){ return String(v||'').replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
-    var wins=[]; for(var m=1;m<=12;m++){ wins.push({m:m,lo:1,hi:15}); wins.push({m:m,lo:16,hi:31}); }
-    var now=new Date(), curIdx=(now.getMonth())*2+(now.getDate()<=15?0:1);
-    var TAG={ghost:'Ghost',health:'Nature health watch',garden:'Garden & orchard',foodways:'Foodways'};
-    /* v993 (2026-09-30, Laurie): hazard glyph under the year — snow/ice/cold, water (flood, mudslide), wind, fire,
-       heat/drought, ground (landslide, sinkhole, rockfall). Classified from the register's `cat` text: the FIRST-named
-       hazard wins for multi-hazard rows ("Tropical cyclone / flood" → wind), whole string as fallback. White, stroke-only. */
+  /* ---------- Phenology & On-the-Record: two fortnight-windowed navigators -------------------------
+     v15 (2026-10-07, Laurie): the old combined pair is split in two. "On the Record" (the historical
+     weather & climate register) stays on Signs + Signals, full width; the expected-microseason
+     "Phenology" window moved to the top of the Society pages, full width. Both reuse one navigator;
+     each no-ops if its row element is absent, so the shared signals.js runs the right one per page. */
+  var _MON=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function _dim(m){ return new Date(2001, m, 0).getDate(); }
+  function _esc(v){ return String(v||'').replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function _wins(){ var w=[]; for(var m=1;m<=12;m++){ w.push({m:m,lo:1,hi:15}); w.push({m:m,lo:16,hi:31}); } return w; }
+  function _curIdx(){ var now=new Date(); return (now.getMonth())*2+(now.getDate()<=15?0:1); }
+  function phenologyNav(ids, cardFor){
+    var row=$(ids.row); if(!row) return;
+    var wins=_wins(), curIdx=_curIdx();
+    row.innerHTML = wins.map(function(w,idx){
+      var label=_MON[w.m-1]+' '+w.lo+'–'+(w.hi===15?15:_dim(w.m));
+      return '<div class="ph-one" id="'+ids.row+'-win-'+idx+'">'+cardFor(w,idx,label,curIdx)+'</div>';
+    }).join('');
+    function setTitle(idx){ var w=wins[idx]; $(ids.title).textContent=(idx===curIdx?'Now: ':'')+_MON[w.m-1]+' '+w.lo+'–'+(w.hi===15?15:_dim(w.m)); }
+    function go(idx){ var el=$(ids.row+'-win-'+idx); if(el) row.scrollTo({left: el.offsetLeft-row.offsetLeft, behavior:'smooth'}); setTitle(idx); }
+    var cur=curIdx; setTitle(cur);
+    $(ids.prev).onclick=function(){ cur=(cur+23)%24; go(cur); };
+    $(ids.next).onclick=function(){ cur=(cur+1)%24; go(cur); };
+    setTimeout(function(){ var el=$(ids.row+'-win-'+curIdx); if(el) row.scrollLeft=el.offsetLeft-row.offsetLeft; }, 0);
+  }
+
+  /* On the Record: the historical weather & climate register, one fortnight per full-width card (Signals). */
+  function renderOnRecord(){
+    if(!$('onrec-row')) return;
+    var EV = window.PHENOLOGY_HISTORY || [];
     var GLYPH={
       snow:'<svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19M12 2l-2 3M12 2l2 3M12 22l-2-3M12 22l2-3M2 12l3-2M2 12l3 2M22 12l-3-2M22 12l-3 2"/></svg>',
       water:'<svg viewBox="0 0 24 24"><path d="M12 3s6 7 6 12a6 6 0 0 1-12 0c0-5 6-12 6-12z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg>',
@@ -475,30 +492,31 @@
       var pick=function(t){ for(var i=0;i<RULES.length;i++){ if(RULES[i][0].test(t)) return RULES[i][1]; } return null; };
       return pick(first)||pick(c);
     }
-    row.innerHTML = wins.map(function(w,idx){
-      var label = MON[w.m-1]+' '+w.lo+'–'+(w.hi===15?15:dim(w.m));
-      var ex = EX[idx];
-      var exCard = '<article class="ph-card'+(idx===curIdx?' cur':'')+'"><div class="ph-head"><div><p class="ph-sub">Predicted</p><div class="ph-win">'+(ex?esc(ex.name):label)+'</div></div><div class="ph-count">'+label+'</div></div>'
-        + (ex ? ex.sections.map(function(sec){ var k=({'Ghost':'ghost','Health Watch':'health','Nature Health Watch':'health','Garden':'garden','Garden & Orchard':'garden','Foodways':'foodways'})[sec.cat]||'plain'; return '<div class="ph-sec"><div class="ph-sech">'+esc(sec.cat)+'</div><ul class="ph-list">'+sec.items.map(function(h){ return '<li><div class="ph-kind '+k+'">'+h+'</div></li>'; }).join('')+'</ul></div>'; }).join('') : '<p class="ph-empty">No microseason text for this window.</p>')+'</article>';
+    phenologyNav({row:'onrec-row',title:'onrec-title',prev:'onrec-prev',next:'onrec-next'}, function(w,idx,label,curIdx){
       var items = EV.filter(function(e){ return e.m===w.m && e.d>=w.lo && e.d<=w.hi; }).sort(function(a,b){ return (a.y-b.y)||(a.d-b.d); });
-      var hist = '<article class="ph-card'+(idx===curIdx?' cur':'')+'"><div class="ph-head"><div><p class="ph-sub">On record</p><div class="ph-win">'+label+'</div></div><div class="ph-count">'+items.length+' event'+(items.length===1?'':'s')+'</div></div>'
+      return '<article class="ph-card'+(idx===curIdx?' cur':'')+'"><div class="ph-head"><div><p class="ph-sub">On record</p><div class="ph-win">'+label+'</div></div><div class="ph-count">'+items.length+' event'+(items.length===1?'':'s')+'</div></div>'
         + (items.length ? '<ol class="ph-list">'+items.map(function(e){
-            var when = e.prec==='day' ? MON[e.m-1].slice(0,3)+' '+e.d : (e.prec==='days' ? MON[e.m-1].slice(0,3)+' '+e.d+' onset' : (e.prec||''));
-            var g=glyphFor(e.cat); return '<li><span class="ph-y">'+e.y+(g?'<span class="ph-g" title="'+GLYPH_TITLE[g]+'">'+GLYPH[g]+'</span>':'')+'</span><div><div class="ph-name">'+esc(e.t)+'</div><div class="ph-meta">'+esc(e.cat)+(when?' · '+esc(when):'')+(e.area?' · '+esc(e.area):'')+'</div>'
-              + (e.meas?'<div class="ph-meta"><b>Measured:</b> '+esc(e.meas)+(e.station?' — '+esc(e.station):'')+'</div>':'')
-              + (e.impact?'<div class="ph-meta">'+esc(e.impact.length>200?e.impact.slice(0,197)+'…':e.impact)+'</div>':'')
-              + '<div class="ph-src">'+(e.url?'<a href="'+esc(e.url)+'" target="_blank" rel="noopener">'+esc(e.source||'source')+'</a>':esc(e.source))+'</div></div></li>'; /* 2026-09-27 (v898, Laurie): confidence note removed from display */
+            var when = e.prec==='day' ? _MON[e.m-1].slice(0,3)+' '+e.d : (e.prec==='days' ? _MON[e.m-1].slice(0,3)+' '+e.d+' onset' : (e.prec||''));
+            var g=glyphFor(e.cat); return '<li><span class="ph-y">'+e.y+(g?'<span class="ph-g" title="'+GLYPH_TITLE[g]+'">'+GLYPH[g]+'</span>':'')+'</span><div><div class="ph-name">'+_esc(e.t)+'</div><div class="ph-meta">'+_esc(e.cat)+(when?' · '+_esc(when):'')+(e.area?' · '+_esc(e.area):'')+'</div>'
+              + (e.meas?'<div class="ph-meta"><b>Measured:</b> '+_esc(e.meas)+(e.station?' — '+_esc(e.station):'')+'</div>':'')
+              + (e.impact?'<div class="ph-meta">'+_esc(e.impact.length>200?e.impact.slice(0,197)+'…':e.impact)+'</div>':'')
+              + '<div class="ph-src">'+(e.url?'<a href="'+_esc(e.url)+'" target="_blank" rel="noopener">'+_esc(e.source||'source')+'</a>':_esc(e.source))+'</div></div></li>';
           }).join('')+'</ol>' : '<p class="ph-empty">Nothing on record for this fortnight yet.</p>')+'</article>';
-      return '<div class="ph-pair" id="ph-win-'+idx+'">'+hist+exCard+'</div>';
-    }).join('');
-    var ys=EV.map(function(e){ return e.y; });
-    if($('ph-note')) $('ph-note').textContent = EX.length+' microseasons in '+(EX.length?EX.reduce(function(n,x){ return n+x.sections.reduce(function(m,s){ return m+s.items.length; },0); },0):0)+' entries · '+EV.length+' events on the register, '+Math.min.apply(null,ys)+'–'+Math.max.apply(null,ys)+' · multi-day and seasonal events sit at their anchor date · hill dates, not valley dates.';
-    function setTitle(idx){ var w=wins[idx]; $('ph-title').textContent=(idx===curIdx?'Now: ':'')+MON[w.m-1]+' '+w.lo+'–'+(w.hi===15?15:dim(w.m)); } /* 2026-09-27 (v898, Laurie): season name dropped from the title per Laurie */
-    function go(idx){ var el=$('ph-win-'+idx); if(el) row.scrollTo({left: el.offsetLeft - row.offsetLeft, behavior:'smooth'}); setTitle(idx); }
-    var cur=curIdx; setTitle(cur);
-    $('ph-prev').onclick=function(){ cur=(cur+23)%24; go(cur); };
-    $('ph-next').onclick=function(){ cur=(cur+1)%24; go(cur); };
-    setTimeout(function(){ var el=$('ph-win-'+curIdx); if(el) row.scrollLeft = el.offsetLeft - row.offsetLeft; }, 0);
+    });
+    if($('onrec-note')&&EV.length){ var ys=EV.map(function(e){ return e.y; });
+      $('onrec-note').textContent = EV.length+' events on the register, '+Math.min.apply(null,ys)+'–'+Math.max.apply(null,ys)+' · multi-day and seasonal events sit at their anchor date.'; }
+  }
+
+  /* Phenology: the expected-microseason window, one fortnight per full-width card (Society pages). */
+  function renderPhenologyWindow(){
+    if(!$('phen-row')) return;
+    var EX = window.PHENOLOGY_EXPECTED || [];
+    phenologyNav({row:'phen-row',title:'phen-title',prev:'phen-prev',next:'phen-next'}, function(w,idx,label,curIdx){
+      var ex = EX[idx];
+      return '<article class="ph-card'+(idx===curIdx?' cur':'')+'"><div class="ph-head"><div><p class="ph-sub">Predicted</p><div class="ph-win">'+(ex?_esc(ex.name):label)+'</div></div><div class="ph-count">'+label+'</div></div>'
+        + (ex ? ex.sections.map(function(sec){ var k=({'Ghost':'ghost','Health Watch':'health','Nature Health Watch':'health','Garden':'garden','Garden & Orchard':'garden','Foodways':'foodways'})[sec.cat]||'plain'; return '<div class="ph-sec"><div class="ph-sech">'+_esc(sec.cat)+'</div><ul class="ph-list">'+sec.items.map(function(h){ return '<li><div class="ph-kind '+k+'">'+h+'</div></li>'; }).join('')+'</ul></div>'; }).join('') : '<p class="ph-empty">No microseason text for this window.</p>')+'</article>';
+    });
+    if($('phen-note')&&EX.length) $('phen-note').textContent = EX.length+' microseasons · '+EX.reduce(function(n,x){ return n+x.sections.reduce(function(m,s){ return m+s.items.length; },0); },0)+' entries.';
   }
 
   /* ---------- iNaturalist: research-grade observations in the place.json box, newest observed first ---------- */
@@ -1551,9 +1569,12 @@ function fetchINat(){
     safeCall('iNaturalist', fetchINat);
     safeCall('eBird', fetchEBird);
     /* v1003 (2026-10-02, Laurie): society.html shares this script but carries only the iNaturalist + eBird sections */
-    if(!$('ph-row')) return;   /* the header sky strip is drawn by skyline.js on every page */
+    /* v15 (2026-10-07, Laurie): Phenology window runs on both pages (no-ops where its row is absent); it now
+       lives on society.html. The guard below gates the Signs + Signals-only sections on the On-the-Record row. */
+    safeCall('Phenology', renderPhenologyWindow);
+    if(!$('onrec-row')) return;   /* society.html shares this script but carries only iNaturalist, eBird + Phenology */
     safeCall('Water levels', fetchWater);
-    safeCall('Phenology', renderPhenology);
+    safeCall('On the Record', renderOnRecord);
     safeCall('Sun/moon', renderSunMoon);
     safeCall('Surface weather', fetchWx);
     safeCall('Degree days', fetchDD);

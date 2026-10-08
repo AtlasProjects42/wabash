@@ -348,6 +348,7 @@ a.link:hover{background:rgba(252,163,21,.14);}
 .ph-row{display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding:4px 2px 14px; -webkit-overflow-scrolling:touch; scrollbar-width:thin;}
 .ph-pair{flex:0 0 100%; scroll-snap-align:start; display:grid; grid-template-columns:1fr 1fr; gap:14px;}
 @media (max-width:860px){ .ph-pair{grid-template-columns:1fr;} }
+.ph-one{flex:0 0 100%; scroll-snap-align:start;} /* v15 (2026-10-07, Laurie): one full-width card per fortnight */
 .ph-card{scroll-snap-align:start; background:rgba(0,0,0,.22); border:1px solid rgba(255,255,255,.22); border-radius:14px; padding:14px 18px 10px; max-height:520px; overflow-y:auto;}
 .ph-card.cur{border-color:var(--gold,#c9a227); box-shadow:0 0 0 1px var(--gold,#c9a227) inset;}
 .ph-head{display:flex; align-items:baseline; justify-content:space-between; gap:10px; margin-bottom:8px; position:sticky; top:0; background:rgba(10,14,50,.92); padding:4px 0 6px;}
@@ -402,15 +403,22 @@ a.link:hover{background:rgba(252,163,21,.14);}
   <p class="sg-det sg-intro" style="margin:4px 0 22px">Who's been getting noticed in {{place.region_short}} lately! Add your own sightings via <a href="https://www.inaturalist.org/observations/upload" target="_blank" rel="noopener">iNaturalist</a> or <a href="https://ebird.org/submit" target="_blank" rel="noopener">eBird</a> to help them make the <a href="#leaderboard">species leaderboard</a>.</p>
   <p id="sg-status"></p>
 
+  <!-- v15 (2026-10-07, Laurie): the expected-microseason Phenology window, moved here from Signs + Signals,
+       at the top and full width. The historical register ("On the Record") stayed on Signs + Signals. -->
+  <h2 class="sg-sec">Phenology</h2>
+  <div class="ph-nav"><button type="button" class="sg-btn" id="phen-prev">&larr; earlier</button><div class="ph-title" id="phen-title"></div><button type="button" class="sg-btn" id="phen-next">later &rarr;</button></div>
+  <div class="ph-row" id="phen-row"></div>
+  <p class="sg-note" id="phen-note"></p>
+
   <h2 class="sg-sec">Seen lately · iNaturalist</h2>
   <p class="sg-det" style="margin:0 0 10px">Research-grade observations within about {{place.wildlife.inat_dist_km}} km of {{place.center.short}}.</p>
   <div class="sg-grid" id="inat-grid"><p class="ph-empty">Loading observations…</p></div>
   <div id="leaderboard" style="scroll-margin-top:90px"></div>
   <div id="inat-list"></div>
   <p class="sg-note" id="inat-note"></p>
-  <a class="sg-btn" id="inat-more" href="https://www.inaturalist.org/observations?quality_grade=research&subview=map&lat=42.6248&lng=-74.135&radius=40" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none">Explore more on iNaturalist &rarr;</a>
+  <a class="sg-btn" id="inat-more" href="https://www.inaturalist.org/observations?quality_grade=research&subview=map&lat={{place.center.lat}}&lng={{place.center.lng}}&radius={{place.wildlife.inat_dist_km}}" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none">Explore more on iNaturalist &rarr;</a>
   <h2 class="sg-sec">Birds lately · eBird</h2>
-  <p class="sg-det" style="margin:0 0 10px">Reported within {{place.wildlife.ebird_dist_km}} km of {{place.center.short}} in the last {{place.wildlife.ebird_back_days}} days, newest first. The <a href="https://dashboard.birdcast.info/region/{{place.wildlife.birdcast_region}}" target="_blank" rel="noopener" style="color:var(--gold,#c9a227)">BirdCast migration dashboard for Albany County</a> has tonight's radar forecast.</p>
+  <p class="sg-det" style="margin:0 0 10px">Reported within {{place.wildlife.ebird_dist_km}} km of {{place.center.short}} in the last {{place.wildlife.ebird_back_days}} days, newest first. The <a href="https://dashboard.birdcast.info/region/{{place.wildlife.birdcast_region}}" target="_blank" rel="noopener" style="color:var(--gold,#c9a227)">BirdCast migration dashboard for {{place.wildlife.birdcast_label}}</a> has tonight's radar forecast.</p>
   <div id="ebird-notable"></div>
   <div class="sg-grid" id="ebird-grid"><p class="ph-empty">Loading sightings…</p></div>
   <p class="sg-note" id="ebird-note"></p>
@@ -420,6 +428,7 @@ a.link:hover{background:rgba(252,163,21,.14);}
 </main>
 
 <script src="skyline.js"></script>
+<script src="phenology_expected.js"></script>
 <script src="signals.js"></script>
 <!-- @@footer -->
 
