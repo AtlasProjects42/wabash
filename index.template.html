@@ -3010,7 +3010,9 @@ if(!map) applyHash();
   if(typeof maplibregl === 'undefined' || !map) return;
   var story = document.getElementById('catsStory'); if(!story) return;
   var CLASS_COLOR = {indigenous:'#c2185b', trade:'#b08d57', pilgrimage:'#6a4fb3',
-                     'post-road':'#2e7d32', caravan:'#e0821a', drover:'#5d7a2e', military:'#9c2b2b'};
+                     'post-road':'#2e7d32', caravan:'#e0821a', drover:'#5d7a2e', military:'#9c2b2b',
+                     /* v18 (2026-10-13, Laurie): new buckets for the Wabash/NA package's non-trade features */
+                     waterway:'#2b6cb0', landmark:'#c9a227', reserve:'#8a6d9c'};
   var colorExpr = ['match', ['get','cls']];
   Object.keys(CLASS_COLOR).forEach(function(k){ colorExpr.push(k, CLASS_COLOR[k]); });
   colorExpr.push('#8a7a5c');                                   /* fallback */

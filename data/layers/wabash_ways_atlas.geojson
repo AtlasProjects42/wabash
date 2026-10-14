@@ -1,0 +1,9594 @@
+{
+ "type": "FeatureCollection",
+ "name": "Wabash Ways Atlas - trails & waterways (PLSS draft)",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "metadata": {
+  "note": "Geometry APPROXIMATE - points at PLSS section centers (2nd PM, ~0.5mi), trails/rivers as waypoint polylines. Replace with meander-table geometry for final. Protocol: Nation review on reserve/village/trace features before publish.",
+  "generated": "2026-10-09",
+  "updated": "2026-10-09: +Wallace PA corpus (PA-001..131 + portages) from the KEY map + PA geography; corridor/approx, Wallace numbering",
+  "pa_note": "Wallace PA corpus: #28-44 verified/refined against the book's path pages; the rest are KEY-map sketches (unverified) and may carry direction/endpoint errors until their text pages are checked."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-01",
+    "name": "Wabash River",
+    "category": "waterway",
+    "wtype": "river",
+    "description": "The main stem; surveyed meander banks across the county. Approx course from PLSS crossings (NE Carroll Co. -> SW past Lafayette toward Attica).",
+    "source": "PLSS plats/notes (meander tables)",
+    "confidence": "approx-course",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.58814,
+      40.69134
+     ],
+     [
+      -86.6263,
+      40.66235
+     ],
+     [
+      -86.66438,
+      40.61887
+     ],
+     [
+      -86.70246,
+      40.58989
+     ],
+     [
+      -86.72132,
+      40.53192
+     ],
+     [
+      -86.75939,
+      40.51742
+     ],
+     [
+      -86.85446,
+      40.47395
+     ],
+     [
+      -86.85438,
+      40.45945
+     ],
+     [
+      -86.87334,
+      40.44496
+     ],
+     [
+      -86.8922,
+      40.41598
+     ],
+     [
+      -86.91114,
+      40.40148
+     ],
+     [
+      -86.96812,
+      40.38699
+     ],
+     [
+      -87.06326,
+      40.38699
+     ],
+     [
+      -87.08202,
+      40.358
+     ],
+     [
+      -87.11977,
+      40.32902
+     ],
+     [
+      -87.1578,
+      40.32902
+     ],
+     [
+      -87.21467,
+      40.31453
+     ],
+     [
+      -87.25251,
+      40.30003
+     ],
+     [
+      -87.25234,
+      40.28554
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-02",
+    "name": "Tippecanoe River",
+    "category": "waterway",
+    "wtype": "river",
+    "description": "Chief northern tributary; meanders S/SW to join the Wabash at the mouth in T24N-R3W Sec 8 (the confluence by Prophetstown). Islands incl. a cluster in T26N-R3W Sec 3.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx-course",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.74117,
+      40.72032
+     ],
+     [
+      -86.76016,
+      40.69134
+     ],
+     [
+      -86.75997,
+      40.64786
+     ],
+     [
+      -86.75991,
+      40.63337
+     ],
+     [
+      -86.75978,
+      40.60438
+     ],
+     [
+      -86.75959,
+      40.5609
+     ],
+     [
+      -86.77853,
+      40.53192
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-03",
+    "name": "Pine Creek (Big Pine Creek)",
+    "category": "waterway",
+    "wtype": "creek",
+    "description": "Major western drainage, SE course; whetstone-grit falls & mill seats in T21N-R7W. Flows toward the Wabash near Attica.",
+    "source": "PLSS notes (named 'Pine Creek'/'Big Pine Creek'/'Pine River')",
+    "confidence": "approx-course",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.1611,
+      40.64786
+     ],
+     [
+      -87.16065,
+      40.60438
+     ],
+     [
+      -87.1605,
+      40.58989
+     ],
+     [
+      -87.16019,
+      40.5609
+     ],
+     [
+      -87.16004,
+      40.54641
+     ],
+     [
+      -87.15989,
+      40.53192
+     ],
+     [
+      -87.19755,
+      40.48844
+     ],
+     [
+      -87.21645,
+      40.47395
+     ],
+     [
+      -87.23517,
+      40.44496
+     ],
+     [
+      -87.25404,
+      40.43047
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-04",
+    "name": "Wild Cat Creek",
+    "category": "waterway",
+    "wtype": "creek",
+    "description": "Crosses the Wea Plain NW/W toward the Wabash. Named in PLSS notes; the Prophet's refuge after the 1811 battle.",
+    "source": "PLSS notes",
+    "confidence": "approx-course",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.87272,
+      40.34351
+     ],
+     [
+      -87.02484,
+      40.34351
+     ],
+     [
+      -86.94899,
+      40.3725
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-11",
+    "name": "Burnett's Creek",
+    "category": "waterway",
+    "wtype": "creek",
+    "description": "Willow-lined stream on the W/NW edge of the Tippecanoe battlefield; Harrison's army camped on the oak rise above it the night of Nov 6-7, 1811 (rear line guarded the creek). Flows SW past Battle Ground to the Wabash. Named for the Burnett family -- almost certainly the metis Potawatomi Burnetts (cf. Burnet's Reserve RS-01, same township); eponym not stated in battle histories (VERIFY). Cross-ref F-001/016/152/155.",
+    "source": "DeHart/battle accounts; PLSS",
+    "confidence": "approx-course",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.85472,
+      40.51742
+     ],
+     [
+      -86.85463,
+      40.50293
+     ],
+     [
+      -86.85455,
+      40.48844
+     ],
+     [
+      -86.87351,
+      40.47395
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-12",
+    "name": "Harrison Creek",
+    "category": "waterway",
+    "wtype": "creek",
+    "description": "Small creek beginning near Battle Ground, flowing east; named for Gen. W.H. Harrison.",
+    "source": "standard",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.79752,
+      40.51742
+     ],
+     [
+      -86.77846,
+      40.51742
+     ],
+     [
+      -86.75939,
+      40.51742
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-05",
+    "name": "Wea Creek (Weeawe)",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "Miami-named creek entering the Wabash from the SE; the only cultural name in the Ouiatanon township notes.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.96823,
+     40.40148
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-06",
+    "name": "Pouceaupichieux Creek",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "French-derived creek name; enters the Wabash from the SW (spelling approximate).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.85438,
+     40.45945
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-07",
+    "name": "Flint Creek",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "Creek at whose mouth the 6-section Burnet reserve sat (T22N-R6W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.08202,
+     40.358
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-08",
+    "name": "Stony Creek",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "Named on the T25N-R2W plat near Mary Wells' Reserve.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.68328,
+     40.5609
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-09",
+    "name": "Little Pine Creek",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "Named creek, SE course (T24N-R6W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.06403,
+     40.47395
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "WW-10",
+    "name": "Brosher Creek",
+    "category": "waterway",
+    "wtype": "creek-mouth",
+    "description": "Named creek in T21N-R7W (spelling uncertain).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.2137,
+     40.22757
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-011",
+    "name": "Great Wabash Trail",
+    "category": "trail",
+    "ttype": "indian-trail",
+    "description": "Principal Native N-S route following the Wabash (Vincennes-Ouiatanon-Kekionga). PLSS confirms the river corridor WAS the route; plotted along the Wabash.",
+    "source": "Dunn/DeHart; PLSS",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-012;TR-021;TR-024",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.58814,
+      40.69134
+     ],
+     [
+      -86.6263,
+      40.66235
+     ],
+     [
+      -86.66438,
+      40.61887
+     ],
+     [
+      -86.70246,
+      40.58989
+     ],
+     [
+      -86.72132,
+      40.53192
+     ],
+     [
+      -86.75939,
+      40.51742
+     ],
+     [
+      -86.85446,
+      40.47395
+     ],
+     [
+      -86.85438,
+      40.45945
+     ],
+     [
+      -86.87334,
+      40.44496
+     ],
+     [
+      -86.8922,
+      40.41598
+     ],
+     [
+      -86.91114,
+      40.40148
+     ],
+     [
+      -86.96812,
+      40.38699
+     ],
+     [
+      -87.06326,
+      40.38699
+     ],
+     [
+      -87.08202,
+      40.358
+     ],
+     [
+      -87.11977,
+      40.32902
+     ],
+     [
+      -87.1578,
+      40.32902
+     ],
+     [
+      -87.21467,
+      40.31453
+     ],
+     [
+      -87.25251,
+      40.30003
+     ],
+     [
+      -87.25234,
+      40.28554
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-013",
+    "name": "Great Sauk Trail",
+    "category": "trail",
+    "ttype": "indian-trail",
+    "description": "Detroit -> SW Michigan (now US-12/old Chicago Rd) -> near La Porte, Indiana -> around the head of Lake Michigan to Chicago, the wild-rice country of Green Bay, and the Lake Superior copper mines; a ~2,000-mi thoroughfare. Branch through Ontario to Niagara & Montreal. [Hinsdale 1931; Treaty of Chicago 1821 Art.6]",
+    "source": "standard",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-035;TR-046",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.046,
+      42.331
+     ],
+     [
+      -86.252,
+      41.683
+     ],
+     [
+      -87.061,
+      41.473
+     ],
+     [
+      -87.65,
+      41.85
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-014",
+    "name": "Potawatomi Trail of Death (1838)",
+    "category": "trail",
+    "ttype": "removal-route",
+    "description": "1838 forced-removal route: Twin Lakes(Plymouth)->Logansport->Battle Ground vicinity->Williamsport->Danville IL->Kansas. Cross-ref F-040.",
+    "source": "removal record",
+    "confidence": "approx-cities",
+    "era": "removal 1838",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.31,
+      41.344
+     ],
+     [
+      -86.356,
+      40.754
+     ],
+     [
+      -86.83557,
+      40.50293
+     ],
+     [
+      -87.292,
+      40.288
+     ],
+     [
+      -87.63,
+      40.124
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-022",
+    "name": "Potawatomi-Miami Trail",
+    "category": "trail",
+    "ttype": "indian-trail",
+    "description": "Fort Wayne-Chicago trade route (Maumee<->Lake Michigan via St. Joseph watershed/Elkhart Co.); distinct from the Sauk Trail. [Wilson 1919 p.431 corroborates: a 'road from Fort Wayne to Chicago' crossed the MI-IN line at the NW corner of Elkhart Co.]",
+    "source": "potawatomi-miamitrail.org; standard",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-012",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.139,
+      41.08
+     ],
+     [
+      -85.977,
+      41.682
+     ],
+     [
+      -87.65,
+      41.85
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-023",
+    "name": "Lafayette-Chicago Road",
+    "category": "trail",
+    "ttype": "wagon-road",
+    "description": "State wagon road labeled 'Lafayette'<->'Chicago' on the T26N-R7W plat; crossed on many section lines through the Grand Prairie (Benton Co.).",
+    "source": "PLSS plat/notes T26N-R7W",
+    "confidence": "approx",
+    "era": "wagon road 1830s",
+    "related": "TR-026",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.894,
+      40.417
+     ],
+     [
+      -87.21841,
+      40.64786
+     ],
+     [
+      -87.65,
+      41.85
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-024",
+    "name": "Wabash-Rockville Wagon Road",
+    "category": "trail",
+    "ttype": "wagon-road",
+    "description": "Wagon road 'supposed to lead from the Wabash to Rockville', NW course (T26N-R6W/R7W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "era": "wagon road 1830s",
+    "related": "TR-011",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.894,
+      40.417
+     ],
+     [
+      -87.142,
+      40.64786
+     ],
+     [
+      -87.229,
+      39.761
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-021",
+    "name": "Barnett's Road",
+    "category": "trail",
+    "ttype": "road",
+    "description": "Named early road across the N of the Lafayette township toward Abraham Burnett's place/reserve.",
+    "source": "PLSS plat T23N-R4W (labeled)",
+    "confidence": "approx",
+    "era": "pioneer road 1820s",
+    "related": "TR-011;TR-046",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.89247,
+      40.45945
+     ],
+     [
+      -86.87343,
+      40.45945
+     ],
+     [
+      -86.85438,
+      40.45945
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-015",
+    "name": "Wea Trail",
+    "category": "trail",
+    "ttype": "indian-trail",
+    "description": "Wea Plain <-> Ouiatanon/Wabash crossing.",
+    "source": "Dunn/DeHart",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.89164,
+      40.32902
+     ],
+     [
+      -86.98715,
+      40.38699
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-012",
+    "name": "Wabash-Maumee Portage (Kekionga)",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "The 'glorious gate' carrying-place between the Great Lakes (Maumee) and Wabash watersheds at Fort Wayne. Cross-ref F-049.",
+    "source": "Dunn Vol.I + Hulbert Vol.7 (Wabash-Maumee 'Petite Riviere' route)",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "related": "TR-011;TR-022;TR-025;TR-033;TR-034;TR-053;TR-058",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -85.139,
+     41.08
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TRC-01",
+    "name": "Indian trail (confluence)",
+    "category": "trail",
+    "ttype": "indian-trace-point",
+    "description": "'an Indian trail' logged in the Tippecanoe meander at the Wabash-Tippecanoe mouth.",
+    "source": "PLSS notes T24N-R3W",
+    "confidence": "located",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.77853,
+     40.53192
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TRC-02",
+    "name": "Old Indian trail (deep hollow)",
+    "category": "trail",
+    "ttype": "indian-trace-point",
+    "description": "'old Indian trail N&S, a deep hollow' logged on the line btw Secs 25&36.",
+    "source": "PLSS notes T26N-R7W",
+    "confidence": "located",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.16125,
+     40.66235
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-01",
+    "name": "Burnet's Reserve (A. Burnett, Potawatomi)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "On the Wabash by the battlefield; NW boundary = the plat's N50E line.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.81651,
+     40.50293
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-02",
+    "name": "Burnett Reserve (1,280 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "SE of T25N-R3W, straddling into R2W.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.70236,
+     40.5609
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-03",
+    "name": "Burnet 6-section Reserve (mouth of Flint Creek)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "Six sections at the mouth of Flint Creek.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.08202,
+     40.358
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-04",
+    "name": "P. Langlois Reservation (1,250 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "'Ten oldest children' of the French-Potawatomi trader Langlois, on the Wabash near Lafayette.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.85429,
+     40.44496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-05",
+    "name": "Wyandot Reserve 'Long Hair & others' (5 sec)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "Wyandot reserve + village on the Wea Plain. Cross-ref F-153.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.75863,
+     40.34351
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-06",
+    "name": "Jean B. Cicot Reserve (640 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "Cicot/Cicotte family reserve on the Wabash. Cross-ref F-121.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.17681,
+     40.32902
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-07",
+    "name": "Z. Cicot's Children Reserve (960 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "On the Wabash (Carroll Co.). Cross-ref F-121.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.58814,
+     40.69134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-08",
+    "name": "Mary Chalilie/Challis Reserve (640 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "SW of T22N-R7W, straddling T21N-R7W (name uncertain).",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.25251,
+     40.30003
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-09",
+    "name": "Children of A. Bondie Reserve (2 sec)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "Opposite L'Isle a l'Aille.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.66438,
+     40.61887
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-10",
+    "name": "Mary Wells' Reserve (640 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "SW T25N-R2W near Stony Creek.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.66425,
+     40.5754
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "RS-11",
+    "name": "Connor's Reserve (J.W. & H. Connor, 1,920 ac)",
+    "category": "reserve",
+    "ftype": "treaty-reserve",
+    "description": "Long tract on the SW bank of the Wabash.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.6263,
+     40.66235
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "VL-01",
+    "name": "Kickapoo Village (Wabash)",
+    "category": "settlement",
+    "ftype": "village/post",
+    "description": "'an Indian village occupied by Kickapoos' on the Wabash bottom.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.25268,
+     40.31453
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "VL-02",
+    "name": "Wyandot Village (Long Hair)",
+    "category": "settlement",
+    "ftype": "village/post",
+    "description": "Drawn village on the Wyandot reserve. Cross-ref F-153.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.75857,
+     40.32902
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "VL-03",
+    "name": "French/Potawatomi 'Village des...'",
+    "category": "settlement",
+    "ftype": "village/post",
+    "description": "Village by the Langlois reserve on the Wabash.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.85429,
+     40.44496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "VL-04",
+    "name": "Morris Trading House ('Morris' landing')",
+    "category": "settlement",
+    "ftype": "village/post",
+    "description": "'a Trading house formerly used by a Mr. Morris'; drawn as a building on the plat.",
+    "source": "PLSS plats/notes",
+    "confidence": "approx",
+    "protocol": "Nation review before publish",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.81751,
+     40.69134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-01",
+    "name": "Petrifying (tufa) Spring",
+    "category": "landmark",
+    "ftype": "geology",
+    "description": "'a remarkable Spring... elevated by a mass of petrified substance... 3.5 ft above the common level.'",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.91181,
+     40.50293
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-02",
+    "name": "Sulphur/Iron Water",
+    "category": "landmark",
+    "ftype": "geology",
+    "description": "'water sulphury or of Iron cast' past a Pine Creek crossing.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.23517,
+     40.44496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-03",
+    "name": "Pine Creek Falls & Mill Seat",
+    "category": "landmark",
+    "ftype": "geology",
+    "description": "'considerable falls... rock bottom, whetstone grit & slate stone'; a mill seat.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.25167,
+     40.22757
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-04",
+    "name": "Mill Seat (30-in fall)",
+    "category": "landmark",
+    "ftype": "mill",
+    "description": "'a good mill seat, fall of 30 in nearly perpendicular.'",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.66386,
+     40.44496
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-05",
+    "name": "Muskrat Pond/Harbour",
+    "category": "landmark",
+    "ftype": "pond",
+    "description": "Large pond/marsh complex; 'many Muskrat houses & Fish' (also T26N-R4W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.87449,
+     40.63337
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-06",
+    "name": "Racoon Pond",
+    "category": "landmark",
+    "ftype": "pond",
+    "description": "Named pond on the W line of T26N-R5W.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.93219,
+     40.69134
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-07",
+    "name": "Fish Pond",
+    "category": "landmark",
+    "ftype": "pond",
+    "description": "Named pond by Muskrat Pond (T26N-R4W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.83646,
+     40.66235
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-08",
+    "name": "Rush Pond",
+    "category": "landmark",
+    "ftype": "pond",
+    "description": "Named recurring wet pond, N-central T26N-R7W.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.19994,
+     40.70583
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-09",
+    "name": "Grand Prairie (label)",
+    "category": "landmark",
+    "ftype": "prairie",
+    "description": "The great upper-Wabash prairie (also T25N-R4W, T26N-R7W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.85488,
+     40.54641
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-10",
+    "name": "Pretty Prairie (label)",
+    "category": "landmark",
+    "ftype": "prairie",
+    "description": "'enter Pretty Prairie (so called)'.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.81659,
+     40.51742
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-11",
+    "name": "Anderson's Grove",
+    "category": "landmark",
+    "ftype": "grove",
+    "description": "Named timber grove (also T25N-R6W).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.14024,
+     40.47395
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-12",
+    "name": "Walnut Grove",
+    "category": "landmark",
+    "ftype": "grove",
+    "description": "'This is called the Walnut grove'; a house nearby.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.1038,
+     40.64786
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-13",
+    "name": "Finch's Grove",
+    "category": "landmark",
+    "ftype": "grove",
+    "description": "'known as Finches Grove, from the most influential man in the grove.'",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.1611,
+     40.64786
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-14",
+    "name": "White Oak Grove",
+    "category": "landmark",
+    "ftype": "grove",
+    "description": "'what is called the W. Oak grove.'",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.25489,
+     40.50293
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-15",
+    "name": "L'Isle a l'Aille (Wabash island)",
+    "category": "landmark",
+    "ftype": "island",
+    "description": "Named island in the Wabash (T25N-R2W plat).",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.66442,
+     40.63337
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "LM-16",
+    "name": "Ridge dividing Wabash & Iroquois waters",
+    "category": "landmark",
+    "ftype": "divide",
+    "description": "Low ridge (<25 ft) dividing the Wabash and Iroquois/Illinois drainages.",
+    "source": "PLSS notes",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.19946,
+     40.66235
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "AN-01",
+    "name": "Tippecanoe Battlefield",
+    "category": "anchor",
+    "ftype": "site",
+    "description": "The 1811 battleground (F-001/016/152).",
+    "source": "folklore master",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.835,
+     40.503
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "AN-02",
+    "name": "Ouiatanon site",
+    "category": "anchor",
+    "ftype": "site",
+    "description": "French post & Wea towns, S bank of the Wabash (F-054).",
+    "source": "folklore master",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.959,
+     40.372
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "AN-03",
+    "name": "Prophetstown / Wabash-Tippecanoe confluence",
+    "category": "anchor",
+    "ftype": "site",
+    "description": "Mouth of the Tippecanoe (F-001).",
+    "source": "folklore master",
+    "confidence": "approx",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.77853,
+     40.53192
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-001",
+    "name": "Buffalo Trace (Vincennes Trace)",
+    "category": "trail",
+    "ttype": "bison-and-native-trace",
+    "description": "The great E-W artery of southern Indiana: Falls of the Ohio (New Albany) -> Paoli -> Shoals -> Vincennes. Worn first by migrating bison, then the main Native and pioneer road to the lower Wabash. (Loads its Part-A locked ID into the atlas.)",
+    "source": "Wilson, Early Indiana Trails & Surveys (1919); Vincennes Trace",
+    "confidence": "corridor",
+    "era": "game-origin->aboriginal->road",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.76,
+      38.28
+     ],
+     [
+      -86.1,
+      38.4
+     ],
+     [
+      -86.468,
+      38.556
+     ],
+     [
+      -86.792,
+      38.667
+     ],
+     [
+      -87.2,
+      38.68
+     ],
+     [
+      -87.528,
+      38.677
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-018",
+    "name": "Thorntown Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Connector from the Wea towns/Ouiatanon SE to Thorntown (the Eel River Miami reserve, Boone Co.) and on toward central Indiana. Ties the Ouiatanon hub to the Thorntown band.",
+    "source": "Wilson 1919; Dunn glossary (F-123)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.9,
+      40.37
+     ],
+     [
+      -86.78,
+      40.28
+     ],
+     [
+      -86.606,
+      40.129
+     ],
+     [
+      -86.45,
+      40.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-019",
+    "name": "Strawtown / Lafayette Trace (Tecumseh's route)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Prehistoric game trail -> Native trace: Delaware capital at Anderson -> ford at Strawtown (White R.) -> NW to the Wildcat & Wea prairies on the Wabash. The route Tecumseh rode from Anderson to Prophetstown; plowed under by the 1880s. FOOTPRINT-CONNECTING.",
+    "source": "Wilson 1919; IN.gov history blog (Lafayette/Strawtown Trace)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.6803,
+      40.1053
+     ],
+     [
+      -85.947,
+      40.178
+     ],
+     [
+      -86.2,
+      40.24
+     ],
+     [
+      -86.5,
+      40.31
+     ],
+     [
+      -86.7,
+      40.35
+     ],
+     [
+      -86.9,
+      40.37
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-020",
+    "name": "Mississinewa Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Up the Mississinewa River from the Wabash at Peru through the Miami villages to the Mississinewa towns (site of the 1812 Mississinewa campaign); connects toward Lake Manitou.",
+    "source": "Wilson 1919; Dunn (cross-ref F-124/144)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.07,
+      40.75
+     ],
+     [
+      -85.9,
+      40.65
+     ],
+     [
+      -85.75,
+      40.57
+     ],
+     [
+      -85.66,
+      40.56
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-025",
+    "name": "Strawtown-Kekionga Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "N-S trail crossing the Lafayette/Strawtown Trace at Strawtown and running to the Miami capital Kekionga (Fort Wayne).",
+    "source": "IN.gov history blog; Wilson 1919",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-012",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.947,
+      40.178
+     ],
+     [
+      -85.65,
+      40.55
+     ],
+     [
+      -85.4,
+      40.85
+     ],
+     [
+      -85.14,
+      41.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-026",
+    "name": "Ouiatanon-Chicago Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Native trace NW from Ouiatanon across the Grand Prairie (Benton Co.) to the Kankakee and Chicago; the Indian precursor underlying the later Lafayette-Chicago wagon road (cross-ref TR-023).",
+    "source": "Wilson 1919",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-023",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.9,
+      40.37
+     ],
+     [
+      -87.1,
+      40.5
+     ],
+     [
+      -87.3,
+      40.7
+     ],
+     [
+      -87.45,
+      41.05
+     ],
+     [
+      -87.55,
+      41.45
+     ],
+     [
+      -87.65,
+      41.85
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-027",
+    "name": "St. Joseph-Kankakee Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "St. Joseph R. landing near South Bend, SW ~4-5 miles across the prairie to the Kankakee marsh (near the sec. 7/8 line); the continental divide carry used by Marquette, La Salle, and the French voyageurs. 'German's Portage' was a variant landing a mile or more shorter. [Baker, The St. Joseph-Kankakee Portage, 1899]",
+    "source": "Wilson 1919 (Kankakee-St. Joseph route); Hulbert Vol.7; Baker 1899",
+    "confidence": "located",
+    "era": "aboriginal",
+    "related": "TR-046;TR-052",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.25,
+      41.676
+     ],
+     [
+      -86.29,
+      41.64
+     ],
+     [
+      -86.315,
+      41.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-002",
+    "name": "Red Banks Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Henderson KY ('Red Banks') -> Evansville -> Princeton -> Vincennes; near-due N-S, ~1 mi W of the R10/R11 line. Harmar's 1787 route.",
+    "source": "Wilson 1919 pp.359-360,392-395",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.59,
+      37.84
+     ],
+     [
+      -87.571,
+      37.975
+     ],
+     [
+      -87.567,
+      38.355
+     ],
+     [
+      -87.528,
+      38.677
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-003",
+    "name": "Yellow Banks Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Rockport (Ohio R.) N through Spencer/Warrick/Pike to the Delaware summer camp at the forks of White R.; via Chrisney, Gentryville, Dale, Otwell; crossed the Patoka at a ford near Jasper. Delaware 'Weesoe Wusapinuk'.",
+    "source": "Wilson 1919 pp.359,384-392",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.05,
+      37.88
+     ],
+     [
+      -87.04,
+      38.01
+     ],
+     [
+      -87.06,
+      38.17
+     ],
+     [
+      -87.09,
+      38.47
+     ],
+     [
+      -87.28,
+      38.49
+     ],
+     [
+      -87.3,
+      38.78
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-004",
+    "name": "Rome Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Rome (Perry Co., orig. 'Washington') NW via Fulda, Mariah Hill, N of Dale to the SW corner of Dubois Co.; lost at the Freeman line ~2 mi NE of Pleasantville; joined the Yellow Banks Trail near the Pike Co. line.",
+    "source": "Wilson 1919 pp.357-359,398",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.56,
+      37.92
+     ],
+     [
+      -86.88,
+      38.12
+     ],
+     [
+      -86.9,
+      38.17
+     ],
+     [
+      -87.0,
+      38.2
+     ],
+     [
+      -87.22,
+      38.42
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-005",
+    "name": "Shawnee Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Southern Illinois -> Vincennes; two traces joined near the 'beauty spots' ~6 mi NW of Mt. Carmel IL. 'Shawnee' = 'Southerner'. Only incidentally in Indiana.",
+    "source": "Wilson 1919 pp.360,455",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.528,
+      38.677
+     ],
+     [
+      -87.76,
+      38.41
+     ],
+     [
+      -88.0,
+      38.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-006",
+    "name": "Salt Route (Salt Trace)",
+    "category": "trail",
+    "ttype": "salt-route",
+    "description": "Vincennes -> White R. crossing near Hazleton -> Patoka at John Severns' (3 mi N of Princeton) -> SW to the Wabash near the mouth of the Little Wabash -> the Illinois salt works (Saline Creek, nr Shawneetown). Crossed the Wabash 'just below New Harmony'.",
+    "source": "Wilson 1919 pp.396-397",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.528,
+      38.677
+     ],
+     [
+      -87.54,
+      38.49
+     ],
+     [
+      -87.57,
+      38.4
+     ],
+     [
+      -87.93,
+      38.13
+     ],
+     [
+      -88.19,
+      37.71
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-007",
+    "name": "Kibbey's Road",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "First road across the whole state: Cincinnati -> Vincennes (cut by Capt. E. Kibbey, 1799). Via Milan/Dearborn Co., Madison, New Lexington, Salem, French Lick, the forks of White R. ~201 mi. Became the north fork of the Buffalo trace.",
+    "source": "Wilson 1919 pp.352-353,441",
+    "confidence": "approx",
+    "era": "pioneer road 1799",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.51,
+      39.1
+     ],
+     [
+      -85.13,
+      39.12
+     ],
+     [
+      -85.38,
+      38.74
+     ],
+     [
+      -86.1,
+      38.61
+     ],
+     [
+      -86.62,
+      38.55
+     ],
+     [
+      -87.17,
+      38.66
+     ],
+     [
+      -87.53,
+      38.68
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-008",
+    "name": "Vallonia Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Vallonia (old fort, Jackson Co.) SE through Washington & Scott Cos. into Clark's Grant near the Pigeon Roost, to old Springville (nr Charlestown) and the Falls of the Ohio; crossed the Muscatatuck. The 'Aaron Burr cabin' stood on it.",
+    "source": "Wilson 1919 pp.355,380-381",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.1,
+      38.84
+     ],
+     [
+      -85.95,
+      38.7
+     ],
+     [
+      -85.78,
+      38.65
+     ],
+     [
+      -85.67,
+      38.45
+     ],
+     [
+      -85.76,
+      38.28
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-009",
+    "name": "Whetzel's Trace",
+    "category": "trail",
+    "ttype": "pioneer-trace",
+    "description": "Jacob Whetzel's 1818 trace through the New Purchase: Laurel (Whitewater R., Franklin Co.) W ~60 mi to the West Fork of White R. at Waverly; ~7 mi below Rushville, 4 mi above Shelbyville, N of Boggstown. Permission from Delaware Chief Anderson.",
+    "source": "Wilson 1919 pp.399-401",
+    "confidence": "corridor",
+    "era": "pioneer trace 1818",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.19,
+      39.51
+     ],
+     [
+      -85.45,
+      39.5
+     ],
+     [
+      -85.78,
+      39.58
+     ],
+     [
+      -85.92,
+      39.57
+     ],
+     [
+      -86.17,
+      39.52
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-028",
+    "name": "Blue River Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Ohio R. at Fredonia (mouth of Blue R.) N via Hardinsburg to the Buffalo trace near Samuel Hay's cabin on the W bank of Little Blue R. (~34.25 mi from Clark's Grant). Emigrant entry route after 1807.",
+    "source": "Wilson 1919 pp.381-384",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.47,
+      38.07
+     ],
+     [
+      -86.27,
+      38.46
+     ],
+     [
+      -86.3,
+      38.55
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-029",
+    "name": "Buck Creek Trace",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Harrison Co. (R4E): Ohio R. -> Corydon -> the Buffalo trace; crossed the S fork of Buck creek twice. Squire Boone's mill and 'cave-sepulchre' nearby.",
+    "source": "Wilson 1919 p.357",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.05,
+      38.0
+     ],
+     [
+      -86.12,
+      38.21
+     ],
+     [
+      -86.2,
+      38.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-030",
+    "name": "Illinois Trace",
+    "category": "trail",
+    "ttype": "bison-and-native-trace",
+    "description": "The 'Old Buffalo trace' running W from Vincennes into Illinois (from Clark's Grant); the W line of the Vincennes tract crossed it. Clark's 1779 approach route is linked to it.",
+    "source": "Wilson 1919 pp.361,420",
+    "confidence": "approx",
+    "era": "game-origin->aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.528,
+      38.677
+     ],
+     [
+      -87.75,
+      38.65
+     ],
+     [
+      -88.0,
+      38.62
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-031",
+    "name": "Michigan Road",
+    "category": "trail",
+    "ttype": "state-road",
+    "description": "1828-30 state road, 100 ft wide: Michigan City (Trail Creek/Lake Michigan) -> South Bend -> Rochester -> Logansport (Eel R.) -> Indianapolis -> Madison. Touches the footprint corridor at Logansport.",
+    "source": "Wilson 1919 pp.439-441",
+    "confidence": "high",
+    "era": "state road 1828-30",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -86.89,
+      41.71
+     ],
+     [
+      -86.25,
+      41.68
+     ],
+     [
+      -86.21,
+      41.06
+     ],
+     [
+      -86.36,
+      40.75
+     ],
+     [
+      -86.16,
+      39.77
+     ],
+     [
+      -85.38,
+      38.74
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-032",
+    "name": "Vincennes-Fort Harrison Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Indian trail N from Vincennes, crossing the Freeman line near Carlisle, past Terre Haute to Fort Harrison (on the Wabash).",
+    "source": "Wilson 1919 p.361",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -87.53,
+      38.68
+     ],
+     [
+      -87.4,
+      38.96
+     ],
+     [
+      -87.41,
+      39.47
+     ],
+     [
+      -87.4,
+      39.52
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-033",
+    "name": "Fort Wayne-Nottawasepe Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Indian trail from Fort Wayne NW to Nottawasepe (Michigan); crossed the state line ~6 mi W of the NE corner of LaGrange Co.",
+    "source": "Wilson 1919 p.432 (MI-IN line survey)",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-012",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.14,
+      41.08
+     ],
+     [
+      -85.44,
+      41.76
+     ],
+     [
+      -85.5,
+      42.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-034",
+    "name": "Coldwater-Fort Wayne Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Indian trail between Coldwater (Michigan) and Fort Wayne; crossed the state line just N of Fremont, IN (near James Lake).",
+    "source": "Wilson 1919 p.432 (MI-IN line survey)",
+    "confidence": "approx-cities",
+    "era": "aboriginal",
+    "related": "TR-012",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -85.14,
+      41.08
+     ],
+     [
+      -84.93,
+      41.73
+     ],
+     [
+      -85.0,
+      41.94
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-035",
+    "name": "Chicago Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "The continental hinge Chicago R. (Lake Michigan) <-> Des Plaines/Illinois R. (Mississippi). Marquette wintered on it 1674-75; named in the 1795 Treaty of Greenville. The reason Chicago exists.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "located-approx",
+    "era": "aboriginal",
+    "related": "TR-013",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -87.82,
+     41.79
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-036",
+    "name": "Fox-Wisconsin Portage ('The Grand Portage')",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Fox R. (Green Bay/Great Lakes) <-> Wisconsin R. (Mississippi) at present Portage, WI. Crossed by Nicollet (1634) and Joliet & Marquette (1673); guarded by Fort Winnebago.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "located-approx",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -89.46,
+     43.54
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-037",
+    "name": "Niagara Portage (Lake Erie <-> Lake Ontario)",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "The carry around Niagara Falls between Lakes Ontario and Erie -- the great choke-point of the lower Lakes; long controlled by the Seneca and then contested by France and Britain.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "located-approx",
+    "era": "aboriginal",
+    "related": "TR-044",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.06,
+     43.08
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-038",
+    "name": "Cuyahoga-Tuscarawas Portage ('the Portage Path')",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Lake Erie (Cuyahoga R.) <-> Ohio R. (Tuscarawas/Muskingum) at present Akron, OH; the 'Portage Path' was a surveyed treaty landmark (1785 Fort McIntosh line).",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "located-approx",
+    "era": "aboriginal",
+    "related": "TR-056",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -81.52,
+     41.04
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-039",
+    "name": "Scioto-Sandusky Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Lake Erie (Sandusky R.) <-> Ohio R. (Scioto) -- the central Ohio carry linking the Lakes to the Ohio down the Scioto.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -83.28,
+     40.8
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-040",
+    "name": "Miami-St. Mary's (Loramie) Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Great Miami R. (Ohio R. system) <-> St. Mary's R. (Maumee/Lake Erie) at Loramie's store; the SW Ohio carry between the Ohio and the Lakes.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "related": "TR-053",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -84.38,
+     40.37
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-041",
+    "name": "Chautauqua Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Lake Erie <-> Chautauqua Lake -> Allegheny/Ohio (Mississippi system); the shortest Lakes-to-Ohio carry, used by the French 1753 to reach the Allegheny.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.43,
+     42.16
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-042",
+    "name": "Presque Isle-French Creek Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "Lake Erie (Presque Isle) <-> Riviere aux Boeufs (French Creek) -> Allegheny; the French 1753 fort chain (Presque Isle -> Le Boeuf) carry.",
+    "source": "Hulbert, Historic Highways of America, Vol.7 'Portage Paths' (1903), Gutenberg #41179",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.08,
+     42.08
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-043",
+    "name": "Great Trail (tidewater -> Detroit)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The principal E-W trunk: forks of the Ohio (Pittsburgh) -> Fort Laurens (Tuscarawas ford) -> Mohican John's Town -> Sandusky Bay -> Maumee Rapids (Perrysburg) -> Toledo -> Monroe -> Flat Rock -> Brownstown -> Detroit; N of Detroit it becomes the Saginaw & Mackinaw Trail. A Maumee branch entered Michigan at Morenci and joined the Chicago Trail at Allen.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails' | also in Hulbert Vol.2 Indian Thoroughfares (Ft Pitt->Big Beaver->Bolivar->Mohican John's Town->Sandusky->Detroit; Heckewelder 1796 map)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -80.52,
+      40.65
+     ],
+     [
+      -81.47,
+      40.63
+     ],
+     [
+      -82.25,
+      40.85
+     ],
+     [
+      -82.7,
+      41.45
+     ],
+     [
+      -83.63,
+      41.56
+     ],
+     [
+      -83.54,
+      41.65
+     ],
+     [
+      -83.4,
+      41.92
+     ],
+     [
+      -83.29,
+      42.1
+     ],
+     [
+      -83.05,
+      42.33
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-044",
+    "name": "Lake Erie Shore Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "South shore of Lake Erie: Toledo (where the Michigan trails converged) -> Sandusky Bay -> Cleveland -> Erie PA -> Buffalo/Niagara NY; closely followed by the modern lakeshore highway. Extends east as the Mohawk Trail to the Hudson.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails' | also Hulbert Vol.2 (Niagara->Presque Isle->Sandusky->Detroit, 'second beach'; Heckewelder 1796)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-037",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.54,
+      41.65
+     ],
+     [
+      -82.71,
+      41.45
+     ],
+     [
+      -81.69,
+      41.5
+     ],
+     [
+      -80.08,
+      42.13
+     ],
+     [
+      -78.88,
+      42.89
+     ],
+     [
+      -79.06,
+      43.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-045",
+    "name": "Scioto Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Branched from the Great/Shore trails at Sandusky Bay, up the Sandusky R. to the portage, down the Scioto to the Ohio, then across Kentucky (Warriors' Path) to Cumberland Gap and the South. The copper-and-shell trade artery: Michigan copper south, marine shell north.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails' | also Hulbert Vol.2 (Sandusky valley->Scioto->Ohio; Kanawha branch to Pt Pleasant; Filson/Hutchins maps)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.7,
+      41.45
+     ],
+     [
+      -83.0,
+      40.8
+     ],
+     [
+      -83.0,
+      39.96
+     ],
+     [
+      -82.98,
+      39.33
+     ],
+     [
+      -82.99,
+      38.73
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-046",
+    "name": "Montreal Trail (Detroit -> Prophetstown/Ouiatenon)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "THE Great Lakes land-link into the footprint: an old trail from Montreal following the Chicago Trail from Detroit, branching at Fort St. Joseph (Niles) and leading SOUTH to the Tippecanoe River, Prophet's Town, and Ouiatenon on the Wabash. From Ouiatenon, water route to New Orleans (Eddy: 1,871 mi). FOOTPRINT-CONNECTING.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails' (Eddy 1816 & Hutchins 1778 maps)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-013;TR-021;TR-027",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.05,
+      42.33
+     ],
+     [
+      -85.0,
+      42.0
+     ],
+     [
+      -86.25,
+      41.83
+     ],
+     [
+      -86.5,
+      41.0
+     ],
+     [
+      -86.75,
+      40.7
+     ],
+     [
+      -86.84,
+      40.51
+     ],
+     [
+      -86.9,
+      40.37
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-047",
+    "name": "Mahoning Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The most direct Detroit <-> forks-of-the-Ohio route: up the north bend of the Mahoning R. (E Ohio), then W to join the Great Trail near Sandusky Bay.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails' | also Hulbert Vol.2 (runners' bypass Ft Pitt->Beaver/Mahoning->Cuyahoga-Tuscarawas portage->Sandusky)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -80.65,
+      41.1
+     ],
+     [
+      -81.5,
+      41.3
+     ],
+     [
+      -82.7,
+      41.45
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-048",
+    "name": "Saginaw & Mackinaw Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Detroit -> Pontiac -> Flint -> Saginaw R. -> up the Tittabawassee to Edenville, where it forked for the Grand Traverse region and for Cheboygan/the Straits of Mackinac. Followed by the Dixie Highway from Toledo through Detroit, Pontiac, Flint.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails'",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.05,
+      42.33
+     ],
+     [
+      -83.29,
+      42.64
+     ],
+     [
+      -83.69,
+      43.01
+     ],
+     [
+      -83.95,
+      43.42
+     ],
+     [
+      -84.39,
+      43.8
+     ],
+     [
+      -84.76,
+      44.31
+     ],
+     [
+      -84.73,
+      45.78
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-049",
+    "name": "Grand River Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Detroit -> Grand Rapids (mouth of the Grand), through Oakland, Livingston, Ingham, Ionia, Kent counties; followed the Cedar R. much of the way. Leaves Detroit as Grand River Avenue / the Grand River Road; a trail network fanned out at the Grand Rapids.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails'",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.05,
+      42.33
+     ],
+     [
+      -83.93,
+      42.61
+     ],
+     [
+      -84.55,
+      42.73
+     ],
+     [
+      -85.07,
+      42.98
+     ],
+     [
+      -85.67,
+      42.96
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-050",
+    "name": "Territorial Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Crossed the Chicago/Sauk Trail at Ypsilanti, through Ann Arbor, the centers of Jackson & Calhoun counties, branching to Kalamazoo (uniting with the Chicago Trail in SE Berrien Co.) and to the mouths of the St. Joseph (St. Joseph) and Kalamazoo (Saugatuck).",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails'",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.61,
+      42.24
+     ],
+     [
+      -83.74,
+      42.28
+     ],
+     [
+      -84.4,
+      42.25
+     ],
+     [
+      -84.96,
+      42.27
+     ],
+     [
+      -85.59,
+      42.29
+     ],
+     [
+      -86.49,
+      42.11
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-051",
+    "name": "Potawatomi Trail (Huron River, Michigan)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Followed the Huron R. from its mouth (Lake Erie) up to Portage Lake (Washtenaw/Livingston line), crossing the Chicago/Sauk Trail at Ypsilanti and passing Ann Arbor. Distinct from the Fort Wayne-Chicago Potawatomi-Miami Trail (TR-022).",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails'",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -83.24,
+      42.05
+     ],
+     [
+      -83.56,
+      42.17
+     ],
+     [
+      -83.74,
+      42.28
+     ],
+     [
+      -83.92,
+      42.42
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-052",
+    "name": "Mackinaw-St. Joseph Shore Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Down the east shore of Lake Michigan: Mackinaw -> the Traverse bays -> Manistee/Mason/Oceana shore -> South Haven -> mouth of the St. Joseph (St. Joseph); below St. Joseph it touched the shore villages and JOINED THE SAUK TRAIL IN INDIANA, connecting for Chicago. FOOTPRINT-CONNECTING.",
+    "source": "Hinsdale, Archaeological Atlas of Michigan (1931), ch. 'Trails'",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-027",
+    "region": "Great Lakes / Old Northwest"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.73,
+      45.78
+     ],
+     [
+      -85.62,
+      44.76
+     ],
+     [
+      -86.32,
+      44.24
+     ],
+     [
+      -86.43,
+      43.5
+     ],
+     [
+      -86.27,
+      42.4
+     ],
+     [
+      -86.49,
+      42.11
+     ],
+     [
+      -86.7,
+      41.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-053",
+    "name": "Harmar's Road (1790)",
+    "category": "trail",
+    "ttype": "military-road",
+    "description": "Harmar's 1790 campaign march, Fort Washington (Cincinnati) NW to the Maumee towns at Kekionga (Fort Wayne): via Lebanon, Fish-pot Ford (Little Miami), old Chillicothe, Mad R. near New Carlisle, Troy, Piqua (Great Miami), Loramie's Creek, St. Marys. Followed Clark's 1782 trace out of Cincinnati; Hardin's ambush fell on the Kickapoo path near the Eel R. ~11 mi from Fort Wayne.",
+    "source": "Hulbert, Historic Highways Vol.8 'Military Roads of the Mississippi Basin: The Conquest of the Old Northwest' (1904), Gutenberg #41167",
+    "confidence": "corridor",
+    "era": "military 1790",
+    "related": "TR-012;TR-040",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.51,
+      39.1
+     ],
+     [
+      -84.2,
+      39.44
+     ],
+     [
+      -83.93,
+      39.58
+     ],
+     [
+      -84.02,
+      39.94
+     ],
+     [
+      -84.2,
+      40.04
+     ],
+     [
+      -84.25,
+      40.14
+     ],
+     [
+      -84.38,
+      40.3
+     ],
+     [
+      -84.39,
+      40.54
+     ],
+     [
+      -85.14,
+      41.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-054",
+    "name": "Wayne's Trace & the fort chain (1791-94)",
+    "category": "trail",
+    "ttype": "military-road",
+    "description": "The military road and fort chain of the Old Northwest conquest: Fort Washington -> Ft. Hamilton -> Ft. St. Clair (Eaton) -> Ft. Jefferson -> Ft. Greene Ville -> Ft. Recovery (St. Clair's 1791 defeat) -> Ft. Adams -> Ft. Defiance (Auglaize-Maumee) -> down the Maumee to Fallen Timbers & Ft. Meigs (the Rapids). Wayne built Fort Wayne at Kekionga, 1794.",
+    "source": "Hulbert, Historic Highways Vol.8 'Military Roads of the Mississippi Basin: The Conquest of the Old Northwest' (1904), Gutenberg #41167 + standard campaign histories",
+    "confidence": "corridor",
+    "era": "military 1791-94",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.51,
+      39.1
+     ],
+     [
+      -84.56,
+      39.4
+     ],
+     [
+      -84.64,
+      39.74
+     ],
+     [
+      -84.63,
+      40.03
+     ],
+     [
+      -84.63,
+      40.1
+     ],
+     [
+      -84.78,
+      40.41
+     ],
+     [
+      -84.72,
+      40.45
+     ],
+     [
+      -84.36,
+      41.28
+     ],
+     [
+      -83.63,
+      41.55
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-055",
+    "name": "Hull's Road (1812)",
+    "category": "trail",
+    "ttype": "military-road",
+    "description": "Hull's 1812 march to Detroit, the chief supply road of the NW theatre: Dayton/Urbana -> Ft. McArthur (Kenton) -> Ft. Findlay -> Ft. Meigs (Maumee Rapids) -> Brownstown -> Detroit.",
+    "source": "Hulbert, Historic Highways Vol.8 'Military Roads of the Mississippi Basin: The Conquest of the Old Northwest' (1904), Gutenberg #41167 + War-of-1812 histories",
+    "confidence": "corridor",
+    "era": "military 1812",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.19,
+      39.76
+     ],
+     [
+      -83.75,
+      40.11
+     ],
+     [
+      -83.61,
+      40.65
+     ],
+     [
+      -83.65,
+      41.04
+     ],
+     [
+      -83.63,
+      41.55
+     ],
+     [
+      -83.05,
+      42.33
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-056",
+    "name": "Cuyahoga-Muskingum Trail (Old Muskingum Trail)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Lake Erie <-> Ohio R. through the Delaware country: mouth of the Cuyahoga (Cleveland) -> the great portage to the Tuscarawas (Akron) -> down the Tuscarawas past the Crossing-place of the Muskingum (Bolivar) to the Delaware capital Gosh-goshing (Coshocton) -> down the Muskingum to Marietta.",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-038",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -81.7,
+      41.5
+     ],
+     [
+      -81.52,
+      41.08
+     ],
+     [
+      -81.46,
+      40.65
+     ],
+     [
+      -81.86,
+      40.27
+     ],
+     [
+      -81.45,
+      39.42
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-057",
+    "name": "Miami Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "War-and-trade path: the Great/Little Miami valleys converging to cross the Ohio near the mouth of the Miami (North Bend/Cincinnati), then through the Licking and Kentucky valleys to the Cumberland watershed; a branch joins the Warriors' Path through Cumberland Gap into Cherokee country.",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -84.25,
+      40.14
+     ],
+     [
+      -84.19,
+      39.76
+     ],
+     [
+      -84.82,
+      39.11
+     ],
+     [
+      -84.3,
+      38.6
+     ],
+     [
+      -83.67,
+      36.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-058",
+    "name": "Maumee / 'Miami-of-the-Lake' Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Scioto -> Maumee connector: from Lower Shawnees Town (mouth of the Scioto) NW on the watershed between the Scioto and the two Miamis to the Maumee valley and the Miami town at Kekionga (Fort Wayne) -- the road on toward the Lake Michigan and Superior country.",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902) (Hutchins map 1764)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "related": "TR-012",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.99,
+      38.73
+     ],
+     [
+      -83.4,
+      39.6
+     ],
+     [
+      -84.0,
+      40.4
+     ],
+     [
+      -84.8,
+      40.9
+     ],
+     [
+      -85.14,
+      41.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-059",
+    "name": "Venango Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The main landward Fort Pitt -> Lake Erie route and French-fort line: Fort Pitt N on the Allegheny/Beaver watershed to Fort Venango (Franklin), up French Creek (Riviere aux Boeufs) to Fort Le Boeuf (Waterford) and the portage to Fort Presque Isle (Erie).",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -79.98,
+      41.94
+     ],
+     [
+      -80.08,
+      42.13
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-060",
+    "name": "Scioto-Beaver Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Second in Western importance to the Great Trail: Lower Shawnees Town up the Scioto/Tuscarawas to the Delaware country near Coshocton, then the Tuscarawas-Ohio watershed to 'Painted Post' and the Pennsylvania frontier at the Beaver. Traversed by Christopher Gist for the Ohio Company.",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.99,
+      38.73
+     ],
+     [
+      -82.5,
+      39.5
+     ],
+     [
+      -81.86,
+      40.27
+     ],
+     [
+      -80.9,
+      40.5
+     ],
+     [
+      -80.31,
+      40.69
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-061",
+    "name": "Scioto-Monongahela Trail",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Scioto country <-> the 'Long House' via the lower Ohio: Lower Shawnees Town E across Fairfield/Perry Cos. to Wallace Ridge and 'Big Rock', S to the Ohio opposite the mouth of the Little Kanawha (Belpre), crossing at Parkersburg, by Dry Ridge to the Monongahela. Tecumseh's party marched part of it.",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Indiana & Ohio Valley"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -82.99,
+      38.73
+     ],
+     [
+      -82.0,
+      39.4
+     ],
+     [
+      -81.56,
+      39.27
+     ],
+     [
+      -80.7,
+      39.5
+     ],
+     [
+      -80.0,
+      39.63
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-062",
+    "name": "Iroquois Trail (Great Central Trail)",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The spine of the Six Nations' Long House and one of the longest independent thoroughfares on the continent: Hudson R. below Albany -> up the Mohawk valley -> Ft Stanwix (Rome) -> Oneida -> Onondaga (Syracuse, the council fire) -> Cayuga (Auburn) -> N of the Finger Lakes -> Seneca country (Canandaigua, Batavia) -> Niagara R. just S of the falls. Became the Genesee Rd / NY Central corridor. [NORTHEAST / Laurie's NY]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902) (Guy Johnson map 1771)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -73.75,
+      42.65
+     ],
+     [
+      -74.6,
+      42.95
+     ],
+     [
+      -75.46,
+      43.21
+     ],
+     [
+      -75.65,
+      43.08
+     ],
+     [
+      -76.15,
+      43.05
+     ],
+     [
+      -76.57,
+      42.93
+     ],
+     [
+      -77.28,
+      42.89
+     ],
+     [
+      -78.19,
+      43.0
+     ],
+     [
+      -79.04,
+      43.17
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-063",
+    "name": "Old Connecticut Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Boston/Cambridge -> Marlborough -> Grafton -> Oxford -> Springfield -> Albany; the Bay colonists' road to the Hudson, ~ the Boston & Albany RR alignment. [NORTHEAST]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.06,
+      42.36
+     ],
+     [
+      -71.55,
+      42.35
+     ],
+     [
+      -71.69,
+      42.21
+     ],
+     [
+      -71.86,
+      42.11
+     ],
+     [
+      -72.59,
+      42.1
+     ],
+     [
+      -73.75,
+      42.65
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-064",
+    "name": "New Connecticut Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "Parallel to the Old Connecticut Path: Cambridge -> Worcester -> Albany. [NORTHEAST]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "approx",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -71.11,
+      42.37
+     ],
+     [
+      -71.8,
+      42.26
+     ],
+     [
+      -73.75,
+      42.65
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-065",
+    "name": "Kittanning Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "A preeminent traders' route over the Alleghenies: Kittanning on the Allegheny -> Kittanning Gorge/Point (nr Hollidaysburg) -> up the Juniata (Water Street, Alexandria) -> across the ridges -> Susquehanna/Carlisle -> Philadelphia. Became Forbes's Road (1758). [NORTHEAST/Appalachian]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.52,
+      40.82
+     ],
+     [
+      -78.44,
+      40.47
+     ],
+     [
+      -78.01,
+      40.48
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -75.16,
+      39.95
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-066",
+    "name": "Nemacolin's Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The 'bloody thoroughfare' VA/MD traffic converged on: Wills Creek (Ft Cumberland) -> Little Crossings -> Great Meadows -> Gist's Plantation (Mt Braddock) -> Stewart's Crossing (Connellsville) -> the forks of the Ohio (Pittsburgh). Became Washington's Rd, Braddock's Rd, the Cumberland/National Rd. [NORTHEAST/Appalachian]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.76,
+      39.65
+     ],
+     [
+      -79.28,
+      39.73
+     ],
+     [
+      -79.58,
+      39.82
+     ],
+     [
+      -79.59,
+      40.02
+     ],
+     [
+      -80.0,
+      40.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "TR-067",
+    "name": "Virginia Warriors' Path",
+    "category": "trail",
+    "ttype": "indian-trace",
+    "description": "The great N-S war trail in the trough between the Blue Ridge and Cumberland ranges: Shenandoah/New R. valley -> Cumberland Gap -> Crab Orchard -> Danville -> the Falls of the Ohio (Louisville), on toward the Mississippi. Became Boone's Wilderness Road. [NORTHEAST/Appalachian->South]",
+    "source": "Hulbert, Historic Highways Vol.2 'Indian Thoroughfares' (1902)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      37.3
+     ],
+     [
+      -81.5,
+      36.9
+     ],
+     [
+      -83.67,
+      36.6
+     ],
+     [
+      -84.5,
+      37.46
+     ],
+     [
+      -84.77,
+      37.65
+     ],
+     [
+      -85.76,
+      38.26
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-001",
+    "name": "Allegheny Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Philadelphia->the Allegheny; the main E-W trader path (Armstrong Path a branch) [Wallace #001, p.19] | Philadelphia->Robin Hood's Ford->Paoli->Morgantown->Myerstown->Lebanon->Hershey->Hummelstown->Paxtang(Harrisburg); continues W as the Frankstown Path (PA-026). Oldest road in PA.",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "PA-026"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.47,
+      40.04
+     ],
+     [
+      -75.7,
+      40.01
+     ],
+     [
+      -75.89,
+      40.15
+     ],
+     [
+      -76.11,
+      40.26
+     ],
+     [
+      -76.18,
+      40.3
+     ],
+     [
+      -76.31,
+      40.37
+     ],
+     [
+      -76.41,
+      40.34
+     ],
+     [
+      -76.52,
+      40.33
+     ],
+     [
+      -76.65,
+      40.28
+     ],
+     [
+      -76.7,
+      40.27
+     ],
+     [
+      -76.88,
+      40.27
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-002",
+    "name": "Bald Eagle Creek Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up Bald Eagle Creek to the West Branch [Wallace #002, p.22]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.45,
+      41.14
+     ],
+     [
+      -77.65,
+      41.01
+     ],
+     [
+      -77.78,
+      40.94
+     ],
+     [
+      -77.78,
+      40.91
+     ],
+     [
+      -77.9,
+      40.83
+     ],
+     [
+      -78.24,
+      40.67
+     ],
+     [
+      -78.34,
+      40.6
+     ],
+     [
+      -78.39,
+      40.52
+     ],
+     [
+      -78.35,
+      40.47
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-003",
+    "name": "Bald Eagle's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Bald Eagle's Nest toward Chinklacamoose [Wallace #003, p.23]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.78,
+      40.94
+     ],
+     [
+      -77.95,
+      40.97
+     ],
+     [
+      -78.22,
+      40.9
+     ],
+     [
+      -78.44,
+      41.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-004",
+    "name": "Blue Rock Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conestoga to the Susquehanna at Blue Rock ford [Wallace #004, p.24]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.51,
+      40.13
+     ],
+     [
+      -75.89,
+      40.15
+     ],
+     [
+      -76.09,
+      40.1
+     ],
+     [
+      -76.31,
+      40.04
+     ],
+     [
+      -76.35,
+      40.0
+     ],
+     [
+      -76.52,
+      40.01
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-005",
+    "name": "Bottom Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "West Branch bottom path [Wallace #005, p.25]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.84,
+      40.9
+     ],
+     [
+      -76.85,
+      40.93
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-006",
+    "name": "Brokenstraw Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up Brokenstraw Creek (Bullock/Byerly's branches) [Wallace #006, p.25]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.27,
+      41.84
+     ],
+     [
+      -79.32,
+      41.85
+     ],
+     [
+      -79.41,
+      41.84
+     ],
+     [
+      -79.64,
+      41.95
+     ],
+     [
+      -79.84,
+      41.9
+     ],
+     [
+      -79.98,
+      41.94
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-007",
+    "name": "Catawba Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the great N-S Catawba war path (Iroquois<->Catawba) [Wallace #007, p.27]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.43,
+      42.08
+     ],
+     [
+      -78.64,
+      41.96
+     ],
+     [
+      -78.81,
+      41.66
+     ],
+     [
+      -79.08,
+      41.16
+     ],
+     [
+      -79.15,
+      40.62
+     ],
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.59,
+      40.02
+     ],
+     [
+      -79.72,
+      39.9
+     ],
+     [
+      -79.96,
+      39.63
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-008",
+    "name": "Catawissa Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Tulpehocken/Reading to Catawissa on the Susquehanna [Wallace #008, p.31]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.46,
+      40.95
+     ],
+     [
+      -76.62,
+      40.9
+     ],
+     [
+      -76.79,
+      40.86
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-009",
+    "name": "Catfish Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Catfish Camp (Washington PA) area [Wallace #009, p.32]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.25,
+      40.17
+     ],
+     [
+      -80.19,
+      40.26
+     ],
+     [
+      -80.11,
+      40.36
+     ],
+     [
+      -80.08,
+      40.41
+     ],
+     [
+      -80.0,
+      40.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-010",
+    "name": "Cattaraugus Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "toward the Cattaraugus/Lake Erie [Wallace #010, p.33]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.88,
+      42.89
+     ],
+     [
+      -78.87,
+      42.34
+     ],
+     [
+      -78.8,
+      42.25
+     ],
+     [
+      -78.72,
+      42.16
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-011",
+    "name": "Cayahaga Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "toward the Cuyahoga (Ohio) [Wallace #011, p.33]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -80.46,
+      41.19
+     ],
+     [
+      -80.77,
+      41.18
+     ],
+     [
+      -81.36,
+      41.15
+     ],
+     [
+      -81.52,
+      41.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-012",
+    "name": "Chillisquaque Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Chillisquaque Creek [Wallace #012, p.34]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.8,
+      40.89
+     ],
+     [
+      -76.65,
+      41.05
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-013",
+    "name": "Conemaugh Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conemaugh valley (Conestoga Path a branch) [Wallace #013, p.35]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -78.6,
+      40.15
+     ],
+     [
+      -78.8,
+      40.3
+     ],
+     [
+      -78.92,
+      40.33
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-014",
+    "name": "Conestoga-Newport Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conestoga toward Newport [Wallace #014, p.36]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.52,
+      40.01
+     ],
+     [
+      -76.02,
+      39.99
+     ],
+     [
+      -75.78,
+      39.82
+     ],
+     [
+      -75.73,
+      39.79
+     ],
+     [
+      -75.6,
+      39.71
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-015",
+    "name": "Conewago Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conewago [Wallace #015, p.36]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.63,
+      40.42
+     ],
+     [
+      -76.65,
+      40.28
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-016",
+    "name": "Conneaut Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conneaut Lake toward Lake Erie [Wallace #016, p.37]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.57,
+      41.95
+     ],
+     [
+      -80.37,
+      41.89
+     ],
+     [
+      -80.3,
+      41.63
+     ],
+     [
+      -80.15,
+      41.64
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-017",
+    "name": "Conoy Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Conoy Town on the Susquehanna [Wallace #017, p.38]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.7,
+      40.09
+     ],
+     [
+      -76.73,
+      40.11
+     ],
+     [
+      -76.84,
+      40.14
+     ],
+     [
+      -76.93,
+      40.16
+     ],
+     [
+      -77.19,
+      40.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-018",
+    "name": "Cornplanter's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Cornplanter's town (Jenuchshadego) [Wallace #018, p.39]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.0,
+      41.84
+     ],
+     [
+      -79.14,
+      41.84
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-019",
+    "name": "Cornplanter-Venango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Cornplanter to Venango [Wallace #019, p.41]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.0,
+      41.84
+     ],
+     [
+      -79.14,
+      41.84
+     ],
+     [
+      -79.32,
+      41.85
+     ],
+     [
+      -79.41,
+      41.84
+     ],
+     [
+      -79.66,
+      41.63
+     ],
+     [
+      -79.7,
+      41.43
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-020",
+    "name": "Culbertson's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "(Cumberland Path/Road nearby) [Wallace #020, p.42]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.05,
+      41.22
+     ],
+     [
+      -76.85,
+      41.12
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-021",
+    "name": "Cussewago Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Cussewago (Meadville) toward Venango [Wallace #021, p.43]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.52,
+      41.6
+     ],
+     [
+      -80.43,
+      41.66
+     ],
+     [
+      -80.3,
+      41.63
+     ],
+     [
+      -80.15,
+      41.64
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-022",
+    "name": "Delaware River Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Delaware (Dunlap's Path a branch) [Wallace #022, p.44]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.29,
+      40.84
+     ],
+     [
+      -75.19,
+      40.99
+     ],
+     [
+      -74.8,
+      41.32
+     ],
+     [
+      -74.69,
+      41.37
+     ],
+     [
+      -75.13,
+      41.63
+     ],
+     [
+      -75.42,
+      42.06
+     ],
+     [
+      -74.3,
+      42.93
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-023",
+    "name": "Falls Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Falls of the Delaware [Wallace #023, p.45]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -74.98,
+      40.08
+     ],
+     [
+      -74.85,
+      40.1
+     ],
+     [
+      -74.78,
+      40.21
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-024",
+    "name": "Forbidden Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the Iroquois 'Forbidden Path' across the N tier (Tioga->Allegheny) [Wallace #024, p.46]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.52,
+      41.95
+     ],
+     [
+      -76.81,
+      42.09
+     ],
+     [
+      -77.1,
+      42.16
+     ],
+     [
+      -77.23,
+      42.1
+     ],
+     [
+      -77.61,
+      42.27
+     ],
+     [
+      -77.79,
+      42.16
+     ],
+     [
+      -78.43,
+      42.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-025",
+    "name": "Fort Hill Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #025, p.49]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.18,
+      39.77
+     ],
+     [
+      -79.1,
+      39.72
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-026",
+    "name": "Frankstown Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Standing Stone->Frankstown->Chinklacamoose [Wallace #026, p.49]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "PA-001"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.6,
+      40.15
+     ],
+     [
+      -77.88,
+      40.27
+     ],
+     [
+      -77.88,
+      40.39
+     ],
+     [
+      -78.01,
+      40.48
+     ],
+     [
+      -78.35,
+      40.47
+     ],
+     [
+      -78.39,
+      40.43
+     ],
+     [
+      -78.8,
+      40.73
+     ],
+     [
+      -79.15,
+      40.62
+     ],
+     [
+      -79.3,
+      40.65
+     ],
+     [
+      -79.52,
+      40.82
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-027",
+    "name": "Frankstown-Burnt Cabins Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #027, p.55]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9,
+      40.05
+     ],
+     [
+      -78.0,
+      40.08
+     ],
+     [
+      -78.01,
+      40.2
+     ],
+     [
+      -78.2,
+      40.35
+     ],
+     [
+      -78.35,
+      40.47
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-028",
+    "name": "Frankstown-Venango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #028, p.56]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.35,
+      40.47
+     ],
+     [
+      -78.8,
+      40.73
+     ],
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -79.0,
+      40.95
+     ],
+     [
+      -79.3,
+      41.1
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-029",
+    "name": "French Creek Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up French Creek (Venango->Le Boeuf) [Wallace #029, p.57] | FIX: this is the Conestoga->Phoenixville French Creek path (Schuylkill), not the Venango one",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.52,
+      40.01
+     ],
+     [
+      -76.31,
+      40.04
+     ],
+     [
+      -76.09,
+      40.1
+     ],
+     [
+      -75.89,
+      40.15
+     ],
+     [
+      -75.51,
+      40.13
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-030",
+    "name": "Georgetown Road",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "pioneer-road [Wallace #030, p.57] | pioneer-road; packers' path from Georgetown/Baltimore to the Raystown Path",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "pioneer-road",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.58,
+      39.76
+     ],
+     [
+      -77.93,
+      39.98
+     ],
+     [
+      -77.9,
+      40.05
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-031",
+    "name": "Glades Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "across the Glades [Wallace #031, p.59] | FIX: Bedford->Washington PA (the 'Middle Indian Trail'), via the Glades",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -78.63,
+      40.0
+     ],
+     [
+      -79.08,
+      40.01
+     ],
+     [
+      -79.39,
+      40.11
+     ],
+     [
+      -79.54,
+      40.15
+     ],
+     [
+      -79.77,
+      40.21
+     ],
+     [
+      -79.93,
+      40.2
+     ],
+     [
+      -80.25,
+      40.17
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-032",
+    "name": "Goschgoschink Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Goschgoschink (upper Allegheny Delaware towns) [Wallace #032, p.61] | FIX: West Hickory->Luthersburg->Clearfield",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.42,
+      41.57
+     ],
+     [
+      -79.35,
+      41.45
+     ],
+     [
+      -79.19,
+      41.38
+     ],
+     [
+      -79.25,
+      41.33
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -79.2,
+      41.18
+     ],
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -78.73,
+      41.03
+     ],
+     [
+      -78.44,
+      41.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-033",
+    "name": "Great Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the Great (Trader's) Path to the Ohio [Wallace #033, p.62] | FIX: Pittsburgh->Detroit (= the Great Trail, cross-ref TR-043)",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-043"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -80.07,
+      40.52
+     ],
+     [
+      -80.31,
+      40.7
+     ],
+     [
+      -80.42,
+      40.75
+     ],
+     [
+      -81.46,
+      40.65
+     ],
+     [
+      -82.7,
+      41.45
+     ],
+     [
+      -83.05,
+      42.33
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-034",
+    "name": "Great Island Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Great Island (Lock Haven) westward [Wallace #034, p.63] | FIX: Sunbury->Lock Haven up the West Branch",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.8,
+      40.89
+     ],
+     [
+      -76.89,
+      40.96
+     ],
+     [
+      -76.85,
+      40.93
+     ],
+     [
+      -76.9,
+      41.08
+     ],
+     [
+      -76.85,
+      41.12
+     ],
+     [
+      -76.98,
+      41.1
+     ],
+     [
+      -77.45,
+      41.14
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-035",
+    "name": "Great Minquas Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the great Minquas/Susquehannock fur path, Delaware R.->Susquehanna [Wallace #035, p.64] | FIX: Philadelphia->Washington Boro (Susquehannock fur path)",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.39,
+      39.92
+     ],
+     [
+      -75.47,
+      39.9
+     ],
+     [
+      -75.92,
+      39.96
+     ],
+     [
+      -76.02,
+      39.99
+     ],
+     [
+      -76.18,
+      39.98
+     ],
+     [
+      -76.27,
+      39.97
+     ],
+     [
+      -76.3,
+      40.0
+     ],
+     [
+      -76.52,
+      40.01
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-036",
+    "name": "Great Shamokin Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Shamokin (Sunbury)->Kittanning, the Susquehanna-Allegheny trunk [Wallace #036, p.66] | refined full route",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.85,
+      41.01
+     ],
+     [
+      -76.79,
+      41.21
+     ],
+     [
+      -77.0,
+      41.24
+     ],
+     [
+      -77.26,
+      41.2
+     ],
+     [
+      -77.45,
+      41.14
+     ],
+     [
+      -77.78,
+      40.94
+     ],
+     [
+      -77.95,
+      40.97
+     ],
+     [
+      -78.44,
+      41.02
+     ],
+     [
+      -78.73,
+      41.03
+     ],
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -79.18,
+      40.85
+     ],
+     [
+      -79.52,
+      40.82
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-037",
+    "name": "Great Warriors Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the N-S Great Warriors Path (PA segment) [Wallace #037, p.72] | FIX: Athens(Tioga)->Sunbury down the N Branch",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-067"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.52,
+      41.95
+     ],
+     [
+      -76.52,
+      41.83
+     ],
+     [
+      -76.44,
+      41.77
+     ],
+     [
+      -76.39,
+      41.78
+     ],
+     [
+      -76.27,
+      41.67
+     ],
+     [
+      -75.95,
+      41.54
+     ],
+     [
+      -75.88,
+      41.24
+     ],
+     [
+      -76.22,
+      41.05
+     ],
+     [
+      -76.23,
+      41.05
+     ],
+     [
+      -76.45,
+      41.0
+     ],
+     [
+      -76.61,
+      40.96
+     ],
+     [
+      -76.8,
+      40.89
+     ],
+     [
+      -76.79,
+      40.86
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-038",
+    "name": "Hays Mill Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #038, p.74]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.08,
+      40.01
+     ],
+     [
+      -78.82,
+      39.73
+     ],
+     [
+      -78.76,
+      39.65
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-039",
+    "name": "Horseheads Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "toward the NY line at Horseheads [Wallace #039, p.75] | refined",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.92,
+      41.62
+     ],
+     [
+      -76.85,
+      41.66
+     ],
+     [
+      -76.79,
+      41.79
+     ],
+     [
+      -76.78,
+      41.81
+     ],
+     [
+      -76.81,
+      42.09
+     ],
+     [
+      -76.82,
+      42.17
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-040",
+    "name": "Ichsua Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "toward Ischua (Olean NY) [Wallace #040, p.76] | refined",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.28,
+      41.81
+     ],
+     [
+      -78.39,
+      41.96
+     ],
+     [
+      -78.43,
+      42.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-041",
+    "name": "Juniata Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Juniata valley [Wallace #041, p.77] | refined",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.84,
+      40.63
+     ],
+     [
+      -77.23,
+      40.56
+     ],
+     [
+      -77.4,
+      40.57
+     ],
+     [
+      -77.57,
+      40.6
+     ],
+     [
+      -77.88,
+      40.39
+     ],
+     [
+      -77.88,
+      40.38
+     ],
+     [
+      -78.01,
+      40.48
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-042",
+    "name": "Kersey Road",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "pioneer-road [Wallace #042, p.78]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "approx",
+    "era": "pioneer-road",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.73,
+      41.42
+     ],
+     [
+      -78.76,
+      41.12
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-043",
+    "name": "Kishacoquillas Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Kishacoquillas valley over to Penns [Wallace #043, p.78] | refined",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.78,
+      40.94
+     ],
+     [
+      -77.78,
+      40.91
+     ],
+     [
+      -77.74,
+      40.86
+     ],
+     [
+      -77.63,
+      40.78
+     ],
+     [
+      -77.6,
+      40.72
+     ],
+     [
+      -77.6,
+      40.66
+     ],
+     [
+      -77.57,
+      40.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-044",
+    "name": "Kiskiminetas Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "(Kittanning Path: see TR-065) [Wallace #044, p.79] | refined Indiana->Tarentum",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.15,
+      40.62
+     ],
+     [
+      -79.28,
+      40.57
+     ],
+     [
+      -79.57,
+      40.58
+     ],
+     [
+      -79.61,
+      40.63
+     ],
+     [
+      -79.76,
+      40.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-045",
+    "name": "Kuskusky-Chartier's Town Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #045, p.81]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.76,
+      40.6
+     ],
+     [
+      -79.95,
+      40.8
+     ],
+     [
+      -79.9,
+      40.86
+     ],
+     [
+      -80.35,
+      41.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-046",
+    "name": "Kuskusky-Cussewago Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #046, p.81]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.15,
+      41.64
+     ],
+     [
+      -80.39,
+      41.55
+     ],
+     [
+      -80.46,
+      41.19
+     ],
+     [
+      -80.25,
+      41.09
+     ],
+     [
+      -80.35,
+      41.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-047",
+    "name": "Kuskusky-Kittanning Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #047, p.82]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.52,
+      40.82
+     ],
+     [
+      -79.9,
+      40.86
+     ],
+     [
+      -80.35,
+      41.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-048",
+    "name": "Kuskusky-Ohio Forks Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #048, p.82]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -80.14,
+      40.79
+     ],
+     [
+      -80.28,
+      40.86
+     ],
+     [
+      -80.35,
+      41.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-049",
+    "name": "Kuskusky-Venango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #049, p.83]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.35,
+      41.0
+     ],
+     [
+      -80.1,
+      41.05
+     ],
+     [
+      -80.0,
+      41.13
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-050",
+    "name": "Lackawanna Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Lackawanna to the Great Bend [Wallace #050, p.83]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.79,
+      41.33
+     ],
+     [
+      -75.66,
+      41.41
+     ],
+     [
+      -75.71,
+      41.49
+     ],
+     [
+      -75.73,
+      41.98
+     ],
+     [
+      -75.64,
+      42.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-051",
+    "name": "Lackawaxen Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "down the Lackawaxen to the Delaware [Wallace #051, p.84]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.28,
+      41.6
+     ],
+     [
+      -75.15,
+      41.53
+     ],
+     [
+      -74.99,
+      41.48
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-052",
+    "name": "Lake Shore Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "PA Lake Erie shore segment [Wallace #052, p.85]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-044"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.57,
+      41.95
+     ],
+     [
+      -80.08,
+      42.13
+     ],
+     [
+      -79.84,
+      42.22
+     ],
+     [
+      -79.58,
+      42.32
+     ],
+     [
+      -78.88,
+      42.89
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-053",
+    "name": "Lehigh Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Lehigh to Wyoming [Wallace #053, p.88]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.71,
+      40.83
+     ],
+     [
+      -75.73,
+      40.87
+     ],
+     [
+      -75.83,
+      40.94
+     ],
+     [
+      -76.0,
+      41.2
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-054",
+    "name": "Lenni Lenape Path (Old York Road)",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Philadelphia->the Delaware->New York (Old York Road) [Wallace #054, p.90]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.13,
+      40.1
+     ],
+     [
+      -75.12,
+      40.14
+     ],
+     [
+      -75.05,
+      40.31
+     ],
+     [
+      -75.03,
+      40.34
+     ],
+     [
+      -74.95,
+      40.36
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-055",
+    "name": "Logan's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #055, p.91]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.37,
+      41.13
+     ],
+     [
+      -77.3,
+      41.03
+     ],
+     [
+      -77.47,
+      40.89
+     ],
+     [
+      -77.6,
+      40.72
+     ],
+     [
+      -77.57,
+      40.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-056",
+    "name": "Logstown Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #056, p.93]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.3,
+      40.6
+     ],
+     [
+      -80.14,
+      40.79
+     ],
+     [
+      -80.14,
+      40.95
+     ],
+     [
+      -80.0,
+      41.13
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-057",
+    "name": "Loyalhanna Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Loyalhanna (Ligonier) eastward [Wallace #057, p.94]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.38,
+      40.32
+     ],
+     [
+      -79.45,
+      40.49
+     ],
+     [
+      -79.57,
+      40.6
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-058",
+    "name": "Loyalhanna-Goschgoschink Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #058, p.94]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.15,
+      40.62
+     ],
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -79.42,
+      41.57
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-059",
+    "name": "Loyalsock Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up Loyalsock (Lycoming/McKee's branches) [Wallace #059, p.95]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.4,
+      41.52
+     ],
+     [
+      -76.6,
+      41.5
+     ],
+     [
+      -76.7,
+      41.47
+     ],
+     [
+      -76.92,
+      41.25
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-060",
+    "name": "Mahanoy Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Mahanoy [Wallace #060, p.96]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.57,
+      40.6
+     ],
+     [
+      -77.3,
+      40.7
+     ],
+     [
+      -77.05,
+      40.78
+     ],
+     [
+      -76.86,
+      40.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-061",
+    "name": "Mahoning Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Mahoning Creek (PA; not the Ohio Mahoning TR-047) [Wallace #061, p.96]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.31,
+      40.7
+     ],
+     [
+      -80.35,
+      41.0
+     ],
+     [
+      -80.65,
+      41.1
+     ],
+     [
+      -80.77,
+      41.18
+     ],
+     [
+      -81.24,
+      41.16
+     ],
+     [
+      -81.36,
+      41.15
+     ],
+     [
+      -81.52,
+      41.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-062",
+    "name": "Masthope Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #062, p.97]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.28,
+      41.6
+     ],
+     [
+      -75.14,
+      41.56
+     ],
+     [
+      -75.0,
+      41.52
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-063",
+    "name": "Maxatawny Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "(Mead's/Meniolagomeka branches) [Wallace #063, p.98]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.22,
+      40.69
+     ],
+     [
+      -75.49,
+      40.6
+     ],
+     [
+      -75.6,
+      40.55
+     ],
+     [
+      -75.78,
+      40.52
+     ],
+     [
+      -75.85,
+      40.46
+     ],
+     [
+      -75.9,
+      40.45
+     ],
+     [
+      -75.93,
+      40.34
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-064",
+    "name": "Mingo Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Mingo Town (Mon valley) [Wallace #064, p.100]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.88,
+      40.02
+     ],
+     [
+      -80.05,
+      40.05
+     ],
+     [
+      -80.25,
+      40.17
+     ],
+     [
+      -80.41,
+      40.12
+     ],
+     [
+      -80.49,
+      40.17
+     ],
+     [
+      -80.72,
+      40.07
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-065",
+    "name": "Minisink Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the Minisink Path up the Delaware to the NY line (Esopus beyond) [Wallace #065, p.101]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -74.8,
+      41.32
+     ],
+     [
+      -75.1,
+      41.4
+     ],
+     [
+      -75.45,
+      41.43
+     ],
+     [
+      -75.66,
+      41.41
+     ],
+     [
+      -75.79,
+      41.33
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-066",
+    "name": "Minsi Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Minsi (Munsee) path [Wallace #066, p.102]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.21,
+      40.07
+     ],
+     [
+      -75.26,
+      40.3
+     ],
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.31,
+      40.74
+     ],
+     [
+      -75.29,
+      40.84
+     ],
+     [
+      -75.25,
+      40.98
+     ],
+     [
+      -75.19,
+      40.99
+     ],
+     [
+      -75.11,
+      41.01
+     ],
+     [
+      -74.89,
+      41.22
+     ],
+     [
+      -74.69,
+      41.37
+     ],
+     [
+      -74.02,
+      41.93
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-067",
+    "name": "Monocacy Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "toward the Monocacy (MD) [Wallace #067, p.105]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.53,
+      40.03
+     ],
+     [
+      -76.73,
+      39.96
+     ],
+     [
+      -76.98,
+      39.8
+     ],
+     [
+      -77.09,
+      39.74
+     ],
+     [
+      -77.17,
+      39.66
+     ],
+     [
+      -77.41,
+      39.41
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-068",
+    "name": "Morrison Cove Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #068, p.106]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.47,
+      40.07
+     ],
+     [
+      -78.4,
+      40.18
+     ],
+     [
+      -78.32,
+      40.31
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-069",
+    "name": "Muncy-Mahoning Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #069, p.106]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      41.21
+     ],
+     [
+      -76.7,
+      41.08
+     ],
+     [
+      -76.68,
+      41.05
+     ],
+     [
+      -76.61,
+      40.96
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-070",
+    "name": "Nanticoke Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Nanticoke on the Susquehanna [Wallace #070, p.107]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.98,
+      39.79
+     ],
+     [
+      -75.93,
+      39.9
+     ],
+     [
+      -75.91,
+      40.09
+     ],
+     [
+      -75.89,
+      40.15
+     ],
+     [
+      -75.93,
+      40.34
+     ],
+     [
+      -75.85,
+      40.5
+     ],
+     [
+      -75.97,
+      40.8
+     ],
+     [
+      -75.97,
+      40.96
+     ],
+     [
+      -76.0,
+      41.2
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-071",
+    "name": "Nemacolin's Path (Braddock Road)",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "PA-precise Braddock Rd [Wallace #071, p.109]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-066"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.76,
+      39.65
+     ],
+     [
+      -79.33,
+      39.75
+     ],
+     [
+      -79.65,
+      39.95
+     ],
+     [
+      -79.72,
+      39.9
+     ],
+     [
+      -79.88,
+      40.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-072",
+    "name": "Nescopeck Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Nescopeck->the Lehigh/Delaware over the Pocono [Wallace #072, p.113]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.62,
+      40.74
+     ],
+     [
+      -75.6,
+      40.8
+     ],
+     [
+      -75.66,
+      40.83
+     ],
+     [
+      -75.82,
+      40.86
+     ],
+     [
+      -75.97,
+      40.96
+     ],
+     [
+      -76.22,
+      41.05
+     ],
+     [
+      -76.23,
+      41.05
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-073",
+    "name": "New Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #073, p.115]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.31,
+      40.34
+     ],
+     [
+      -77.39,
+      40.37
+     ],
+     [
+      -77.62,
+      40.38
+     ],
+     [
+      -77.65,
+      40.34
+     ],
+     [
+      -77.78,
+      40.28
+     ],
+     [
+      -77.88,
+      40.27
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-074",
+    "name": "New Castle Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #074, p.116]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.57,
+      39.66
+     ],
+     [
+      -75.9,
+      39.7
+     ],
+     [
+      -76.3,
+      39.73
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-075",
+    "name": "Nippenose Paths",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #075, p.116]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.26,
+      41.2
+     ],
+     [
+      -77.2,
+      41.17
+     ],
+     [
+      -77.15,
+      41.15
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-076",
+    "name": "Ohio Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "down the Ohio [Wallace #076, p.116]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.93,
+      40.34
+     ],
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -80.0,
+      40.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-077",
+    "name": "Oil Creek Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "down Oil Creek [Wallace #077, p.117]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.98,
+      41.94
+     ],
+     [
+      -79.8,
+      41.7
+     ],
+     [
+      -79.7,
+      41.43
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-078",
+    "name": "Okehocking Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #078, p.117]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.45,
+      40.1
+     ],
+     [
+      -75.47,
+      40.04
+     ],
+     [
+      -75.43,
+      39.97
+     ],
+     [
+      -75.47,
+      39.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-079",
+    "name": "Old Peter's Road",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "pioneer-road [Wallace #079, p.118]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "pioneer-road",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.7,
+      40.01
+     ],
+     [
+      -75.88,
+      40.0
+     ],
+     [
+      -76.1,
+      40.05
+     ],
+     [
+      -76.5,
+      40.11
+     ],
+     [
+      -76.66,
+      40.09
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-080",
+    "name": "Old Swedes Path",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "pioneer-road [Wallace #080, p.120]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "pioneer-road",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.26,
+      39.92
+     ],
+     [
+      -75.38,
+      39.85
+     ],
+     [
+      -75.42,
+      39.81
+     ],
+     [
+      -75.57,
+      39.66
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-081",
+    "name": "Oley Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Oley valley [Wallace #081, p.121]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.5,
+      40.53
+     ],
+     [
+      -75.55,
+      40.52
+     ],
+     [
+      -75.78,
+      40.38
+     ],
+     [
+      -75.93,
+      40.34
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-082",
+    "name": "Oswayo Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "(The Painted Line nearby) [Wallace #082, p.121]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.76,
+      41.98
+     ],
+     [
+      -77.9,
+      41.9
+     ],
+     [
+      -78.02,
+      41.92
+     ],
+     [
+      -78.19,
+      41.96
+     ],
+     [
+      -78.27,
+      42.0
+     ],
+     [
+      -78.43,
+      42.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-083",
+    "name": "Paxtang Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Paxtang (Harrisburg)->Tulpehocken [Wallace #083, p.122]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.52,
+      40.01
+     ],
+     [
+      -76.5,
+      40.03
+     ],
+     [
+      -76.55,
+      40.06
+     ],
+     [
+      -76.73,
+      40.2
+     ],
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -76.92,
+      40.37
+     ],
+     [
+      -76.96,
+      40.54
+     ],
+     [
+      -76.84,
+      40.63
+     ],
+     [
+      -76.85,
+      40.71
+     ],
+     [
+      -76.79,
+      40.86
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-084",
+    "name": "Peach Bottom Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "to Peach Bottom ford on the Susquehanna [Wallace #084, p.123]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.0,
+      39.83
+     ],
+     [
+      -76.1,
+      39.78
+     ],
+     [
+      -76.2,
+      39.78
+     ],
+     [
+      -76.25,
+      39.75
+     ],
+     [
+      -76.3,
+      39.73
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-085",
+    "name": "Pechoquealin Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Pechoquealin (Delaware Water Gap) path [Wallace #085, p.124]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.11,
+      41.01
+     ],
+     [
+      -75.18,
+      41.0
+     ],
+     [
+      -75.19,
+      40.99
+     ],
+     [
+      -75.27,
+      41.03
+     ],
+     [
+      -75.46,
+      41.1
+     ],
+     [
+      -75.72,
+      41.16
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-086",
+    "name": "Peholand's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #086, p.125]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.16,
+      40.54
+     ],
+     [
+      -79.12,
+      40.55
+     ],
+     [
+      -79.15,
+      40.62
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-087",
+    "name": "Penns Creek Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up Penns Creek over to Bald Eagle [Wallace #087, p.126]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.99,
+      40.88
+     ],
+     [
+      -77.05,
+      40.92
+     ],
+     [
+      -77.17,
+      40.9
+     ],
+     [
+      -77.35,
+      40.9
+     ],
+     [
+      -77.42,
+      40.9
+     ],
+     [
+      -77.47,
+      40.89
+     ],
+     [
+      -77.79,
+      40.78
+     ],
+     [
+      -77.88,
+      40.72
+     ],
+     [
+      -78.12,
+      40.61
+     ],
+     [
+      -78.05,
+      40.47
+     ],
+     [
+      -78.35,
+      40.47
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-088",
+    "name": "Perkiomen Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Perkiomen [Wallace #088, p.127]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.16,
+      39.95
+     ],
+     [
+      -75.34,
+      40.12
+     ],
+     [
+      -75.45,
+      40.19
+     ],
+     [
+      -75.65,
+      40.25
+     ],
+     [
+      -75.75,
+      40.26
+     ],
+     [
+      -75.93,
+      40.34
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-089",
+    "name": "Perkiomen-Lehigh Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #089, p.128]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.46,
+      40.13
+     ],
+     [
+      -75.45,
+      40.19
+     ],
+     [
+      -75.47,
+      40.25
+     ],
+     [
+      -75.47,
+      40.34
+     ],
+     [
+      -75.49,
+      40.39
+     ],
+     [
+      -75.52,
+      40.54
+     ],
+     [
+      -75.49,
+      40.6
+     ],
+     [
+      -75.49,
+      40.65
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-090",
+    "name": "Pigeon Paths",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "to the pigeon roosts of the N tier [Wallace #090, p.129]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.14,
+      41.84
+     ],
+     [
+      -79.1,
+      41.79
+     ],
+     [
+      -79.03,
+      41.7
+     ],
+     [
+      -78.81,
+      41.66
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-091",
+    "name": "Pine Creek Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up Pine Creek to the N tier/Tioga [Wallace #091, p.130]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.26,
+      41.2
+     ],
+     [
+      -77.35,
+      41.33
+     ],
+     [
+      -77.45,
+      41.55
+     ],
+     [
+      -77.55,
+      41.7
+     ],
+     [
+      -77.6,
+      41.76
+     ],
+     [
+      -77.78,
+      41.78
+     ],
+     [
+      -77.76,
+      41.98
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-092",
+    "name": "Pohopoco Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Pohopoco (Big Creek) [Wallace #092, p.132]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.66,
+      40.83
+     ],
+     [
+      -75.51,
+      40.9
+     ],
+     [
+      -75.45,
+      40.92
+     ],
+     [
+      -75.39,
+      40.92
+     ],
+     [
+      -75.25,
+      40.98
+     ],
+     [
+      -75.19,
+      40.99
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-093",
+    "name": "Point Pleasant Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #093, p.133]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.47,
+      40.25
+     ],
+     [
+      -75.31,
+      40.35
+     ],
+     [
+      -75.2,
+      40.37
+     ],
+     [
+      -75.12,
+      40.38
+     ],
+     [
+      -75.07,
+      40.42
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-095",
+    "name": "Punxsutawney-Venango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #095, p.141]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -79.08,
+      41.0
+     ],
+     [
+      -79.15,
+      41.05
+     ],
+     [
+      -79.25,
+      41.08
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-096",
+    "name": "Raystown Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the Raystown Path -> Forbes Road [Wallace #096, p.142]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.52,
+      40.05
+     ],
+     [
+      -77.93,
+      39.98
+     ],
+     [
+      -78.0,
+      40.08
+     ],
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.62,
+      40.43
+     ],
+     [
+      -80.0,
+      40.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-097",
+    "name": "Raystown-Chinklacamoose Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #097, p.147]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -78.39,
+      40.43
+     ],
+     [
+      -78.39,
+      40.52
+     ],
+     [
+      -78.24,
+      40.67
+     ],
+     [
+      -78.11,
+      40.74
+     ],
+     [
+      -78.0,
+      40.9
+     ],
+     [
+      -78.22,
+      40.9
+     ],
+     [
+      -78.44,
+      41.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-098",
+    "name": "Red Hole Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #098, p.148]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.38,
+      40.55
+     ],
+     [
+      -76.33,
+      40.62
+     ],
+     [
+      -76.28,
+      40.68
+     ],
+     [
+      -76.2,
+      40.72
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-099",
+    "name": "Redstone Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Redstone Old Fort (Brownsville) [Wallace #099, p.148]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.72,
+      39.8
+     ],
+     [
+      -79.65,
+      39.95
+     ],
+     [
+      -79.8,
+      39.98
+     ],
+     [
+      -79.88,
+      40.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-100",
+    "name": "St. Joseph's Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #100, p.149]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.42,
+      41.72
+     ],
+     [
+      -76.47,
+      41.78
+     ],
+     [
+      -76.52,
+      41.83
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-101",
+    "name": "Salt Lick Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #101, p.150]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.45,
+      40.14
+     ],
+     [
+      -79.54,
+      40.15
+     ],
+     [
+      -79.61,
+      40.22
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-102",
+    "name": "Sewickley Old Town Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #102, p.151]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.77,
+      40.21
+     ],
+     [
+      -79.73,
+      40.26
+     ],
+     [
+      -79.75,
+      40.39
+     ],
+     [
+      -79.68,
+      40.39
+     ],
+     [
+      -79.62,
+      40.42
+     ],
+     [
+      -79.76,
+      40.57
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-103",
+    "name": "Sheshequin Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Muncy->Sheshequin on the N Branch (toward Tioga/NY) [Wallace #103, p.152]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.0,
+      41.24
+     ],
+     [
+      -77.03,
+      41.42
+     ],
+     [
+      -76.94,
+      41.5
+     ],
+     [
+      -76.94,
+      41.6
+     ],
+     [
+      -76.92,
+      41.62
+     ],
+     [
+      -76.85,
+      41.66
+     ],
+     [
+      -76.78,
+      41.68
+     ],
+     [
+      -76.44,
+      41.77
+     ],
+     [
+      -76.5,
+      41.87
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-104",
+    "name": "Sinnemahoning Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the Sinnemahoning to the Portage [Wallace #104, p.155]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.45,
+      41.14
+     ],
+     [
+      -77.47,
+      41.18
+     ],
+     [
+      -77.63,
+      41.33
+     ],
+     [
+      -77.7,
+      41.36
+     ],
+     [
+      -77.75,
+      41.33
+     ],
+     [
+      -77.9,
+      41.3
+     ],
+     [
+      -78.13,
+      41.21
+     ],
+     [
+      -78.2,
+      41.44
+     ],
+     [
+      -78.24,
+      41.51
+     ],
+     [
+      -78.17,
+      41.63
+     ],
+     [
+      -78.3,
+      41.72
+     ],
+     [
+      -78.28,
+      41.81
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-105",
+    "name": "Standing Stone Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Standing Stone (Huntingdon) [Wallace #105, p.156]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.01,
+      40.48
+     ],
+     [
+      -77.86,
+      40.79
+     ],
+     [
+      -77.78,
+      40.91
+     ],
+     [
+      -77.78,
+      40.94
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-106",
+    "name": "Standing Stone-Fort Littleton Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #106, p.156]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.01,
+      40.48
+     ],
+     [
+      -78.2,
+      40.35
+     ],
+     [
+      -78.15,
+      40.25
+     ],
+     [
+      -78.0,
+      40.08
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-107",
+    "name": "Sullivan's Road",
+    "category": "trail",
+    "ttype": "pioneer-road",
+    "description": "pioneer-road; Sullivan's 1779 march road [Wallace #107, p.157]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "pioneer road 1779",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.22,
+      40.69
+     ],
+     [
+      -75.29,
+      40.84
+     ],
+     [
+      -75.32,
+      40.9
+     ],
+     [
+      -75.27,
+      41.03
+     ],
+     [
+      -75.5,
+      41.1
+     ],
+     [
+      -75.88,
+      41.24
+     ],
+     [
+      -75.95,
+      41.54
+     ],
+     [
+      -76.44,
+      41.77
+     ],
+     [
+      -76.52,
+      41.95
+     ],
+     [
+      -76.81,
+      42.09
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-108",
+    "name": "Susquehanna Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "up the West Branch Susquehanna [Wallace #108, p.158]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.03,
+      40.4
+     ],
+     [
+      -76.99,
+      40.57
+     ],
+     [
+      -76.86,
+      40.8
+     ],
+     [
+      -76.79,
+      40.86
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-109",
+    "name": "Three Springs Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #109, p.159]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.88,
+      40.27
+     ],
+     [
+      -77.9,
+      40.24
+     ],
+     [
+      -78.01,
+      40.2
+     ],
+     [
+      -78.1,
+      40.15
+     ],
+     [
+      -78.12,
+      40.12
+     ],
+     [
+      -78.5,
+      40.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-110",
+    "name": "Tioga Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the great Susquehanna path to Tioga and the NY line [Wallace #110, p.159]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.03,
+      41.42
+     ],
+     [
+      -77.1,
+      41.57
+     ],
+     [
+      -77.06,
+      41.68
+     ],
+     [
+      -77.08,
+      41.81
+     ],
+     [
+      -77.13,
+      41.91
+     ],
+     [
+      -77.13,
+      41.99
+     ],
+     [
+      -77.1,
+      42.16
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-111",
+    "name": "Tory Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #111, p.160]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.82,
+      40.58
+     ],
+     [
+      -76.0,
+      40.7
+     ],
+     [
+      -76.0,
+      40.76
+     ],
+     [
+      -76.14,
+      40.81
+     ],
+     [
+      -76.46,
+      40.95
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-112",
+    "name": "Towanda Path (The Genesee Road)",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Towanda westward -> the Genesee Road toward NY [Wallace #112, p.160]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      41.21
+     ],
+     [
+      -76.72,
+      41.24
+     ],
+     [
+      -76.68,
+      41.35
+     ],
+     [
+      -76.7,
+      41.47
+     ],
+     [
+      -76.55,
+      41.5
+     ],
+     [
+      -76.42,
+      41.72
+     ],
+     [
+      -76.44,
+      41.77
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-113",
+    "name": "Tulpehocken Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the diplomatic highway: Harris's->Tulpehocken->Shamokin (Weiser) [Wallace #113, p.162]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.85,
+      40.71
+     ],
+     [
+      -76.7,
+      40.66
+     ],
+     [
+      -76.48,
+      40.67
+     ],
+     [
+      -76.38,
+      40.55
+     ],
+     [
+      -76.27,
+      40.46
+     ],
+     [
+      -76.24,
+      40.44
+     ],
+     [
+      -76.18,
+      40.36
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-114",
+    "name": "Tunkhannock Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #114, p.164]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.95,
+      41.54
+     ],
+     [
+      -75.78,
+      41.63
+     ],
+     [
+      -75.73,
+      41.86
+     ],
+     [
+      -75.73,
+      41.98
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-115",
+    "name": "Turkeyfoot Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Turkeyfoot (Confluence) [Wallace #115, p.165]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.76,
+      39.65
+     ],
+     [
+      -78.78,
+      39.68
+     ],
+     [
+      -78.86,
+      39.7
+     ],
+     [
+      -79.12,
+      39.75
+     ],
+     [
+      -79.08,
+      39.75
+     ],
+     [
+      -79.35,
+      39.81
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-116",
+    "name": "Tuscarora Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "over Tuscarora Mountain [Wallace #116, p.168]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.7,
+      39.72
+     ],
+     [
+      -77.9,
+      39.83
+     ],
+     [
+      -77.93,
+      39.98
+     ],
+     [
+      -77.8,
+      40.08
+     ],
+     [
+      -77.77,
+      40.18
+     ],
+     [
+      -77.85,
+      40.25
+     ],
+     [
+      -77.62,
+      40.38
+     ],
+     [
+      -77.6,
+      40.47
+     ],
+     [
+      -77.39,
+      40.53
+     ],
+     [
+      -77.18,
+      40.66
+     ],
+     [
+      -77.1,
+      40.7
+     ],
+     [
+      -76.94,
+      40.76
+     ],
+     [
+      -76.86,
+      40.8
+     ],
+     [
+      -76.79,
+      40.86
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-118",
+    "name": "Venango-Chinklacamoose Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #118, p.174]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -78.97,
+      40.94
+     ],
+     [
+      -78.44,
+      41.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-119",
+    "name": "Venango-Conewango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #119, p.175]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -79.7,
+      41.43
+     ],
+     [
+      -79.4,
+      41.68
+     ],
+     [
+      -79.14,
+      41.84
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-120",
+    "name": "Venango-Kittanning Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #120, p.176]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.52,
+      40.82
+     ],
+     [
+      -79.5,
+      41.05
+     ],
+     [
+      -79.45,
+      41.17
+     ],
+     [
+      -79.38,
+      41.21
+     ],
+     [
+      -79.83,
+      41.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-121",
+    "name": "Virginia Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "the Virginia/Warriors trunk (PA stub) [Wallace #121, p.177]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-067"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.3,
+      40.18
+     ],
+     [
+      -77.52,
+      40.05
+     ],
+     [
+      -77.66,
+      39.94
+     ],
+     [
+      -77.73,
+      39.79
+     ],
+     [
+      -77.82,
+      39.6
+     ],
+     [
+      -78.16,
+      39.19
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-122",
+    "name": "Walnut Bottom Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #122, p.178]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.28,
+      40.15
+     ],
+     [
+      -77.33,
+      40.12
+     ],
+     [
+      -77.4,
+      40.08
+     ],
+     [
+      -77.47,
+      40.06
+     ],
+     [
+      -77.52,
+      40.05
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-123",
+    "name": "Wapwallopen Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #123, p.178]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.1,
+      41.08
+     ],
+     [
+      -76.0,
+      41.2
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-124",
+    "name": "Warm Spring Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #124, p.179]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -77.9,
+      39.83
+     ],
+     [
+      -78.0,
+      39.75
+     ],
+     [
+      -78.1,
+      39.72
+     ],
+     [
+      -78.3,
+      39.68
+     ],
+     [
+      -78.18,
+      39.7
+     ],
+     [
+      -78.23,
+      39.63
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-126",
+    "name": "Warriors Branch",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #126, p.184]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -79.79,
+      39.8
+     ],
+     [
+      -79.92,
+      39.82
+     ],
+     [
+      -80.3,
+      39.8
+     ],
+     [
+      -80.4,
+      39.8
+     ],
+     [
+      -80.74,
+      39.92
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-127",
+    "name": "Warriors Mark Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors Mark [Wallace #127, p.186]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.35,
+      40.47
+     ],
+     [
+      -78.05,
+      40.47
+     ],
+     [
+      -78.12,
+      40.61
+     ],
+     [
+      -78.11,
+      40.74
+     ],
+     [
+      -78.0,
+      40.9
+     ],
+     [
+      -78.22,
+      40.9
+     ],
+     [
+      -78.44,
+      41.02
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-128",
+    "name": "Wechquetank Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #128, p.187]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.31,
+      40.74
+     ],
+     [
+      -75.35,
+      40.82
+     ],
+     [
+      -75.5,
+      40.88
+     ],
+     [
+      -75.45,
+      40.92
+     ],
+     [
+      -75.39,
+      40.92
+     ],
+     [
+      -75.62,
+      41.1
+     ],
+     [
+      -75.72,
+      41.16
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-129",
+    "name": "Wyalusing Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Wyalusing on the N Branch Susquehanna [Wallace #129, p.188]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.27,
+      41.67
+     ],
+     [
+      -76.23,
+      41.6
+     ],
+     [
+      -76.4,
+      41.52
+     ],
+     [
+      -76.56,
+      41.4
+     ],
+     [
+      -76.56,
+      41.35
+     ],
+     [
+      -76.57,
+      41.33
+     ],
+     [
+      -76.6,
+      41.3
+     ],
+     [
+      -76.71,
+      41.28
+     ],
+     [
+      -76.72,
+      41.24
+     ],
+     [
+      -76.79,
+      41.21
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-131",
+    "name": "Wysaukin Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "[Wallace #131, p.192]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.39,
+      41.78
+     ],
+     [
+      -76.34,
+      41.86
+     ],
+     [
+      -76.3,
+      41.9
+     ],
+     [
+      -76.37,
+      42.03
+     ],
+     [
+      -76.26,
+      42.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-125A",
+    "name": "Warriors Path to the Potomac - Bloody Run",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors/Wyoming branch [Wallace #125A, p.181]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.01,
+      40.48
+     ],
+     [
+      -78.2,
+      40.35
+     ],
+     [
+      -78.25,
+      40.28
+     ],
+     [
+      -78.3,
+      40.1
+     ],
+     [
+      -78.37,
+      40.01
+     ],
+     [
+      -78.47,
+      39.7
+     ],
+     [
+      -78.6,
+      39.56
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-125B",
+    "name": "Warriors Path to the Potomac - Manns Choice",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors/Wyoming branch [Wallace #125B, p.182]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.35,
+      40.47
+     ],
+     [
+      -78.44,
+      40.3
+     ],
+     [
+      -78.52,
+      40.16
+     ],
+     [
+      -78.52,
+      40.1
+     ],
+     [
+      -78.52,
+      40.05
+     ],
+     [
+      -78.63,
+      40.0
+     ],
+     [
+      -78.65,
+      39.85
+     ],
+     [
+      -78.72,
+      39.82
+     ],
+     [
+      -78.8,
+      39.72
+     ],
+     [
+      -78.78,
+      39.68
+     ],
+     [
+      -78.82,
+      39.58
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-125C",
+    "name": "Warriors Path to the Potomac - Raystown",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors/Wyoming branch [Wallace #125C, p.184]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -78.35,
+      40.47
+     ],
+     [
+      -78.52,
+      40.05
+     ],
+     [
+      -78.55,
+      40.02
+     ],
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -78.6,
+      39.8
+     ],
+     [
+      -78.76,
+      39.65
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-130A",
+    "name": "Wyoming Path - via Lehigh",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors/Wyoming branch [Wallace #130A, p.191]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "PA-053"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.37,
+      40.62
+     ],
+     [
+      -75.71,
+      40.83
+     ],
+     [
+      -75.73,
+      40.87
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-130B",
+    "name": "Wyoming Path - via Nescopeck",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Warriors/Wyoming branch [Wallace #130B, p.191]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "PA-072"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -75.93,
+      40.34
+     ],
+     [
+      -76.22,
+      41.05
+     ],
+     [
+      -76.0,
+      41.2
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094A",
+    "name": "Allegheny Portage: Big Portage Path",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94A, p.135]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.17,
+     41.63
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094B",
+    "name": "Allegheny Portage: Little Portage Path",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94B, p.136]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.05,
+     41.62
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094C",
+    "name": "Chautauqua Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94C, p.136]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-041"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -79.43,
+     42.16
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094D",
+    "name": "Cherry Tree Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94D, p.137]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -78.8,
+     40.73
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094E",
+    "name": "Conestoga Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94E, p.138]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.98,
+     40.07
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094F",
+    "name": "Conococheague Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94F, p.139]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.7,
+     40.0
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094G",
+    "name": "Great Bend Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94G, p.139]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -75.6,
+     41.93
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094H",
+    "name": "Presque Isle Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94H, p.140]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-042"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -80.0,
+     42.05
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-094I",
+    "name": "Tioga Portage",
+    "category": "trail",
+    "ttype": "portage",
+    "description": "[Wallace #94I, p.141]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965; 1971 ed.)",
+    "confidence": "located (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -76.52,
+     41.95
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-130",
+    "name": null,
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Wyoming (Wilkes-Barre) hub: 4 Susquehanna approaches + 5 Delaware-side paths (Lehigh, Pechoquealin, Sullivan's Rd, Wechquetank, Minisink) [Wallace]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.79,
+      40.86
+     ],
+     [
+      -76.61,
+      40.96
+     ],
+     [
+      -76.45,
+      41.0
+     ],
+     [
+      -76.23,
+      41.05
+     ],
+     [
+      -76.15,
+      41.15
+     ],
+     [
+      -76.0,
+      41.2
+     ],
+     [
+      -75.88,
+      41.24
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-A4",
+    "name": "Forbes Road (1758)",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "The Raystown Path militarized by Gen. Forbes 1758: Harrisburg->Carlisle->Shippensburg->Ft Loudon(Cowan Gap)->Ft Littleton->Bedford->Ligonier->Bushy Run->Ft Pitt. Became the Pennsylvania Road (Appendix IV) [Wallace]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "military road 1758",
+    "region": "Northeast",
+    "related": "PA-096"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -76.88,
+      40.27
+     ],
+     [
+      -77.19,
+      40.2
+     ],
+     [
+      -77.52,
+      40.05
+     ],
+     [
+      -77.93,
+      39.98
+     ],
+     [
+      -78.0,
+      40.08
+     ],
+     [
+      -78.5,
+      40.02
+     ],
+     [
+      -79.24,
+      40.24
+     ],
+     [
+      -79.62,
+      40.43
+     ],
+     [
+      -80.0,
+      40.44
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-A5",
+    "name": "Washington's Path to Fort LeBoeuf (1753)",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Young George Washington's Dec 1753 mission: Logstown->Murthering Town(Harmony)->Portersville->West Liberty->the Venango Path->Venango(Franklin)->Cussewago(Meadville)->Little Cooley detour->Fort LeBoeuf(Waterford) (Appendix V) [Wallace]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "historic journey 1753",
+    "region": "Northeast",
+    "related": "PA-117"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.31,
+      40.7
+     ],
+     [
+      -80.13,
+      40.81
+     ],
+     [
+      -80.14,
+      40.95
+     ],
+     [
+      -80.06,
+      41.07
+     ],
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -80.15,
+      41.64
+     ],
+     [
+      -79.95,
+      41.7
+     ],
+     [
+      -79.98,
+      41.94
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "id": "PA-117",
+    "name": "Venango Path",
+    "category": "trail",
+    "ttype": "indian-path",
+    "description": "Pittsburgh(Shannopin's)->Evans City->Prospect->Harrisville->Barkeyville->Franklin(Venango)->up French Creek->Cambridge Springs->Fort Le Boeuf(Waterford)->Presque Isle(Erie); the chief Ft Pitt->Lake Erie military highway 1753-94 (cross-ref TR-059). [Wallace #117, p.170]",
+    "source": "Wallace, Indian Paths of Pennsylvania (1965)",
+    "confidence": "corridor (Wallace page-verified)",
+    "era": "aboriginal",
+    "region": "Northeast",
+    "related": "TR-059"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -80.0,
+      40.44
+     ],
+     [
+      -80.06,
+      40.77
+     ],
+     [
+      -80.03,
+      40.9
+     ],
+     [
+      -80.0,
+      41.13
+     ],
+     [
+      -79.98,
+      41.25
+     ],
+     [
+      -79.83,
+      41.4
+     ],
+     [
+      -80.06,
+      41.8
+     ],
+     [
+      -79.98,
+      41.94
+     ],
+     [
+      -80.08,
+      42.13
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1668,7 +1668,7 @@ def emit_ways_layer():
     def split_antimeridian(coords):
         """Break a coordinate run wherever consecutive lons jump >180° so the line doesn't wrap the globe."""
         if len(coords) < 2:
-            return [coords] if coords else []
+            return []   # v18 (2026-10-13): a single-node segment (a standalone named node) is emitted as a node, not a 1-coord LineString
         runs, cur = [], [coords[0]]
         for prev, nxt in zip(coords, coords[1:]):
             if abs(nxt[0] - prev[0]) > 180:
